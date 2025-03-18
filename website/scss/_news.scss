@@ -4,103 +4,161 @@
     h2 {
         font-size: 36px;
         font-weight: 600;
-    }
-
-    .news-item {
-        display: block;
-        position: relative;
-        margin-bottom: 32px;
-    }
-
-    a > img {
-        // only target the main news image, not the author pfp
-        width: 100%;
-        margin: 0;
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-        
-    }
-
-    p {
-        font-size: 13px;
-        font-weight: 300;
-        // letter-spacing: 0.04em;
-        line-height: 22px;
-
-    }
-    .news-tooltip {
-        position: absolute;
-        right: 0;
-        top: 8px;
-        color: #fff;
-        padding: 0 10px;
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 23px;
-        text-transform: uppercase;
-
-    }
-
-    .news-description {
-        padding: 30px;
-        margin: -8px 0 0;
-        border: 0.5px solid #ccc;
-
-        h3 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 0;
-        }
-        p {
-            margin: 0 0 25px 0;
-        }
-
-        .news-btn {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 400;
-            font-size: 1.125em;
-            text-transform: uppercase;
-            display: inline-block;
-            border-radius: 4px;
-            padding: 10px 14px;
-            margin: 0 8px 30px 0;
-        }
-
-        .news-author {
-            padding-top: 32px;
-            border-top: 0.5px solid #ccc;
-            display: flex;
-            flex-direction: row;
-
-            img {
-                margin: 0;
-                aspect-ratio: 1;
-                border-radius: 50%;
-            }
-            p {
-                margin: 0;
-                padding: 2px 0 2px 20px;
-                font-weight: 300;
-                letter-spacing: 0.01em;
-                strong {
-                    font-weight: 500;
-                }
-            }
-
-        }
+        float: left;
+        letter-spacing: 0.4px;
     }
     h3 {
         font-size: 26px;
-        text-align: center;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .news-view {
         a {
-            text-decoration: none;
+            font-size: inherit;
             &:hover {
                 text-decoration: underline;
             }
+        }
+        &.top {
+            display: none;
+            float: right;
+        }
+        @media (min-width: $breakpoint-small) {
+            &.top {
+                display: inline;
+            }
+
+            &.bottom  {
+                display: none
+            }
+        }
+    }
+    .news-grid {
+        .news-item {
+            display: block;
+            position: relative;
+            top: 0;
+            transition: .5s ease;
+            margin-bottom: 32px;
+
+            &:hover {
+                top: -10px;
+            }
+
+            @media (min-width: $breakpoint-small) {
+                max-width: 345px;
+            }
+            @media (min-width: $breakpoint-medium) {
+                max-width: 455px;
+            }
+            @media (min-width: $breakpoint-large) {
+                max-width: 370px;
+            }
+            @media (min-width: $breakpoint-small) and (max-width: ($breakpoint-large - 1px)) {
+                &:nth-child(n+3) {
+                    display: none;
+                }
+            }
+        }
+
+        a > img {
+            // only target the main news image, not the author pfp
+            width: 100%;
+            margin: 0;
+        }
+
+        p {
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0.4px;
+            line-height: 22px;
+
+        }
+        .news-tooltip {
+            position: absolute;
+            right: 0;
+            top: 8px;
+            color: #fff;
+            padding: 0 10px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 23px;
+            text-transform: uppercase;
+
+        }
+
+        .news-description {
+            padding: 30px;
+            margin: -8px 0 0;
+            border: 0.5px solid #ccc;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 0;
+                text-align: left;
+                padding-right: 16px;
+            }
+            p {
+                margin: 0 0 25px 0;
+            }
+
+            .news-btn {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 1.125em;
+                text-transform: uppercase;
+                display: inline-block;
+                border-radius: 4px;
+                padding: 10px 14px;
+                margin: 0 8px 30px 0;
+            }
+
+            .news-author {
+                padding-top: 32px;
+                border-top: 0.5px solid #ccc;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    margin: 0;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                }
+                p {
+                    margin: 0;
+                    padding: 2px 0 2px 20px;
+                    font-weight: 300;
+                    letter-spacing: 0.01em;
+                    strong {
+                        font-weight: 500;
+                    }
+                }
+
+            }
+        }
+        h3 {
+            font-size: 26px;
+            text-align: center; // mobile viewport bottom header is centered
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        @media (min-width: $breakpoint-small) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            grid-gap: 30px;
+        }
+        @media (min-width: $breakpoint-large) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
