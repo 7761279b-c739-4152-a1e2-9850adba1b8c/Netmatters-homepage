@@ -1390,12 +1390,12 @@ header form.search-mobile .search-bar-mobile-icon {
   }
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 61, ../../html_css_assessment/website/scss/_services.scss */
 .services {
   margin-top: 50px;
 }
 
-/* line 62, ../../html_css_assessment/website/scss/_services.scss */
+/* line 63, ../../html_css_assessment/website/scss/_services.scss */
 .services h2 {
   font-size: 2.6875rem;
   font-weight: 400;
@@ -1404,7 +1404,7 @@ header form.search-mobile .search-bar-mobile-icon {
   margin-bottom: 15px;
 }
 
-/* line 69, ../../html_css_assessment/website/scss/_services.scss */
+/* line 70, ../../html_css_assessment/website/scss/_services.scss */
 .services h3 {
   font-size: 1.625rem;
   font-weight: 600;
@@ -1413,43 +1413,43 @@ header form.search-mobile .search-bar-mobile-icon {
   text-align: center;
 }
 
-/* line 76, ../../html_css_assessment/website/scss/_services.scss */
+/* line 77, ../../html_css_assessment/website/scss/_services.scss */
 .services h1 {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 0.0625rem;
 }
 
-/* line 83, ../../html_css_assessment/website/scss/_services.scss */
+/* line 84, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view a {
   color: #333645;
   text-decoration: none;
 }
 
-/* line 86, ../../html_css_assessment/website/scss/_services.scss */
+/* line 87, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view a:hover {
   text-decoration: underline;
 }
 
-/* line 91, ../../html_css_assessment/website/scss/_services.scss */
+/* line 92, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view.top {
   display: none;
   float: right;
 }
 
 @media (min-width: 768px) {
-  /* line 96, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 97, ../../html_css_assessment/website/scss/_services.scss */
   .services .services-view.top {
     display: inline;
   }
-  /* line 100, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 101, ../../html_css_assessment/website/scss/_services.scss */
   .services .services-view.bottom {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 106, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 107, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     display: grid;
     grid-gap: 25px;
@@ -1462,7 +1462,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 992px) {
-  /* line 106, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 107, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1471,7 +1471,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 1260px) {
-  /* line 106, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 107, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1479,13 +1479,14 @@ header form.search-mobile .search-bar-mobile-icon {
   }
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_services.scss */
+/* line 131, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey {
   display: block;
   position: relative;
   top: 0;
   transition: .5s ease;
   border: 0.5px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -1493,13 +1494,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.grey {
     margin: 0;
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_services.scss */
+/* line 17, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey .icon {
   display: block;
   width: 65px;
@@ -1512,51 +1513,52 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 3.875rem;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey h2 {
   font-size: 1.75rem;
   margin: 0 0 21px;
   float: none;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 33, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_services.scss */
+/* line 37, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey .service-btn {
   background-color: #f7b322;
   margin: 0;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 46, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover {
   color: #fff;
   background-color: #67809f;
   top: -10px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 50, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover .icon {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_services.scss */
+/* line 54, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover .service-btn {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_services.scss */
+/* line 131, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue {
   display: block;
   position: relative;
   top: 0;
   transition: .5s ease;
   border: 0.5px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -1564,13 +1566,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.blue {
     margin: 0;
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_services.scss */
+/* line 17, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue .icon {
   display: block;
   width: 65px;
@@ -1583,51 +1585,52 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 3.875rem;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue h2 {
   font-size: 1.75rem;
   margin: 0 0 21px;
   float: none;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 33, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_services.scss */
+/* line 37, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue .service-btn {
   background-color: #4183d7;
   margin: 0;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 46, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover {
   color: #fff;
   background-color: #4183d7;
   top: -10px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 50, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover .icon {
   color: #4183d7;
   background-color: #fff;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_services.scss */
+/* line 54, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover .service-btn {
   color: #4183d7;
   background-color: #fff;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_services.scss */
+/* line 131, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green {
   display: block;
   position: relative;
   top: 0;
   transition: .5s ease;
   border: 0.5px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -1635,13 +1638,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.green {
     margin: 0;
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_services.scss */
+/* line 17, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green .icon {
   display: block;
   width: 65px;
@@ -1654,51 +1657,52 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 3.875rem;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green h2 {
   font-size: 1.75rem;
   margin: 0 0 21px;
   float: none;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 33, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_services.scss */
+/* line 37, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green .service-btn {
   background-color: #2ecc71;
   margin: 0;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 46, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover {
   color: #fff;
   background-color: #2ecc71;
   top: -10px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 50, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover .icon {
   color: #2ecc71;
   background-color: #fff;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_services.scss */
+/* line 54, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover .service-btn {
   color: #2ecc71;
   background-color: #fff;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_services.scss */
+/* line 131, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red {
   display: block;
   position: relative;
   top: 0;
   transition: .5s ease;
   border: 0.5px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -1706,13 +1710,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.red {
     margin: 0;
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_services.scss */
+/* line 17, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red .icon {
   display: block;
   width: 65px;
@@ -1725,51 +1729,52 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 3.875rem;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red h2 {
   font-size: 1.75rem;
   margin: 0 0 21px;
   float: none;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 33, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_services.scss */
+/* line 37, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red .service-btn {
   background-color: #d64541;
   margin: 0;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 46, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover {
   color: #fff;
   background-color: #d64541;
   top: -10px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 50, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover .icon {
   color: #d64541;
   background-color: #fff;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_services.scss */
+/* line 54, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover .service-btn {
   color: #d64541;
   background-color: #fff;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_services.scss */
+/* line 131, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple {
   display: block;
   position: relative;
   top: 0;
   transition: .5s ease;
   border: 0.5px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -1777,13 +1782,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.purple {
     margin: 0;
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_services.scss */
+/* line 17, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple .icon {
   display: block;
   width: 65px;
@@ -1796,51 +1801,52 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 3.875rem;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple h2 {
   font-size: 1.75rem;
   margin: 0 0 21px;
   float: none;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 33, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_services.scss */
+/* line 37, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple .service-btn {
   background-color: #926fb1;
   margin: 0;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 46, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover {
   color: #fff;
   background-color: #926fb1;
   top: -10px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 50, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover .icon {
   color: #926fb1;
   background-color: #fff;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_services.scss */
+/* line 54, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover .service-btn {
   color: #926fb1;
   background-color: #fff;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_services.scss */
+/* line 131, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink {
   display: block;
   position: relative;
   top: 0;
   transition: .5s ease;
   border: 0.5px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -1848,13 +1854,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.pink {
     margin: 0;
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_services.scss */
+/* line 17, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink .icon {
   display: block;
   width: 65px;
@@ -1867,51 +1873,52 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 3.875rem;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink h2 {
   font-size: 1.75rem;
   margin: 0 0 21px;
   float: none;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 33, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_services.scss */
+/* line 37, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink .service-btn {
   background-color: #f62459;
   margin: 0;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 46, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover {
   color: #fff;
   background-color: #f62459;
   top: -10px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 50, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover .icon {
   color: #f62459;
   background-color: #fff;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_services.scss */
+/* line 54, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover .service-btn {
   color: #f62459;
   background-color: #fff;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_services.scss */
+/* line 131, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange {
   display: block;
   position: relative;
   top: 0;
   transition: .5s ease;
   border: 0.5px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -1919,13 +1926,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.orange {
     margin: 0;
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_services.scss */
+/* line 17, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange .icon {
   display: block;
   width: 65px;
@@ -1938,45 +1945,45 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 3.875rem;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange h2 {
   font-size: 1.75rem;
   margin: 0 0 21px;
   float: none;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 33, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange p {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_services.scss */
+/* line 37, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange .service-btn {
   background-color: #ce4125;
   margin: 0;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 46, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover {
   color: #fff;
   background-color: #ce4125;
   top: -10px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 50, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover .icon {
   color: #ce4125;
   background-color: #fff;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_services.scss */
+/* line 54, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover .service-btn {
   color: #ce4125;
   background-color: #fff;
 }
 
-/* line 134, ../../html_css_assessment/website/scss/_services.scss */
+/* line 135, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.bespoke {
   grid-area: bespoke;
 }
@@ -1990,7 +1997,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 140, ../../html_css_assessment/website/scss/_services.scss */
+/* line 141, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.IT {
   grid-area: IT;
 }
@@ -2004,7 +2011,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 146, ../../html_css_assessment/website/scss/_services.scss */
+/* line 147, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.marketing {
   grid-area: marketing;
 }
@@ -2018,7 +2025,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 152, ../../html_css_assessment/website/scss/_services.scss */
+/* line 153, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.telecoms {
   grid-area: telecoms;
 }
@@ -2032,7 +2039,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 158, ../../html_css_assessment/website/scss/_services.scss */
+/* line 159, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.web {
   grid-area: web;
 }
@@ -2046,7 +2053,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 164, ../../html_css_assessment/website/scss/_services.scss */
+/* line 165, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.security {
   grid-area: security;
 }
@@ -2060,7 +2067,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 170, ../../html_css_assessment/website/scss/_services.scss */
+/* line 171, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.training {
   grid-area: training;
 }
@@ -2677,11 +2684,16 @@ footer .footer-row .footer-menu a:hover {
 footer .footer-company .footer-social-media {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 8px;
+  grid-gap: 8px;
   margin-top: 0;
   margin-bottom: 36px;
-  max-width: 0px;
+  width: 280px;
   font-size: 1.625rem;
+}
+
+/* line 73, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company .footer-social-media .fb:hover {
+  background-color: #3b5998;
 }
 
 /* line 35, ../../html_css_assessment/website/scss/_icons.scss */
@@ -2693,13 +2705,23 @@ footer .footer-company .footer-social-media .icon-fb::before {
   content: "";
 }
 
+/* line 81, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company .footer-social-media .li:hover {
+  background-color: #0077b5;
+}
+
 /* line 35, ../../html_css_assessment/website/scss/_icons.scss */
-footer .footer-company .footer-social-media .icon-l::before {
+footer .footer-company .footer-social-media .icon-li::before {
   font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
   content: "";
+}
+
+/* line 89, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company .footer-social-media .tw:hover {
+  background-color: #00aced;
 }
 
 /* line 35, ../../html_css_assessment/website/scss/_icons.scss */
@@ -2711,6 +2733,11 @@ footer .footer-company .footer-social-media .icon-tw::before {
   content: "";
 }
 
+/* line 97, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company .footer-social-media .in:hover {
+  background-color: #d93175;
+}
+
 /* line 35, ../../html_css_assessment/website/scss/_icons.scss */
 footer .footer-company .footer-social-media .icon-in::before {
   font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
@@ -2720,13 +2747,12 @@ footer .footer-company .footer-social-media .icon-in::before {
   content: "";
 }
 
-/* line 85, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 105, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media a {
   color: #fff;
   text-decoration: none;
-  background-color: #272936;
+  background-color: #212330;
   display: block;
-  width: 64px;
   height: 56px;
   padding-top: 12px;
   text-align: center;
@@ -2736,10 +2762,11 @@ footer .footer-company .footer-social-media a {
   /* line 63, ../../html_css_assessment/website/scss/_footer.scss */
   footer .footer-company .footer-social-media {
     grid-template-columns: 1fr 1fr;
+    width: 136px;
   }
 }
 
-/* line 102, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 122, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright {
   margin: 0;
   background-color: #212330;
@@ -2750,33 +2777,33 @@ footer .footer-company .footer-social-media a {
   line-height: 1.16071rem;
 }
 
-/* line 110, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 130, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright p {
   margin: 0;
 }
 
-/* line 113, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 133, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 116, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 136, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright a:hover {
   text-decoration: underline;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 140, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright .copyright-- {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 124, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 144, ../../html_css_assessment/website/scss/_footer.scss */
   .copyright .copyright-newline {
     display: none;
   }
-  /* line 127, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 147, ../../html_css_assessment/website/scss/_footer.scss */
   .copyright .copyright-- {
     display: inline;
   }

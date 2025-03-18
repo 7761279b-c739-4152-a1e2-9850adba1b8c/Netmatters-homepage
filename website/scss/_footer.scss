@@ -63,20 +63,40 @@ footer {
       .footer-social-media {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr 1fr;
-         gap: 8px;
+         grid-gap: 8px;
          margin-top: 0;
          margin-bottom: 36px;
-         max-width: 0px;
+         width: 280px;
          font-size: rems(26px);
 
+         .fb {
+            &:hover {
+               background-color: $color-facebook;
+            }
+         }
          .icon-fb {
             @include icon("\E907");
          }
-         .icon-l {
+         .li {
+            &:hover {
+               background-color: $color-linkedin;
+            }
+         }
+         .icon-li {
             @include icon("\F0E1");
+         }
+         .tw {
+            &:hover {
+               background-color: $color-twitter;
+            }
          }
          .icon-tw {
             @include icon("\E90B");
+         }
+         .in {
+            &:hover {
+               background-color: $color-instagram;
+            }
          }
          .icon-in {
             @include icon("\E909");
@@ -85,15 +105,15 @@ footer {
          a {
             color: #fff;
             text-decoration: none;
-            background-color: $color-button-dark;
+            background-color: $color-button-socialmedia;
             display: block;
-            width: 64px;
             height: 56px;
             padding-top: 12px;
             text-align: center;
          }
          @media (max-width: 480px) {
             grid-template-columns: 1fr 1fr;
+            width: 136px;
          }
       }
    }
