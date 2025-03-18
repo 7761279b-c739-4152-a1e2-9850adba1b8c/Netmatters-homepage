@@ -11,7 +11,7 @@
     border-width: 0;
     background-color: $color-button-grey;
     &:hover {
-        background-color: darken($color-button-grey, 8%)
+        background-color: darken($color-button-grey, 8%);
     }
     @include icon("\E003");
 }

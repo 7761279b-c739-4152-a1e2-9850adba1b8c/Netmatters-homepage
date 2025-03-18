@@ -355,6 +355,28 @@ header form.search-mobile .icon-search::before {
   }
 }
 
+/* line 1, ../../html_css_assessment/website/scss/_dropdowns.scss */
+.dropdowns {
+  background-color: #333645;
+  color: #fff;
+  display: none;
+}
+
+/* line 6, ../../html_css_assessment/website/scss/_dropdowns.scss */
+.dropdowns .dropdown-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 32px;
+}
+
+@media (min-width: 1260px) {
+  /* line 1, ../../html_css_assessment/website/scss/_dropdowns.scss */
+  .dropdowns {
+    display: block;
+  }
+}
+
 /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
 .banner {
   color: #fff;
