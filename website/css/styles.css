@@ -136,34 +136,34 @@ body {
 .latest-news .news-item {
   display: block;
   position: relative;
+  margin-bottom: 32px;
 }
 
-/* line 14, ../../html_css_assessment/website/scss/_news.scss */
+/* line 15, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news a > img {
   width: 100%;
   margin: 0;
 }
 
-/* line 20, ../../html_css_assessment/website/scss/_news.scss */
+/* line 21, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 25, ../../html_css_assessment/website/scss/_news.scss */
+/* line 27, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news p {
   font-size: 13px;
   font-weight: 300;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_news.scss */
+/* line 34, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-tooltip {
   position: absolute;
   right: 0;
   top: 8px;
   color: #fff;
-  background-color: #4183d7;
   padding: 0 10px;
   font-size: 12px;
   font-weight: 600;
@@ -171,18 +171,17 @@ body {
   text-transform: uppercase;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_news.scss */
+/* line 47, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-description {
   padding: 30px;
   margin: -8px 0 0;
   border: 0.5px solid #ccc;
 }
 
-/* line 51, ../../html_css_assessment/website/scss/_news.scss */
+/* line 52, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-description h3 {
   font-size: 16px;
   font-weight: 600;
-  color: #4183d7;
   margin-top: 0;
 }
 
@@ -192,9 +191,8 @@ body {
 }
 
 /* line 61, ../../html_css_assessment/website/scss/_news.scss */
-.latest-news .news-description .btn-news {
+.latest-news .news-description .news-btn {
   color: #fff;
-  background-color: #4183d7;
   text-decoration: none;
   font-weight: 400;
   font-size: 1.125em;
@@ -205,7 +203,7 @@ body {
   margin: 0 8px 30px 0;
 }
 
-/* line 74, ../../html_css_assessment/website/scss/_news.scss */
+/* line 73, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-description .news-author {
   padding-top: 32px;
   border-top: 0.5px solid #ccc;
@@ -213,14 +211,14 @@ body {
   flex-direction: row;
 }
 
-/* line 80, ../../html_css_assessment/website/scss/_news.scss */
+/* line 79, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-description .news-author img {
   margin: 0;
   aspect-ratio: 1;
   border-radius: 50%;
 }
 
-/* line 85, ../../html_css_assessment/website/scss/_news.scss */
+/* line 84, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-description .news-author p {
   margin: 0;
   padding: 2px 0 2px 20px;
@@ -228,9 +226,55 @@ body {
   letter-spacing: 0.01em;
 }
 
-/* line 90, ../../html_css_assessment/website/scss/_news.scss */
+/* line 89, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-description .news-author p strong {
   font-weight: 500;
+}
+
+/* line 96, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news h3 {
+  font-size: 26px;
+  text-align: center;
+}
+
+/* line 99, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news h3 a {
+  text-decoration: none;
+}
+
+/* line 101, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news h3 a:hover {
+  text-decoration: underline;
+}
+
+/* line 109, ../../html_css_assessment/website/scss/_news.scss */
+.news-item.purple .news-tooltip {
+  background-color: #926fb1;
+}
+
+/* line 114, ../../html_css_assessment/website/scss/_news.scss */
+.news-item.purple .news-description h3 {
+  color: #926fb1;
+}
+
+/* line 118, ../../html_css_assessment/website/scss/_news.scss */
+.news-item.purple .news-description .news-btn {
+  background-color: #926fb1;
+}
+
+/* line 109, ../../html_css_assessment/website/scss/_news.scss */
+.news-item.blue .news-tooltip {
+  background-color: #4183d7;
+}
+
+/* line 114, ../../html_css_assessment/website/scss/_news.scss */
+.news-item.blue .news-description h3 {
+  color: #4183d7;
+}
+
+/* line 118, ../../html_css_assessment/website/scss/_news.scss */
+.news-item.blue .news-description .news-btn {
+  background-color: #4183d7;
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_partners.scss */

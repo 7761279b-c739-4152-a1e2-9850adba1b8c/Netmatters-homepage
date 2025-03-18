@@ -24,10 +24,10 @@
     }
 
     .google-reviews {
-        @include button(#4387f6);
+        @include button($color-google-review);
     }
     .trustpilot-reviews {
-        @include button(#00b67b);
+        @include button($color-trustpilot-review);
     }
     .welcome-btns {
         margin-bottom: 40px;

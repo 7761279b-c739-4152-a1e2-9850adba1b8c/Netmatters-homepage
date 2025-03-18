@@ -9,6 +9,7 @@
     .news-item {
         display: block;
         position: relative;
+        margin-bottom: 32px;
     }
 
     a > img {
@@ -20,6 +21,7 @@
     a {
         color: inherit;
         text-decoration: none;
+        
     }
 
     p {
@@ -34,7 +36,6 @@
         right: 0;
         top: 8px;
         color: #fff;
-        background-color: $color-blue;
         padding: 0 10px;
         font-size: 12px;
         font-weight: 600;
@@ -51,16 +52,14 @@
         h3 {
             font-size: 16px;
             font-weight: 600;
-            color: $color-blue;
             margin-top: 0;
         }
         p {
             margin: 0 0 25px 0;
         }
 
-        .btn-news {
+        .news-btn {
             color: #fff;
-            background-color: $color-blue;
             text-decoration: none;
             font-weight: 400;
             font-size: 1.125em;
@@ -94,4 +93,39 @@
 
         }
     }
+    h3 {
+        font-size: 26px;
+        text-align: center;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@mixin news_color($color) {
+    .news-tooltip {
+        background-color: $color;
+    }
+
+    .news-description {
+        h3 {
+            color: $color;
+        }
+
+        .news-btn {
+            background-color: $color;
+        }
+    }
+}
+
+
+.news-item.purple {
+    @include news_color($color-purple)
+}
+
+.news-item.blue {
+    @include news_color($color-blue)
 }
