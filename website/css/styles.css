@@ -2386,105 +2386,135 @@ footer {
   background-color: #333645;
   color: #fff;
   padding: 30px 0 0;
-  position: relative;
 }
 
-/* line 7, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 6, ../../html_css_assessment/website/scss/_footer.scss */
+footer h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 26px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 15, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 11, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 19, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-row .footer-menu {
   flex: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: 768px) {
-  /* line 11, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 19, ../../html_css_assessment/website/scss/_footer.scss */
   footer .footer-row .footer-menu {
     flex: 50%;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 11, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 19, ../../html_css_assessment/website/scss/_footer.scss */
   footer .footer-row .footer-menu {
     flex: 25%;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 11, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 19, ../../html_css_assessment/website/scss/_footer.scss */
   footer .footer-row .footer-menu {
     margin-bottom: 40px;
   }
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-row .footer-menu h4 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 26px;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/* line 35, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 36, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-row .footer-menu ul {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
-/* line 40, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 41, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-row .footer-menu li {
   list-style-type: none;
-  padding: 0.1em;
+  margin: 0;
+  padding: 0;
+  line-height: 21px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 48, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-row .footer-menu a {
   color: #fff;
   text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.4px;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 55, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-row .footer-menu a:hover {
   text-decoration: underline;
 }
 
-/* line 56, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-company {
-  height: 200px;
-}
-
-/* line 59, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 63, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 8px;
   margin-top: 0;
+  margin-bottom: 36px;
   max-width: 0px;
+  font-size: 26px;
 }
 
-/* line 67, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-company h4 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 26px;
-  margin-top: 26px;
-  padding-top: 0;
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+footer .footer-company .footer-social-media .icon-fb::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
 }
 
-/* line 75, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-company a {
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+footer .footer-company .footer-social-media .icon-l::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+footer .footer-company .footer-social-media .icon-tw::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+footer .footer-company .footer-social-media .icon-in::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 85, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company .footer-social-media a {
   color: #fff;
   text-decoration: none;
   background-color: #272936;
   display: block;
   width: 64px;
   height: 56px;
+  padding-top: 12px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
