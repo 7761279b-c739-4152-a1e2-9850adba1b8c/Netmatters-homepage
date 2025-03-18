@@ -4,23 +4,38 @@
     background-image: url('../img/home-YLei.webp');
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        background-color: rgba(#000, 0.5);
+        @media (min-width: $breakpoint-medium) {
+            background: linear-gradient(270deg, transparent 25%, #000);
+        }
+    }
     .container {
         display: flex;
         flex-direction: column;
         padding: 40px 0 0;
         height: 550px;
+        z-index: 5;
+        position: relative;
     }
     text-align: center;
 
 
-
     h1 {
         font-size: 40px;
-        line-height: 3rem;
+        line-height: 48px;
         margin: 0 0 20px;
         font-weight: 600;
     }
-    
+
     p {
         font-size: 20px;
         letter-spacing: 0.4px;
@@ -37,6 +52,53 @@
     }
 
     .banner-selector {
+        text-align: center;
+        display: block;
+        position: absolute;
+        bottom: 44px;
+        left: 0;
         margin: 0 0 8px;
+        width: 100%;
+        .banner-circle {
+            display: inline-block;
+            background-color: rgba(#fff, 0.5);
+            z-index: 100;
+            width: 11px;
+            height: 11px;
+            margin: 0 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:nth-child(1) { // current active banner menu (except I'm just using a static background)
+                position: relative;
+                background-color: #fff;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -8px;
+                    left: -8px;
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        text-align: left;
+        h1 {
+            font-size: 64px;
+            line-height: 80px;
+            width: 940px;
+        }
+        p {
+            font-size: 26px;
+        }
+    }
+    @media (min-width: $breakpoint-large) {
+        h1 {
+            width: 1170px;
+        }
     }
 }

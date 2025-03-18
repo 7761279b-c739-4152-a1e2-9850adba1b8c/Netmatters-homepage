@@ -1240,26 +1240,48 @@ header form.search-mobile .icon-search::before {
   background-image: url("../img/home-YLei.webp");
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   text-align: center;
 }
 
-/* line 7, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 8, ../../html_css_assessment/website/scss/_banner.scss */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 992px) {
+  /* line 8, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner::before {
+    background: linear-gradient(270deg, transparent 25%, #000);
+  }
+}
+
+/* line 21, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .container, .banner .dropdowns .dropdown-row .dropdown .dropdown-dropdown, .dropdowns .dropdown-row .dropdown .banner .dropdown-dropdown {
   display: flex;
   flex-direction: column;
   padding: 40px 0 0;
   height: 550px;
+  z-index: 5;
+  position: relative;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 32, ../../html_css_assessment/website/scss/_banner.scss */
 .banner h1 {
   font-size: 40px;
-  line-height: 3rem;
+  line-height: 48px;
   margin: 0 0 20px;
   font-weight: 600;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 39, ../../html_css_assessment/website/scss/_banner.scss */
 .banner p {
   font-size: 20px;
   letter-spacing: 0.4px;
@@ -1267,7 +1289,7 @@ header form.search-mobile .icon-search::before {
   margin: 0 0 25px;
 }
 
-/* line 31, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 46, ../../html_css_assessment/website/scss/_banner.scss */
 .banner a {
   background-color: #926fb1;
 }
@@ -1277,14 +1299,74 @@ header form.search-mobile .icon-search::before {
   background-color: #7e57a0;
 }
 
-/* line 35, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 50, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-overlay {
   margin: auto;
 }
 
-/* line 39, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 54, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector {
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 44px;
+  left: 0;
   margin: 0 0 8px;
+  width: 100%;
+}
+
+/* line 62, ../../html_css_assessment/website/scss/_banner.scss */
+.banner .banner-selector .banner-circle {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+  width: 11px;
+  height: 11px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* line 71, ../../html_css_assessment/website/scss/_banner.scss */
+.banner .banner-selector .banner-circle:nth-child(1) {
+  position: relative;
+  background-color: #fff;
+}
+
+/* line 74, ../../html_css_assessment/website/scss/_banner.scss */
+.banner .banner-selector .banner-circle:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 992px) {
+  /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner {
+    text-align: left;
+  }
+  /* line 90, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner h1 {
+    font-size: 64px;
+    line-height: 80px;
+    width: 940px;
+  }
+  /* line 95, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner p {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 100, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner h1 {
+    width: 1170px;
+  }
 }
 
 /* line 60, ../../html_css_assessment/website/scss/_services.scss */
