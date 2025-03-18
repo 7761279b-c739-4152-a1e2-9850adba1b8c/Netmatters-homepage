@@ -2,6 +2,7 @@
     background-color: $color-background;
     color: #fff;
     display: none;
+    position: relative;
 
     .dropdown-row {
         display: flex;
@@ -12,25 +13,70 @@
 
         .dropdown {
             cursor: pointer;
-            position: relative;
+            display: block;
             flex-basis: 1px;
             flex-grow: 1;
             
             .icon {
                 // display: block;
-                padding-top: 10px;
+                padding: 16px 0 0;
                 margin: 0;
                 font-size: 23px;
                 // line-height: 62px;
             }
+            p {
+                font-size: 18px;
+                margin: 0;
+                text-transform: uppercase;
+                padding-bottom: 13px;
+                small {
+                    font-size: 10px;
+                    display: block;
+                    line-height: 10px;
+                }
+            }
 
             .dropdown-dropdown {
+                @extend .container;
                 display: none;
                 position: absolute;
                 top: 100%;
                 min-width: 100%;
+                left: 0;
+                color: #fff;
+                text-align: left;
                 &:hover {
                     display: block;
+                }
+                h2 {
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 19px;
+                    text-transform: none;
+                }
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    list-style: none;
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+                        &:hover p {
+                            text-decoration: underline;
+                        }
+                        display: flex;
+                        margin: 16px 0;
+                    }
+                    p {
+                        margin: 0;
+                        display: block;
+                    }
+                    span {
+                        display: block;
+                        padding-right: 8px;
+                    }
                 }
             }
 
@@ -54,14 +100,14 @@
                     color: $value;
                 }
                 .dropdown-dropdown {
-                    background-color: $value;
+                    background-color: darken($value, 10%);
                 }
             }
         }
 
     }
 
-    @media (min-width: $breakpoint-large) {
+    @media (min-width: $breakpoint-medium) {
         display: block;
     }
 
@@ -100,5 +146,146 @@
         .icon {
             @include icon("\E8DE");
         }
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-crm {
+        @include icon("\F085");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-automation {
+        @include icon("\E139");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-integration {
+        @include icon("\E110");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-mobile {
+        @include icon("\E145");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-databases {
+        @include icon("\E118");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-sharepoint {
+        @include icon("\E178");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-operational {
+        @include icon("\E025");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-central {
+        @include icon("\F0C0");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-IoT {
+        @include icon("\F109");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-intranet {
+        @include icon("\F0C2");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-portal {
+        @include icon("\F0ED");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-reporting {
+        @include icon("\F0AC");
+    }
+    .dropdown .dropdown-dropdown .icon-bespoke-sap {
+        @include icon("\E910");
+    }
+    .dropdown .dropdown-dropdown .icon-IT-managed {
+        @include icon("\E035");
+    }
+    .dropdown .dropdown-dropdown .icon-IT-business {
+        @include icon("\F0B1");
+    }
+    .dropdown .dropdown-dropdown .icon-IT-office {
+        @include icon("\F109");
+    }
+    .dropdown .dropdown-dropdown .icon-IT-consultancy {
+        @include icon("\E8DE");
+    }
+    .dropdown .dropdown-dropdown .icon-IT-cloud {
+        @include icon("\F0C2");
+    }
+    .dropdown .dropdown-dropdown .icon-IT-backup {
+        @include icon("\E121");
+    }
+    .dropdown .dropdown-dropdown .icon-marketing-seo {
+        @include icon("\F002");
+    }
+    .dropdown .dropdown-dropdown .icon-marketing-ppc {
+        @include icon("\F0D6");
+    }
+    .dropdown .dropdown-dropdown .icon-marketing-cro {
+        @include icon("\E68B");
+    }
+    .dropdown .dropdown-dropdown .icon-marketing-email {
+        @include icon("\F0E0");
+    }
+    .dropdown .dropdown-dropdown .icon-marketing-social {
+        @include icon("\F0C0");
+    }
+    .dropdown .dropdown-dropdown .icon-marketing-content {
+        @include icon("\F040");
+    }
+    .dropdown .dropdown-dropdown .icon-telecoms-mobile {
+        @include icon("\F145");
+    }
+    .dropdown .dropdown-dropdown .icon-telecoms-hosted-VoIP {
+        @include icon("\F095");
+    }
+    .dropdown .dropdown-dropdown .icon-telecoms-business-VoIP {
+        @include icon("\F098");
+    }
+    .dropdown .dropdown-dropdown .icon-telecoms-broadbands {
+        @include icon("\F0E4");
+    }
+    .dropdown .dropdown-dropdown .icon-telecoms-leased {
+        @include icon("\E910");
+    }
+    .dropdown .dropdown-dropdown .icon-telecoms-3cx {
+        @include icon("\E8B6");
+    }
+    .dropdown .dropdown-dropdown .icon-web-bespoke {
+        @include icon("\F040");
+    }
+    .dropdown .dropdown-dropdown .icon-web-ecommerce {
+        @include icon("\E116");
+    }
+    .dropdown .dropdown-dropdown .icon-web-monthly {
+        @include icon("\F108");
+    }
+    .dropdown .dropdown-dropdown .icon-web-branding {
+        @include icon("\F0A1");
+    }
+    .dropdown .dropdown-dropdown .icon-web-mobile {
+        @include icon("\E145");
+    }
+    .dropdown .dropdown-dropdown .icon-web-hosting {
+        @include icon("\2601");
+    }
+    .dropdown .dropdown-dropdown .icon-security-assessment {
+        @include icon("\F0EA");
+    }
+    .dropdown .dropdown-dropdown .icon-security-management {
+        @include icon("\F017");
+    }
+    .dropdown .dropdown-dropdown .icon-security-penetration {
+        @include icon("\F0C3");
+    }
+    .dropdown .dropdown-dropdown .icon-security-certification {
+        @include icon("\E8DE");
+    }
+    .dropdown .dropdown-dropdown .icon-security-pci {
+        @include icon("\E7C9");
+    }
+    .dropdown .dropdown-dropdown .icon-security-hacking {
+        @include icon("\F023");
+    }
+    .dropdown .dropdown-dropdown .icon-training-career {
+        @include icon("\F109");
+    }
+    .dropdown .dropdown-dropdown .icon-training-bootcamp {
+        @include icon("\E908");
+    }
+    .dropdown .dropdown-dropdown .icon-training-faq {
+        @include icon("\F059");
+    }
+    .dropdown .dropdown-dropdown .icon-training-collaborators {
+        @include icon("\E910");
     }
 }
