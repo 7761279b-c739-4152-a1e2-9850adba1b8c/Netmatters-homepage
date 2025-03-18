@@ -472,33 +472,34 @@ header form.search-mobile .search-bar-mobile-icon {
   left: 0;
   color: #fff;
   text-align: left;
+  z-index: 50;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 51, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown:hover {
   display: block;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 54, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown h2 {
   font-size: 2rem;
   font-weight: 500;
 }
 
-/* line 57, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 58, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown p {
   font-size: 1.1875rem;
   text-transform: none;
 }
 
-/* line 61, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 62, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
 }
 
-/* line 65, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 66, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown ul a {
   color: inherit;
   text-decoration: none;
@@ -506,34 +507,34 @@ header form.search-mobile .search-bar-mobile-icon {
   margin: 16px 0;
 }
 
-/* line 68, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 69, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown ul a:hover p {
   text-decoration: underline;
 }
 
-/* line 74, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 75, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown ul p {
   margin: 0;
   display: block;
 }
 
-/* line 78, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 79, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown ul span {
   display: block;
   padding-right: 8px;
 }
 
-/* line 87, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 88, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown:hover .dropdown-dropdown {
   display: block;
 }
 
-/* line 92, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 93, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown > a {
   position: relative;
 }
 
-/* line 94, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 95, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown > a::after {
   content: "";
   position: absolute;
@@ -549,218 +550,218 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 1260px) {
-  /* line 94, ../../html_css_assessment/website/scss/_dropdowns.scss */
+  /* line 95, ../../html_css_assessment/website/scss/_dropdowns.scss */
   .dropdowns .dropdown-row .dropdown > a::after {
     border-width: 35px 84px 0;
   }
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 116, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.grey:hover {
   background-color: #67809f;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 118, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.grey:hover .icon {
   color: #fff;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 121, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.grey:hover > a::after {
   display: inline-block;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 125, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.grey .icon {
   color: #67809f;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 128, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.grey .dropdown-dropdown {
   background-color: #526781;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 131, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.grey > a {
   border-color: #67809f transparent transparent;
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 116, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.blue:hover {
   background-color: #4183d7;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 118, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.blue:hover .icon {
   color: #fff;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 121, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.blue:hover > a::after {
   display: inline-block;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 125, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.blue .icon {
   color: #4183d7;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 128, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.blue .dropdown-dropdown {
   background-color: #286abd;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 131, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.blue > a {
   border-color: #4183d7 transparent transparent;
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 116, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.green:hover {
   background-color: #2ecc71;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 118, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.green:hover .icon {
   color: #fff;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 121, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.green:hover > a::after {
   display: inline-block;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 125, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.green .icon {
   color: #2ecc71;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 128, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.green .dropdown-dropdown {
   background-color: #25a25a;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 131, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.green > a {
   border-color: #2ecc71 transparent transparent;
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 116, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.red:hover {
   background-color: #d64541;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 118, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.red:hover .icon {
   color: #fff;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 121, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.red:hover > a::after {
   display: inline-block;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 125, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.red .icon {
   color: #d64541;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 128, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.red .dropdown-dropdown {
   background-color: #bc2c28;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 131, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.red > a {
   border-color: #d64541 transparent transparent;
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 116, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.purple:hover {
   background-color: #926fb1;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 118, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.purple:hover .icon {
   color: #fff;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 121, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.purple:hover > a::after {
   display: inline-block;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 125, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.purple .icon {
   color: #926fb1;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 128, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.purple .dropdown-dropdown {
   background-color: #79539a;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 131, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.purple > a {
   border-color: #926fb1 transparent transparent;
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 116, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.pink:hover {
   background-color: #f62459;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 118, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.pink:hover .icon {
   color: #fff;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 121, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.pink:hover > a::after {
   display: inline-block;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 125, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.pink .icon {
   color: #f62459;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 128, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.pink .dropdown-dropdown {
   background-color: #de093f;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 131, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.pink > a {
   border-color: #f62459 transparent transparent;
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 116, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.orange:hover {
   background-color: #ce4125;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 118, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.orange:hover .icon {
   color: #fff;
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 121, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.orange:hover > a::after {
   display: inline-block;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 125, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.orange .icon {
   color: #ce4125;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 128, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.orange .dropdown-dropdown {
   background-color: #a3331d;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 131, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown.orange > a {
   border-color: #ce4125 transparent transparent;
 }
