@@ -99,6 +99,92 @@ body {
   content: "";
 }
 
+/* line 1, ../../html_css_assessment/website/scss/_header.scss */
+header {
+  margin: 20px 0;
+}
+
+/* line 3, ../../html_css_assessment/website/scss/_header.scss */
+header img {
+  max-width: 100%;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: auto;
+}
+
+/* line 9, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 15, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row .icon-phone {
+  position: relative;
+  top: 20px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333645;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+header .header-row .icon-phone::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 25, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row .hamburger-box {
+  width: 56px;
+  height: 56px;
+  margin-top: 8px;
+  margin-left: 20px;
+  line-height: 46px;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: #333645;
+}
+
+/* line 37, ../../html_css_assessment/website/scss/_header.scss */
+header form {
+  margin-top: 8px;
+}
+
+/* line 39, ../../html_css_assessment/website/scss/_header.scss */
+header form label {
+  display: none;
+}
+
+/* line 42, ../../html_css_assessment/website/scss/_header.scss */
+header form input {
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 51, ../../html_css_assessment/website/scss/_header.scss */
+header form .icon-search {
+  color: #333645;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+header form .icon-search::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
 /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
 .banner {
   color: #fff;
