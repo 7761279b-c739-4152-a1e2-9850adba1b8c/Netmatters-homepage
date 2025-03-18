@@ -7,8 +7,25 @@ $color-background: #333645;
 $color-button-dark: #272936;
 // $color-button-dark-hover: #121318;
 
+$color-grey: #67809f;
+$color-yellow: #f7b322;
 $color-blue: #4183d7;
+$color-green: #2ecc71;
+$color-red: #d64541;
 $color-purple: #926fb1;
+$color-pink: #f62459;
+$color-orange: #ce4125;
+
+$colors: (
+    'grey': $color-grey,
+    'blue': $color-blue,
+    'green': $color-green,
+    'red': $color-red,
+    'purple': $color-purple,
+    'pink': $color-pink,
+    'orange': $color-orange,
+);
+
 
 $color-google-review: #4387f6;
 $color-trustpilot-review: #00b67b;

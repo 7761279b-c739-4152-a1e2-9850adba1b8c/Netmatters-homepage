@@ -25,3 +25,11 @@
 .btn {
     @include button($color-button-dark)
 }
+
+%btn-small {
+    @extend %btn;
+    font-size: 17px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    line-height: 35px;
+}
