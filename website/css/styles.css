@@ -121,6 +121,118 @@ body {
   margin: 0 0 8px;
 }
 
+/* line 1, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news {
+  padding-bottom: 32px;
+}
+
+/* line 4, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* line 9, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-item {
+  display: block;
+  position: relative;
+}
+
+/* line 14, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news a > img {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 20, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 25, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+/* line 32, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-tooltip {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  color: #fff;
+  background-color: #4183d7;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+/* line 46, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description {
+  padding: 30px;
+  margin: -8px 0 0;
+  border: 0.5px solid #ccc;
+}
+
+/* line 51, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4183d7;
+  margin-top: 0;
+}
+
+/* line 57, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description p {
+  margin: 0 0 25px 0;
+}
+
+/* line 61, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description .btn-news {
+  color: #fff;
+  background-color: #4183d7;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 0 8px 30px 0;
+}
+
+/* line 74, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description .news-author {
+  padding-top: 32px;
+  border-top: 0.5px solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 80, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description .news-author img {
+  margin: 0;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+/* line 85, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description .news-author p {
+  margin: 0;
+  padding: 2px 0 2px 20px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+/* line 90, ../../html_css_assessment/website/scss/_news.scss */
+.latest-news .news-description .news-author p strong {
+  font-weight: 500;
+}
+
 /* line 1, ../../html_css_assessment/website/scss/_partners.scss */
 .partners {
   display: grid;
