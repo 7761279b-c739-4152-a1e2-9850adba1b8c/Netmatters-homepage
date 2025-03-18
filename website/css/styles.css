@@ -41,6 +41,11 @@ body {
   }
 }
 
+/* line 33, ../../html_css_assessment/website/scss/_layout.scss */
+.clearfix {
+  clear: both;
+}
+
 /* line 2, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, .banner a, .about .google-reviews, .about .trustpilot-reviews {
   color: #fff;
@@ -148,19 +153,20 @@ body {
   margin: 0 0 8px;
 }
 
-/* line 56, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services {
   margin-top: 50px;
 }
 
-/* line 58, ../../html_css_assessment/website/scss/_services.scss */
+/* line 62, ../../html_css_assessment/website/scss/_services.scss */
 .services h2 {
   font-size: 43px;
   font-weight: 400;
   margin-top: 0;
+  float: left;
 }
 
-/* line 63, ../../html_css_assessment/website/scss/_services.scss */
+/* line 68, ../../html_css_assessment/website/scss/_services.scss */
 .services h3 {
   font-size: 26px;
   font-weight: 600;
@@ -169,18 +175,73 @@ body {
   text-align: center;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_services.scss */
-.services h3 a {
+/* line 75, ../../html_css_assessment/website/scss/_services.scss */
+.services h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* line 82, ../../html_css_assessment/website/scss/_services.scss */
+.services .services-view a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 73, ../../html_css_assessment/website/scss/_services.scss */
-.services h3 a:hover {
+/* line 85, ../../html_css_assessment/website/scss/_services.scss */
+.services .services-view a:hover {
   text-decoration: underline;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_services.scss */
+/* line 90, ../../html_css_assessment/website/scss/_services.scss */
+.services .services-view.top {
+  display: none;
+  float: right;
+}
+
+@media (min-width: 768px) {
+  /* line 95, ../../html_css_assessment/website/scss/_services.scss */
+  .services .services-view.top {
+    display: inline;
+  }
+  /* line 99, ../../html_css_assessment/website/scss/_services.scss */
+  .services .services-view.bottom {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 105, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service-grid {
+    display: grid;
+    grid-gap: 25px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "bespoke bespoke" "IT IT" "marketing marketing" "telecoms web" "security training";
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 105, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "bespoke bespoke IT IT marketing marketing" "telecoms telecoms telecoms web web web" "security security security training training training";
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 105, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "bespoke bespoke bespoke bespoke IT IT IT IT marketing marketing marketing marketing" "telecoms telecoms telecoms web web web security security security training training training";
+  }
+}
+
+/* line 129, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey {
   display: block;
   position: relative;
@@ -188,12 +249,19 @@ body {
   transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
-  margin: 25px 0;
   padding: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 129, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service.grey {
+    margin: 0;
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey .icon {
   display: block;
   width: 65px;
@@ -206,44 +274,45 @@ body {
   line-height: 62px;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_services.scss */
+/* line 27, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey h2 {
   font-size: 28px;
   margin: 0 0 21px;
+  float: none;
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey .service-btn {
   background-color: #f7b322;
   margin: 0;
 }
 
-/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover {
   color: #fff;
   background-color: #67809f;
   top: -10px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover .icon {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 53, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover .service-btn {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_services.scss */
+/* line 129, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue {
   display: block;
   position: relative;
@@ -251,12 +320,19 @@ body {
   transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
-  margin: 25px 0;
   padding: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 129, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service.blue {
+    margin: 0;
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue .icon {
   display: block;
   width: 65px;
@@ -269,44 +345,45 @@ body {
   line-height: 62px;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_services.scss */
+/* line 27, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue h2 {
   font-size: 28px;
   margin: 0 0 21px;
+  float: none;
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue .service-btn {
   background-color: #4183d7;
   margin: 0;
 }
 
-/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover {
   color: #fff;
   background-color: #4183d7;
   top: -10px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover .icon {
   color: #4183d7;
   background-color: #fff;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 53, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover .service-btn {
   color: #4183d7;
   background-color: #fff;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_services.scss */
+/* line 129, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green {
   display: block;
   position: relative;
@@ -314,12 +391,19 @@ body {
   transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
-  margin: 25px 0;
   padding: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 129, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service.green {
+    margin: 0;
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green .icon {
   display: block;
   width: 65px;
@@ -332,44 +416,45 @@ body {
   line-height: 62px;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_services.scss */
+/* line 27, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green h2 {
   font-size: 28px;
   margin: 0 0 21px;
+  float: none;
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green .service-btn {
   background-color: #2ecc71;
   margin: 0;
 }
 
-/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover {
   color: #fff;
   background-color: #2ecc71;
   top: -10px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover .icon {
   color: #2ecc71;
   background-color: #fff;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 53, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover .service-btn {
   color: #2ecc71;
   background-color: #fff;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_services.scss */
+/* line 129, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red {
   display: block;
   position: relative;
@@ -377,12 +462,19 @@ body {
   transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
-  margin: 25px 0;
   padding: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 129, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service.red {
+    margin: 0;
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red .icon {
   display: block;
   width: 65px;
@@ -395,44 +487,45 @@ body {
   line-height: 62px;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_services.scss */
+/* line 27, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red h2 {
   font-size: 28px;
   margin: 0 0 21px;
+  float: none;
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red .service-btn {
   background-color: #d64541;
   margin: 0;
 }
 
-/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover {
   color: #fff;
   background-color: #d64541;
   top: -10px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover .icon {
   color: #d64541;
   background-color: #fff;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 53, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover .service-btn {
   color: #d64541;
   background-color: #fff;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_services.scss */
+/* line 129, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple {
   display: block;
   position: relative;
@@ -440,12 +533,19 @@ body {
   transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
-  margin: 25px 0;
   padding: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 129, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service.purple {
+    margin: 0;
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple .icon {
   display: block;
   width: 65px;
@@ -458,44 +558,45 @@ body {
   line-height: 62px;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_services.scss */
+/* line 27, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple h2 {
   font-size: 28px;
   margin: 0 0 21px;
+  float: none;
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple .service-btn {
   background-color: #926fb1;
   margin: 0;
 }
 
-/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover {
   color: #fff;
   background-color: #926fb1;
   top: -10px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover .icon {
   color: #926fb1;
   background-color: #fff;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 53, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover .service-btn {
   color: #926fb1;
   background-color: #fff;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_services.scss */
+/* line 129, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink {
   display: block;
   position: relative;
@@ -503,12 +604,19 @@ body {
   transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
-  margin: 25px 0;
   padding: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 129, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service.pink {
+    margin: 0;
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink .icon {
   display: block;
   width: 65px;
@@ -521,44 +629,45 @@ body {
   line-height: 62px;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_services.scss */
+/* line 27, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink h2 {
   font-size: 28px;
   margin: 0 0 21px;
+  float: none;
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink .service-btn {
   background-color: #f62459;
   margin: 0;
 }
 
-/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover {
   color: #fff;
   background-color: #f62459;
   top: -10px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover .icon {
   color: #f62459;
   background-color: #fff;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 53, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover .service-btn {
   color: #f62459;
   background-color: #fff;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_services.scss */
+/* line 129, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange {
   display: block;
   position: relative;
@@ -566,12 +675,19 @@ body {
   transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
-  margin: 25px 0;
   padding: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 129, ../../html_css_assessment/website/scss/_services.scss */
+  .services .service.orange {
+    margin: 0;
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange .icon {
   display: block;
   width: 65px;
@@ -584,45 +700,51 @@ body {
   line-height: 62px;
 }
 
-/* line 24, ../../html_css_assessment/website/scss/_services.scss */
+/* line 27, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange h2 {
   font-size: 28px;
   margin: 0 0 21px;
+  float: none;
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange .service-btn {
   background-color: #ce4125;
   margin: 0;
 }
 
-/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover {
   color: #fff;
   background-color: #ce4125;
   top: -10px;
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover .icon {
   color: #ce4125;
   background-color: #fff;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+/* line 53, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover .service-btn {
   color: #ce4125;
   background-color: #fff;
 }
 
+/* line 133, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.bespoke {
+  grid-area: bespoke;
+}
+
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-.services .service .bespoke::before {
+.services .service.bespoke .icon::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;
@@ -630,8 +752,13 @@ body {
   content: "";
 }
 
+/* line 139, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.IT {
+  grid-area: IT;
+}
+
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-.services .service .IT::before {
+.services .service.IT .icon::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;
@@ -639,8 +766,13 @@ body {
   content: "";
 }
 
+/* line 145, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.marketing {
+  grid-area: marketing;
+}
+
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-.services .service .marketing::before {
+.services .service.marketing .icon::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;
@@ -648,8 +780,13 @@ body {
   content: "";
 }
 
+/* line 151, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.telecoms {
+  grid-area: telecoms;
+}
+
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-.services .service .telecoms::before {
+.services .service.telecoms .icon::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;
@@ -657,8 +794,13 @@ body {
   content: "";
 }
 
+/* line 157, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.web {
+  grid-area: web;
+}
+
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-.services .service .web::before {
+.services .service.web .icon::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;
@@ -666,8 +808,13 @@ body {
   content: "";
 }
 
+/* line 163, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.security {
+  grid-area: security;
+}
+
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-.services .service .security::before {
+.services .service.security .icon::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;
@@ -675,8 +822,13 @@ body {
   content: "";
 }
 
+/* line 169, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.training {
+  grid-area: training;
+}
+
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-.services .service .training::before {
+.services .service.training .icon::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;

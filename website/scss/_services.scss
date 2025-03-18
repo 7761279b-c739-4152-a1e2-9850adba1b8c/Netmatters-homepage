@@ -6,9 +6,12 @@
     transition: .5s ease;
     border: 0.5px solid #ccc;
     border-radius: 20px;
-    margin: 25px 0;
     padding: 30px;
     text-align: center;
+    margin: 25px 0;
+    @media (min-width: $breakpoint-small) {
+        margin: 0; // no margin when in grid
+    }
 
     .icon {
         display: block;
@@ -24,6 +27,7 @@
     h2 {
         font-size: 28px;
         margin: 0 0 21px;
+        float: none;
     }
     p {
         font-size: 13px;
@@ -59,6 +63,7 @@
         font-size: 43px;
         font-weight: 400;
         margin-top: 0;
+        float: left;
     }
     h3 {
         font-size: 26px;
@@ -66,7 +71,14 @@
         margin: 0 0 30px;
         line-height: 1.1;
         text-align: center;
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.1;
+    }
 
+    .services-view {
         a {
             color: inherit;
             text-decoration: none;
@@ -74,31 +86,90 @@
                 text-decoration: underline;
             }
         }
+
+        &.top {
+            display: none;
+            float: right;
+        }
+        @media (min-width: $breakpoint-small) {
+            &.top {
+                display: inline;
+            }
+
+            &.bottom  {
+                display: none
+            }
+        }
     }
+
+    .service-grid {
+        @media (min-width: $breakpoint-small) {
+            display: grid;
+            grid-gap: 25px;
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: "bespoke bespoke" "IT IT" "marketing marketing" "telecoms web" "security training";
+            margin-bottom: 100px;
+        }
+        @media (min-width: $breakpoint-medium) {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "bespoke bespoke IT IT marketing marketing" "telecoms telecoms telecoms web web web" "security security security training training training";
+        }
+        @media (min-width: $breakpoint-large) {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "bespoke bespoke bespoke bespoke IT IT IT IT marketing marketing marketing marketing" "telecoms telecoms telecoms web web web security security security training training training";
+        }
+        
+    }
+
     @each $key, $value in $colors {
         .service.#{$key} {
             @include service($value);
         }
     }
-    .service .bespoke {
-        @include icon("\E918");
+    .service.bespoke {
+        .icon {
+            @include icon("\E918");
+        }
+        grid-area: bespoke;
     }
-    .service .IT {
-        @include icon("\E905");
+    .service.IT {
+        .icon {
+            @include icon("\E905");
+        }
+        grid-area: IT;
     }
-    .service .marketing {
-        @include icon("\E904");
+    .service.marketing {
+        .icon {
+            @include icon("\E904");
+        }
+        grid-area: marketing;
     }
-    .service .telecoms {
-        @include icon("\E902");
+    .service.telecoms {
+        .icon {
+            @include icon("\E902");
+        }
+        grid-area: telecoms;
     }
-    .service .web {
-        @include icon("\E908");
+    .service.web {
+        .icon {
+            @include icon("\E908");
+        }
+        grid-area: web;
     }
-    .service .security {
-        @include icon("\E900");
+    .service.security {
+        .icon {
+            @include icon("\E900");
+        }
+        grid-area: security;
     }
-    .service .training {
-        @include icon("\E8DE");
+    .service.training {
+        .icon {
+            @include icon("\E8DE");
+        }
+        grid-area: training;
     }
 }
