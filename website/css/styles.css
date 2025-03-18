@@ -13,7 +13,7 @@ body {
 }
 
 /* line 13, ../../html_css_assessment/website/scss/_layout.scss */
-.container, .dropdowns .dropdown-row .dropdown .dropdown-dropdown {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -22,21 +22,21 @@ body {
 
 @media (min-width: 768px) {
   /* line 13, ../../html_css_assessment/website/scss/_layout.scss */
-  .container, .dropdowns .dropdown-row .dropdown .dropdown-dropdown {
+  .container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
   /* line 13, ../../html_css_assessment/website/scss/_layout.scss */
-  .container, .dropdowns .dropdown-row .dropdown .dropdown-dropdown {
+  .container {
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
   /* line 13, ../../html_css_assessment/website/scss/_layout.scss */
-  .container, .dropdowns .dropdown-row .dropdown .dropdown-dropdown {
+  .container {
     width: 1200px;
   }
 }
@@ -475,28 +475,29 @@ header form.search-mobile .search-bar-mobile-icon {
   z-index: 50;
 }
 
-/* line 51, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 50, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown:hover {
   display: block;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 53, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown h2 {
   font-size: 2rem;
   font-weight: 500;
 }
 
-/* line 58, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 57, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown p {
   font-size: 1.1875rem;
   text-transform: none;
 }
 
-/* line 62, ../../html_css_assessment/website/scss/_dropdowns.scss */
+/* line 61, ../../html_css_assessment/website/scss/_dropdowns.scss */
 .dropdowns .dropdown-row .dropdown .dropdown-dropdown ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
+  padding-left: 0px;
 }
 
 /* line 66, ../../html_css_assessment/website/scss/_dropdowns.scss */
@@ -538,7 +539,7 @@ header form.search-mobile .search-bar-mobile-icon {
 .dropdowns .dropdown-row .dropdown > a::after {
   content: "";
   position: absolute;
-  bottom: -35px;
+  bottom: -34px;
   left: -100%;
   margin-left: -36px;
   margin: auto;
@@ -1290,7 +1291,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 /* line 21, ../../html_css_assessment/website/scss/_banner.scss */
-.banner .container, .banner .dropdowns .dropdown-row .dropdown .dropdown-dropdown, .dropdowns .dropdown-row .dropdown .banner .dropdown-dropdown {
+.banner .container {
   display: flex;
   flex-direction: column;
   height: 550px;
@@ -2589,12 +2590,12 @@ header form.search-mobile .search-bar-mobile-icon {
 
 @media (min-width: 992px) {
   /* line 8, ../../html_css_assessment/website/scss/_about.scss */
-  .about .container, .about .dropdowns .dropdown-row .dropdown .dropdown-dropdown, .dropdowns .dropdown-row .dropdown .about .dropdown-dropdown {
+  .about .container {
     display: flex;
     flex-direction: row;
   }
   /* line 11, ../../html_css_assessment/website/scss/_about.scss */
-  .about .container .welcome, .about .dropdowns .dropdown-row .dropdown .dropdown-dropdown .welcome, .dropdowns .dropdown-row .dropdown .about .dropdown-dropdown .welcome, .about .container .clients, .about .dropdowns .dropdown-row .dropdown .dropdown-dropdown .clients, .dropdowns .dropdown-row .dropdown .about .dropdown-dropdown .clients {
+  .about .container .welcome, .about .container .clients {
     flex: 1 200px;
   }
 }
