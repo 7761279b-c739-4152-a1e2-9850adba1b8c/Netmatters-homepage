@@ -8,11 +8,97 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 0 32px;
+        text-align: center;
 
+        .dropdown {
+            cursor: pointer;
+            position: relative;
+            flex-basis: 1px;
+            flex-grow: 1;
+            
+            .icon {
+                // display: block;
+                padding-top: 10px;
+                margin: 0;
+                font-size: 23px;
+                // line-height: 62px;
+            }
+
+            .dropdown-dropdown {
+                display: none;
+                position: absolute;
+                top: 100%;
+                min-width: 100%;
+                &:hover {
+                    display: block;
+                }
+            }
+
+
+            &:hover {
+                .dropdown-dropdown {
+                    display: block;
+                }
+            }
+        }
+
+        @each $key, $value in $colors {
+            .dropdown.#{$key} {
+                &:hover {
+                    background-color: $value;
+                    .icon {
+                        color: #fff;
+                    }
+                }
+                .icon {
+                    color: $value;
+                }
+                .dropdown-dropdown {
+                    background-color: $value;
+                }
+            }
+        }
 
     }
 
     @media (min-width: $breakpoint-large) {
         display: block;
+    }
+
+    
+    .dropdown.bespoke {
+        .icon {
+            @include icon("\E918");
+        }
+    }
+    .dropdown.IT {
+        .icon {
+            @include icon("\E905");
+        }
+    }
+    .dropdown.marketing {
+        .icon {
+            @include icon("\E904");
+        }
+    }
+    .dropdown.telecoms {
+        .icon {
+            @include icon("\E902");
+        }
+    }
+    .dropdown.web {
+        .icon {
+            @include icon("\E908");
+        }
+    }
+    .dropdown.security {
+        .icon {
+            @include icon("\E900");
+        }
+    }
+    .dropdown.training {
+        .icon {
+            @include icon("\E8DE");
+        }
     }
 }

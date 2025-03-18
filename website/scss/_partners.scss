@@ -61,6 +61,9 @@
                 margin-top: 11px;
                 margin-bottom: 0;
             }
+            &:hover {
+                display: block;
+            }
         }
         &:hover {
             filter: none;
