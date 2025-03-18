@@ -121,6 +121,25 @@ body {
   margin: 0 0 8px;
 }
 
+/* line 1, ../../html_css_assessment/website/scss/_partners.scss */
+.partners {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 100px;
+  overflow-x: hidden;
+  margin: 16px 0 44px;
+}
+
+/* line 8, ../../html_css_assessment/website/scss/_partners.scss */
+.partners .partner-img {
+  filter: grayscale(100%);
+}
+
+/* line 10, ../../html_css_assessment/website/scss/_partners.scss */
+.partners .partner-img:hover {
+  filter: none;
+}
+
 /* line 1, ../../html_css_assessment/website/scss/_about.scss */
 .about {
   background-color: #333645;

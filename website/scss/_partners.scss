@@ -1,0 +1,16 @@
+.partners {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 100px;
+    overflow-x: hidden;
+    margin: 16px 0 44px;
+
+    .partner-img {
+        filter: grayscale(100%);
+        &:hover {
+            filter: none;
+        }
+
+    }
+
+}
