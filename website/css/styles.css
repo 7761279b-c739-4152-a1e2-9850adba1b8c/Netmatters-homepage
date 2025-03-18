@@ -47,7 +47,7 @@ body {
 }
 
 /* line 2, ../../html_css_assessment/website/scss/_buttons.scss */
-.btn, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, .banner a, .about .google-reviews, .about .trustpilot-reviews {
+.btn, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, header .header-row .btn-support, header .header-row .btn-contact, .banner a, .about .google-reviews, .about .trustpilot-reviews {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
@@ -59,22 +59,17 @@ body {
   margin: 0 8px 16px 0;
 }
 
-/* line 12, ../../html_css_assessment/website/scss/_buttons.scss */
-.btn::after, .services .service.grey .service-btn::after, .services .service.blue .service-btn::after, .services .service.green .service-btn::after, .services .service.red .service-btn::after, .services .service.purple .service-btn::after, .services .service.pink .service-btn::after, .services .service.orange .service-btn::after, .banner a::after, .about .google-reviews::after, .about .trustpilot-reviews::after {
-  content: "";
-}
-
-/* line 25, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 22, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn {
   background-color: #272936;
 }
 
-/* line 20, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn:hover {
   background-color: #16171e;
 }
 
-/* line 29, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 26, ../../html_css_assessment/website/scss/_buttons.scss */
 .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn {
   font-size: 17px;
   padding: 5px 15px;
@@ -100,11 +95,40 @@ body {
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row form #submit-search, header .header-row .btn-search {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 60px;
+  height: 56px;
+  border-radius: 0 3px 3px 0;
+  border-width: 0;
+  background-color: #999aa2;
+}
+
+/* line 13, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row form #submit-search:hover, header .header-row .btn-search:hover {
+  background-color: #84858f;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+header .header-row form #submit-search::before, header .header-row .btn-search::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 20, ../../html_css_assessment/website/scss/_header.scss */
 header {
   margin: 20px 0;
 }
 
-/* line 3, ../../html_css_assessment/website/scss/_header.scss */
+/* line 22, ../../html_css_assessment/website/scss/_header.scss */
 header img {
   max-width: 100%;
   object-fit: contain;
@@ -112,7 +136,7 @@ header img {
   margin-right: auto;
 }
 
-/* line 9, ../../html_css_assessment/website/scss/_header.scss */
+/* line 28, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row {
   display: flex;
   max-width: 100%;
@@ -120,8 +144,9 @@ header .header-row {
   justify-content: space-between;
 }
 
-/* line 15, ../../html_css_assessment/website/scss/_header.scss */
+/* line 34, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .icon-phone {
+  margin: 8px 20px 0 0;
   position: relative;
   top: 20px;
   font-size: 32px;
@@ -139,30 +164,168 @@ header .header-row .icon-phone::before {
   content: "";
 }
 
-/* line 25, ../../html_css_assessment/website/scss/_header.scss */
+@media (min-width: 768px) {
+  /* line 34, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row .icon-phone {
+    display: none;
+  }
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .hamburger-box {
   width: 56px;
   height: 56px;
-  margin-top: 8px;
-  margin-left: 20px;
+  margin: 8px 20px 0 0;
   line-height: 46px;
   font-size: 18px;
   border-radius: 3px;
   background-color: #333645;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_header.scss */
-header form {
-  margin-top: 8px;
+/* line 59, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row form {
+  display: none;
+  flex-direction: row;
+  margin: 8px 20px 0 0;
 }
 
-/* line 39, ../../html_css_assessment/website/scss/_header.scss */
-header form label {
+/* line 60, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row form label {
   display: none;
 }
 
-/* line 42, ../../html_css_assessment/website/scss/_header.scss */
-header form input {
+/* line 66, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row form input {
+  font-family: inherit;
+  width: 147px;
+  height: 56px;
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+  /* line 59, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row form {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 59, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row form {
+    display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 59, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row form {
+    display: flex;
+  }
+  /* line 87, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row form input {
+    width: 240px;
+  }
+}
+
+/* line 92, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row .btn-search {
+  margin: 8px 20px 0 0;
+  height: 56px;
+  border-radius: 3px;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* line 92, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row .btn-search {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 92, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row .btn-search {
+    display: none;
+  }
+}
+
+/* line 106, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row .btn-support {
+  background-color: #4183d7;
+  margin: 8px 20px 0 0;
+  padding: 14px;
+  height: 56px;
+  border-radius: 3px;
+  display: none;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+header .header-row .btn-support:hover {
+  background-color: #2a6ec6;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+header .header-row .btn-support::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+@media (min-width: 992px) {
+  /* line 106, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row .btn-support {
+    display: inline-block;
+  }
+}
+
+/* line 120, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row .btn-contact {
+  background-color: #999aa2;
+  margin: 8px 20px 0 0;
+  padding: 14px;
+  height: 56px;
+  border-radius: 3px;
+  display: none;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+header .header-row .btn-contact:hover {
+  background-color: #84858f;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+header .header-row .btn-contact::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+@media (min-width: 992px) {
+  /* line 120, ../../html_css_assessment/website/scss/_header.scss */
+  header .header-row .btn-contact {
+    display: inline-block;
+  }
+}
+
+/* line 135, ../../html_css_assessment/website/scss/_header.scss */
+header form.search-mobile {
+  margin-top: 8px;
+}
+
+/* line 136, ../../html_css_assessment/website/scss/_header.scss */
+header form.search-mobile label {
+  display: none;
+}
+
+/* line 140, ../../html_css_assessment/website/scss/_header.scss */
+header form.search-mobile input {
+  font-family: inherit;
   width: 100%;
   height: 47px;
   padding: 5px 15px;
@@ -171,18 +334,25 @@ header form input {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 51, ../../html_css_assessment/website/scss/_header.scss */
-header form .icon-search {
+/* line 151, ../../html_css_assessment/website/scss/_header.scss */
+header form.search-mobile .icon-search {
   color: #333645;
 }
 
 /* line 11, ../../html_css_assessment/website/scss/_icons.scss */
-header form .icon-search::before {
+header form.search-mobile .icon-search::before {
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
   content: "";
+}
+
+@media (min-width: 768px) {
+  /* line 135, ../../html_css_assessment/website/scss/_header.scss */
+  header form.search-mobile {
+    display: none;
+  }
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
@@ -224,7 +394,7 @@ header form .icon-search::before {
   background-color: #926fb1;
 }
 
-/* line 20, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
 .banner a:hover {
   background-color: #7e57a0;
 }
@@ -1201,7 +1371,7 @@ header form .icon-search::before {
   background-color: #4387f6;
 }
 
-/* line 20, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
 .about .google-reviews:hover {
   background-color: #1c6ef4;
 }
@@ -1211,7 +1381,7 @@ header form .icon-search::before {
   background-color: #00b67b;
 }
 
-/* line 20, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
 .about .trustpilot-reviews:hover {
   background-color: #008d5f;
 }
