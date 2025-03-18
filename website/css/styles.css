@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* line 3, ../../html_css_assessment/website/scss/_layout.scss */
 body {
@@ -76,6 +77,23 @@ body {
   line-height: 35px;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.icon-right::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
 /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
 .banner {
   color: #fff;
@@ -130,19 +148,19 @@ body {
   margin: 0 0 8px;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services {
   margin-top: 50px;
 }
 
-/* line 39, ../../html_css_assessment/website/scss/_services.scss */
+/* line 58, ../../html_css_assessment/website/scss/_services.scss */
 .services h2 {
   font-size: 43px;
   font-weight: 400;
   margin-top: 0;
 }
 
-/* line 44, ../../html_css_assessment/website/scss/_services.scss */
+/* line 63, ../../html_css_assessment/website/scss/_services.scss */
 .services h3 {
   font-size: 26px;
   font-weight: 600;
@@ -151,20 +169,23 @@ body {
   text-align: center;
 }
 
-/* line 51, ../../html_css_assessment/website/scss/_services.scss */
+/* line 70, ../../html_css_assessment/website/scss/_services.scss */
 .services h3 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 73, ../../html_css_assessment/website/scss/_services.scss */
 .services h3 a:hover {
   text-decoration: underline;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 79, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey {
   display: block;
+  position: relative;
+  top: 0;
+  transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
   margin: 25px 0;
@@ -172,37 +193,62 @@ body {
   text-align: center;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_services.scss */
+/* line 13, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey .icon {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  color: #fff;
   background-color: #67809f;
   margin: 0 auto 10px;
+  font-size: 32px;
+  line-height: 62px;
 }
 
-/* line 18, ../../html_css_assessment/website/scss/_services.scss */
+/* line 24, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey h2 {
   font-size: 28px;
   margin: 0 0 21px;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey .service-btn {
   background-color: #f7b322;
   margin: 0;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.grey:hover {
+  color: #fff;
+  background-color: #67809f;
+  top: -10px;
+}
+
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.grey:hover .icon {
+  color: #67809f;
+  background-color: #fff;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.grey:hover .service-btn {
+  color: #67809f;
+  background-color: #fff;
+}
+
+/* line 79, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue {
   display: block;
+  position: relative;
+  top: 0;
+  transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
   margin: 25px 0;
@@ -210,37 +256,62 @@ body {
   text-align: center;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_services.scss */
+/* line 13, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue .icon {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  color: #fff;
   background-color: #4183d7;
   margin: 0 auto 10px;
+  font-size: 32px;
+  line-height: 62px;
 }
 
-/* line 18, ../../html_css_assessment/website/scss/_services.scss */
+/* line 24, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue h2 {
   font-size: 28px;
   margin: 0 0 21px;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue .service-btn {
   background-color: #4183d7;
   margin: 0;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.blue:hover {
+  color: #fff;
+  background-color: #4183d7;
+  top: -10px;
+}
+
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.blue:hover .icon {
+  color: #4183d7;
+  background-color: #fff;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.blue:hover .service-btn {
+  color: #4183d7;
+  background-color: #fff;
+}
+
+/* line 79, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green {
   display: block;
+  position: relative;
+  top: 0;
+  transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
   margin: 25px 0;
@@ -248,37 +319,62 @@ body {
   text-align: center;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_services.scss */
+/* line 13, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green .icon {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  color: #fff;
   background-color: #2ecc71;
   margin: 0 auto 10px;
+  font-size: 32px;
+  line-height: 62px;
 }
 
-/* line 18, ../../html_css_assessment/website/scss/_services.scss */
+/* line 24, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green h2 {
   font-size: 28px;
   margin: 0 0 21px;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green .service-btn {
   background-color: #2ecc71;
   margin: 0;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.green:hover {
+  color: #fff;
+  background-color: #2ecc71;
+  top: -10px;
+}
+
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.green:hover .icon {
+  color: #2ecc71;
+  background-color: #fff;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.green:hover .service-btn {
+  color: #2ecc71;
+  background-color: #fff;
+}
+
+/* line 79, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red {
   display: block;
+  position: relative;
+  top: 0;
+  transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
   margin: 25px 0;
@@ -286,37 +382,62 @@ body {
   text-align: center;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_services.scss */
+/* line 13, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red .icon {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  color: #fff;
   background-color: #d64541;
   margin: 0 auto 10px;
+  font-size: 32px;
+  line-height: 62px;
 }
 
-/* line 18, ../../html_css_assessment/website/scss/_services.scss */
+/* line 24, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red h2 {
   font-size: 28px;
   margin: 0 0 21px;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red .service-btn {
   background-color: #d64541;
   margin: 0;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.red:hover {
+  color: #fff;
+  background-color: #d64541;
+  top: -10px;
+}
+
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.red:hover .icon {
+  color: #d64541;
+  background-color: #fff;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.red:hover .service-btn {
+  color: #d64541;
+  background-color: #fff;
+}
+
+/* line 79, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple {
   display: block;
+  position: relative;
+  top: 0;
+  transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
   margin: 25px 0;
@@ -324,37 +445,62 @@ body {
   text-align: center;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_services.scss */
+/* line 13, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple .icon {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  color: #fff;
   background-color: #926fb1;
   margin: 0 auto 10px;
+  font-size: 32px;
+  line-height: 62px;
 }
 
-/* line 18, ../../html_css_assessment/website/scss/_services.scss */
+/* line 24, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple h2 {
   font-size: 28px;
   margin: 0 0 21px;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple .service-btn {
   background-color: #926fb1;
   margin: 0;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.purple:hover {
+  color: #fff;
+  background-color: #926fb1;
+  top: -10px;
+}
+
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.purple:hover .icon {
+  color: #926fb1;
+  background-color: #fff;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.purple:hover .service-btn {
+  color: #926fb1;
+  background-color: #fff;
+}
+
+/* line 79, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink {
   display: block;
+  position: relative;
+  top: 0;
+  transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
   margin: 25px 0;
@@ -362,37 +508,62 @@ body {
   text-align: center;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_services.scss */
+/* line 13, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink .icon {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  color: #fff;
   background-color: #f62459;
   margin: 0 auto 10px;
+  font-size: 32px;
+  line-height: 62px;
 }
 
-/* line 18, ../../html_css_assessment/website/scss/_services.scss */
+/* line 24, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink h2 {
   font-size: 28px;
   margin: 0 0 21px;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink .service-btn {
   background-color: #f62459;
   margin: 0;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_services.scss */
+/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.pink:hover {
+  color: #fff;
+  background-color: #f62459;
+  top: -10px;
+}
+
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.pink:hover .icon {
+  color: #f62459;
+  background-color: #fff;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.pink:hover .service-btn {
+  color: #f62459;
+  background-color: #fff;
+}
+
+/* line 79, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange {
   display: block;
+  position: relative;
+  top: 0;
+  transition: .5s ease;
   border: 0.5px solid #ccc;
   border-radius: 20px;
   margin: 25px 0;
@@ -400,32 +571,117 @@ body {
   text-align: center;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_services.scss */
+/* line 13, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange .icon {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 50%;
+  color: #fff;
   background-color: #ce4125;
   margin: 0 auto 10px;
+  font-size: 32px;
+  line-height: 62px;
 }
 
-/* line 18, ../../html_css_assessment/website/scss/_services.scss */
+/* line 24, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange h2 {
   font-size: 28px;
   margin: 0 0 21px;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_services.scss */
+/* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange p {
   font-size: 13px;
   line-height: 22px;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_services.scss */
+/* line 32, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange .service-btn {
   background-color: #ce4125;
   margin: 0;
+}
+
+/* line 41, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.orange:hover {
+  color: #fff;
+  background-color: #ce4125;
+  top: -10px;
+}
+
+/* line 45, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.orange:hover .icon {
+  color: #ce4125;
+  background-color: #fff;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.orange:hover .service-btn {
+  color: #ce4125;
+  background-color: #fff;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.services .service .bespoke::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.services .service .IT::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.services .service .marketing::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.services .service .telecoms::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.services .service .web::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.services .service .security::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_icons.scss */
+.services .service .training::before {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_news.scss */

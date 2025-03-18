@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff') format('woff');
+    // src: url('../fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@mixin icon($icon) {
+    &::before {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-variant: normal;
+        content: $icon;
+    }
+}
+
+.icon-right {
+    @include icon("\E906");
+}

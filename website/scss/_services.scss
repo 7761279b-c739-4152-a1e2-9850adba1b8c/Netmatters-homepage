@@ -1,6 +1,9 @@
 
 @mixin service($color) {
     display: block;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
     border: 0.5px solid #ccc;
     border-radius: 20px;
     margin: 25px 0;
@@ -12,8 +15,11 @@
         width: 65px;
         height: 65px;
         border-radius: 50%;
+        color: #fff;
         background-color: $color;
         margin: 0 auto 10px;
+        font-size: 32px;
+        line-height: 62px;
     }
     h2 {
         font-size: 28px;
@@ -31,6 +37,19 @@
             background-color: $color;
         }
         margin: 0;
+    }
+    &:hover {
+        color: #fff;
+        background-color: $color;
+        top: -10px;
+        .icon {
+            color: $color;
+            background-color: #fff;
+        }
+        .service-btn {
+            color: $color;
+            background-color: #fff;
+        }
     }
 }
 
@@ -61,5 +80,25 @@
             @include service($value);
         }
     }
-
+    .service .bespoke {
+        @include icon("\E918");
+    }
+    .service .IT {
+        @include icon("\E905");
+    }
+    .service .marketing {
+        @include icon("\E904");
+    }
+    .service .telecoms {
+        @include icon("\E902");
+    }
+    .service .web {
+        @include icon("\E908");
+    }
+    .service .security {
+        @include icon("\E900");
+    }
+    .service .training {
+        @include icon("\E8DE");
+    }
 }
