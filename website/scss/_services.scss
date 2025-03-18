@@ -9,7 +9,7 @@
     border-radius: 20px;
     padding: 30px;
     text-align: center;
-    margin: 25px 0;
+    margin: 30px 0;
     @include mq('small') {
         margin: 0; // no margin when in grid
     }
@@ -21,18 +21,24 @@
         border-radius: 50%;
         color: #fff;
         background-color: $color;
-        margin: 0 auto 10px;
+        margin: 0 auto 17px;
         font-size: rems(32px);
         line-height: rems(62px);
     }
     h2 {
-        font-size: rems(28px);
-        margin: 0 0 21px;
+        font-size: rems(20.8px);
+        padding: 0 0 10px;
+        margin: 0 0 11px;
+        line-height: rems(22.88px);
+        letter-spacing: 0.4px;
         float: none;
     }
     p {
         font-size: rems(13px);
+        font-weight: 400;
         line-height: rems(22px);
+        letter-spacing: 0.4px;
+        margin-top: 0;
     }
     .service-btn {
         @extend %btn-small;
@@ -59,13 +65,17 @@
 }
 
 .services {
-    margin-top: 50px;
+    padding-top: 50px;
     h2 {
-        font-size: rems(43px);
+        color: $color-background;
+        font-size: rems(43.2px);
+        line-height: rems(47.52px);
         font-weight: 400;
-        margin-top: 0;
-        float: left;
+        margin-top: 10px;
         margin-bottom: 15px;
+        @include mq('small') {
+            float: left;
+        }
     }
     h3 {
         font-size: rems(26px);
@@ -90,6 +100,7 @@
         }
 
         &.top {
+            margin: 36px 0 0;
             display: none;
             float: right;
         }
@@ -105,9 +116,10 @@
     }
 
     .service-grid {
+        margin-top: 50px;
         @include mq('small') {
             display: grid;
-            grid-gap: 25px;
+            grid-gap: 30px;
             width: 100%;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(5, 1fr);

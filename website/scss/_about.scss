@@ -1,7 +1,7 @@
 .about {
     background-color: $color-background;
     color: #fff;
-    padding: 40px 0 0;
+    padding: 50px 0 0;
     position: relative;
 
     @include mq('medium') {
@@ -30,20 +30,27 @@
         @include button($color-trustpilot-review);
     }
     .welcome-btns {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
     .clients-btns {
         margin-top: 45px;
-        padding-bottom: 45px;
+        padding-bottom: 30px;
     }
 
 
     h1 {
         font-size: rems(36px);
-        margin: 0 0 32px;
+        line-height: rems(39.6px);
+        margin: -6px 0 40px;
         font-weight: 600;
     }
+    .clients {
+        h1 {
+            margin: -10px 0 40px;
+        }
+    }
     p {
+        font-size: rems(16px);
         line-height: rems(30px);
         letter-spacing: 0.4px;
         font-weight: 400;
@@ -54,8 +61,7 @@
         em {
             font-weight: 600;
             font-style: italic;
-            font-size: rems(23px);
-            // line-height: 2rem;
+            font-size: rems(20.8px);
         }
     }
     .client-quote {
@@ -65,12 +71,13 @@
         a {
             font-weight: 600;
         }
+        margin: 27px 0 27px;
     }
 
     .star {
         color: orange;
         font-size: rems(50px);
-        margin: -25px 0 16px;
+        margin: -15px 0 12px;
         padding: 0;
         .icon-star {
             @include icon("\F005");

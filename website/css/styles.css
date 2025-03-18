@@ -55,8 +55,8 @@ body {
   text-transform: uppercase;
   display: inline-block;
   border-radius: 5px;
-  padding: 14px 32px;
-  margin: 0 8px 16px 0;
+  padding: 12.5px 32px;
+  margin: 0 8px 20px 0;
 }
 
 /* line 22, ../../html_css_assessment/website/scss/_buttons.scss */
@@ -72,7 +72,7 @@ body {
 /* line 26, ../../html_css_assessment/website/scss/_buttons.scss */
 .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn {
   font-size: 1.0625rem;
-  padding: 5px 15px;
+  padding: 6px 15px;
   border-radius: 3px;
   line-height: 2.1875rem;
 }
@@ -173,7 +173,7 @@ header .header-row {
 header .header-row .icon-phone {
   margin: 8px 20px 0 0;
   position: relative;
-  top: 20px;
+  top: 30px;
   font-size: 2rem;
   font-weight: 400;
   line-height: 0.0625rem;
@@ -198,9 +198,12 @@ header .header-row .icon-phone::before {
 
 /* line 50, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .hamburger-box {
+  flex-basis: 63px;
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 63px;
   height: 56px;
-  margin: 8px 20px 0 0;
+  margin: 8px 0 0 0;
   line-height: 2.875rem;
   font-size: 1.125rem;
   border-radius: 3px;
@@ -212,26 +215,26 @@ header .header-row .hamburger-box {
   align-items: center;
 }
 
-/* line 63, ../../html_css_assessment/website/scss/_header.scss */
+/* line 66, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .hamburger-box div {
   background-color: #fff;
   width: 30px;
   height: 4px;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_header.scss */
+/* line 73, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form {
   display: none;
   flex-direction: row;
   margin: 8px 20px 0 0;
 }
 
-/* line 71, ../../html_css_assessment/website/scss/_header.scss */
+/* line 74, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form label {
   display: none;
 }
 
-/* line 77, ../../html_css_assessment/website/scss/_header.scss */
+/* line 80, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form input {
   font-family: inherit;
   width: 147px;
@@ -242,31 +245,31 @@ header .header-row form input {
 }
 
 @media (min-width: 768px) {
-  /* line 70, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 73, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 70, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 73, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 70, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 73, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
-  /* line 98, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 101, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form input {
     width: 240px;
   }
 }
 
-/* line 103, ../../html_css_assessment/website/scss/_header.scss */
+/* line 106, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-search {
   margin: 8px 20px 0 0;
   padding: 15px;
@@ -278,20 +281,20 @@ header .header-row .btn-search {
 }
 
 @media (min-width: 992px) {
-  /* line 103, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 106, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: inline-block;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 103, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 106, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: none;
   }
 }
 
-/* line 120, ../../html_css_assessment/website/scss/_header.scss */
+/* line 123, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-support {
   background-color: #4183d7;
   margin: 8px 20px 0 0;
@@ -316,13 +319,13 @@ header .header-row .btn-support::before {
 }
 
 @media (min-width: 992px) {
-  /* line 120, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 123, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-support {
     display: inline-block;
   }
 }
 
-/* line 134, ../../html_css_assessment/website/scss/_header.scss */
+/* line 137, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-contact {
   background-color: #999aa2;
   margin: 8px 20px 0 0;
@@ -347,24 +350,24 @@ header .header-row .btn-contact::before {
 }
 
 @media (min-width: 992px) {
-  /* line 134, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 137, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-contact {
     display: inline-block;
   }
 }
 
-/* line 149, ../../html_css_assessment/website/scss/_header.scss */
+/* line 152, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile {
   position: relative;
   margin-top: 8px;
 }
 
-/* line 151, ../../html_css_assessment/website/scss/_header.scss */
+/* line 154, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile label {
   display: none;
 }
 
-/* line 155, ../../html_css_assessment/website/scss/_header.scss */
+/* line 158, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input {
   font-family: inherit;
   width: 100%;
@@ -375,7 +378,7 @@ header form.search-mobile input {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 166, ../../html_css_assessment/website/scss/_header.scss */
+/* line 169, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .icon-search {
   color: #333645;
 }
@@ -389,7 +392,7 @@ header form.search-mobile .icon-search::before {
   content: "";
 }
 
-/* line 170, ../../html_css_assessment/website/scss/_header.scss */
+/* line 173, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .search-bar-mobile-icon {
   position: absolute;
   cursor: pointer;
@@ -399,7 +402,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 149, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 152, ../../html_css_assessment/website/scss/_header.scss */
   header form.search-mobile {
     display: none;
   }
@@ -1292,17 +1295,20 @@ header form.search-mobile .search-bar-mobile-icon {
   height: 550px;
   z-index: 5;
   position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-/* line 31, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 33, ../../html_css_assessment/website/scss/_banner.scss */
 .banner h1 {
   font-size: 2.5rem;
   line-height: 3rem;
+  letter-spacing: 0.4px;
   margin: 0 0 20px;
   font-weight: 600;
 }
 
-/* line 38, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 41, ../../html_css_assessment/website/scss/_banner.scss */
 .banner p {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1310,7 +1316,7 @@ header form.search-mobile .search-bar-mobile-icon {
   margin-bottom: calc(0.325rem + 31px);
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 48, ../../html_css_assessment/website/scss/_banner.scss */
 .banner a {
   background-color: #926fb1;
 }
@@ -1320,12 +1326,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #7e57a0;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 52, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-overlay {
   margin: auto;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 56, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector {
   text-align: center;
   display: block;
@@ -1336,7 +1342,7 @@ header form.search-mobile .search-bar-mobile-icon {
   width: 100%;
 }
 
-/* line 61, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 64, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1348,13 +1354,13 @@ header form.search-mobile .search-bar-mobile-icon {
   cursor: pointer;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 73, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle:nth-child(1) {
   position: relative;
   background-color: #fff;
 }
 
-/* line 73, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 76, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle:nth-child(1)::after {
   content: "";
   position: absolute;
@@ -1371,40 +1377,48 @@ header form.search-mobile .search-bar-mobile-icon {
   .banner {
     text-align: left;
   }
-  /* line 89, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 92, ../../html_css_assessment/website/scss/_banner.scss */
   .banner h1 {
     font-size: 4rem;
     line-height: 5rem;
     width: 940px;
   }
-  /* line 94, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 97, ../../html_css_assessment/website/scss/_banner.scss */
   .banner p {
     font-size: 1.625rem;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 99, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 102, ../../html_css_assessment/website/scss/_banner.scss */
   .banner h1 {
     width: 1170px;
   }
 }
 
-/* line 61, ../../html_css_assessment/website/scss/_services.scss */
+/* line 67, ../../html_css_assessment/website/scss/_services.scss */
 .services {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
-/* line 63, ../../html_css_assessment/website/scss/_services.scss */
+/* line 69, ../../html_css_assessment/website/scss/_services.scss */
 .services h2 {
-  font-size: 2.6875rem;
+  color: #333645;
+  font-size: 2.7rem;
+  line-height: 2.97rem;
   font-weight: 400;
-  margin-top: 0;
-  float: left;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_services.scss */
+@media (min-width: 768px) {
+  /* line 69, ../../html_css_assessment/website/scss/_services.scss */
+  .services h2 {
+    float: left;
+  }
+}
+
+/* line 80, ../../html_css_assessment/website/scss/_services.scss */
 .services h3 {
   font-size: 1.625rem;
   font-weight: 600;
@@ -1413,46 +1427,52 @@ header form.search-mobile .search-bar-mobile-icon {
   text-align: center;
 }
 
-/* line 77, ../../html_css_assessment/website/scss/_services.scss */
+/* line 87, ../../html_css_assessment/website/scss/_services.scss */
 .services h1 {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 0.0625rem;
 }
 
-/* line 84, ../../html_css_assessment/website/scss/_services.scss */
+/* line 94, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view a {
   color: #333645;
   text-decoration: none;
 }
 
-/* line 87, ../../html_css_assessment/website/scss/_services.scss */
+/* line 97, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view a:hover {
   text-decoration: underline;
 }
 
-/* line 92, ../../html_css_assessment/website/scss/_services.scss */
+/* line 102, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view.top {
+  margin: 36px 0 0;
   display: none;
   float: right;
 }
 
 @media (min-width: 768px) {
-  /* line 97, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 108, ../../html_css_assessment/website/scss/_services.scss */
   .services .services-view.top {
     display: inline;
   }
-  /* line 101, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 112, ../../html_css_assessment/website/scss/_services.scss */
   .services .services-view.bottom {
     display: none;
   }
 }
 
+/* line 118, ../../html_css_assessment/website/scss/_services.scss */
+.services .service-grid {
+  margin-top: 50px;
+}
+
 @media (min-width: 768px) {
-  /* line 107, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 118, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     display: grid;
-    grid-gap: 25px;
+    grid-gap: 30px;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -1462,7 +1482,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 992px) {
-  /* line 107, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 118, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1471,7 +1491,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 1260px) {
-  /* line 107, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 118, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1479,7 +1499,7 @@ header form.search-mobile .search-bar-mobile-icon {
   }
 }
 
-/* line 131, ../../html_css_assessment/website/scss/_services.scss */
+/* line 143, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey {
   display: block;
   position: relative;
@@ -1490,11 +1510,11 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.grey {
     margin: 0;
   }
@@ -1508,50 +1528,56 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 50%;
   color: #fff;
   background-color: #67809f;
-  margin: 0 auto 10px;
+  margin: 0 auto 17px;
   font-size: 2rem;
   line-height: 3.875rem;
 }
 
 /* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey h2 {
-  font-size: 1.75rem;
-  margin: 0 0 21px;
+  font-size: 1.3rem;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+  line-height: 1.43rem;
+  letter-spacing: 0.4px;
   float: none;
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey p {
   font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 43, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey .service-btn {
   background-color: #f7b322;
   margin: 0;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_services.scss */
+/* line 52, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover {
   color: #fff;
   background-color: #67809f;
   top: -10px;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover .icon {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey:hover .service-btn {
   color: #67809f;
   background-color: #fff;
 }
 
-/* line 131, ../../html_css_assessment/website/scss/_services.scss */
+/* line 143, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue {
   display: block;
   position: relative;
@@ -1562,11 +1588,11 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.blue {
     margin: 0;
   }
@@ -1580,50 +1606,56 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 50%;
   color: #fff;
   background-color: #4183d7;
-  margin: 0 auto 10px;
+  margin: 0 auto 17px;
   font-size: 2rem;
   line-height: 3.875rem;
 }
 
 /* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue h2 {
-  font-size: 1.75rem;
-  margin: 0 0 21px;
+  font-size: 1.3rem;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+  line-height: 1.43rem;
+  letter-spacing: 0.4px;
   float: none;
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue p {
   font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 43, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue .service-btn {
   background-color: #4183d7;
   margin: 0;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_services.scss */
+/* line 52, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover {
   color: #fff;
   background-color: #4183d7;
   top: -10px;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover .icon {
   color: #4183d7;
   background-color: #fff;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue:hover .service-btn {
   color: #4183d7;
   background-color: #fff;
 }
 
-/* line 131, ../../html_css_assessment/website/scss/_services.scss */
+/* line 143, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green {
   display: block;
   position: relative;
@@ -1634,11 +1666,11 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.green {
     margin: 0;
   }
@@ -1652,50 +1684,56 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 50%;
   color: #fff;
   background-color: #2ecc71;
-  margin: 0 auto 10px;
+  margin: 0 auto 17px;
   font-size: 2rem;
   line-height: 3.875rem;
 }
 
 /* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green h2 {
-  font-size: 1.75rem;
-  margin: 0 0 21px;
+  font-size: 1.3rem;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+  line-height: 1.43rem;
+  letter-spacing: 0.4px;
   float: none;
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green p {
   font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 43, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green .service-btn {
   background-color: #2ecc71;
   margin: 0;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_services.scss */
+/* line 52, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover {
   color: #fff;
   background-color: #2ecc71;
   top: -10px;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover .icon {
   color: #2ecc71;
   background-color: #fff;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green:hover .service-btn {
   color: #2ecc71;
   background-color: #fff;
 }
 
-/* line 131, ../../html_css_assessment/website/scss/_services.scss */
+/* line 143, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red {
   display: block;
   position: relative;
@@ -1706,11 +1744,11 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.red {
     margin: 0;
   }
@@ -1724,50 +1762,56 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 50%;
   color: #fff;
   background-color: #d64541;
-  margin: 0 auto 10px;
+  margin: 0 auto 17px;
   font-size: 2rem;
   line-height: 3.875rem;
 }
 
 /* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red h2 {
-  font-size: 1.75rem;
-  margin: 0 0 21px;
+  font-size: 1.3rem;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+  line-height: 1.43rem;
+  letter-spacing: 0.4px;
   float: none;
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red p {
   font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 43, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red .service-btn {
   background-color: #d64541;
   margin: 0;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_services.scss */
+/* line 52, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover {
   color: #fff;
   background-color: #d64541;
   top: -10px;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover .icon {
   color: #d64541;
   background-color: #fff;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red:hover .service-btn {
   color: #d64541;
   background-color: #fff;
 }
 
-/* line 131, ../../html_css_assessment/website/scss/_services.scss */
+/* line 143, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple {
   display: block;
   position: relative;
@@ -1778,11 +1822,11 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.purple {
     margin: 0;
   }
@@ -1796,50 +1840,56 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 50%;
   color: #fff;
   background-color: #926fb1;
-  margin: 0 auto 10px;
+  margin: 0 auto 17px;
   font-size: 2rem;
   line-height: 3.875rem;
 }
 
 /* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple h2 {
-  font-size: 1.75rem;
-  margin: 0 0 21px;
+  font-size: 1.3rem;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+  line-height: 1.43rem;
+  letter-spacing: 0.4px;
   float: none;
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple p {
   font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 43, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple .service-btn {
   background-color: #926fb1;
   margin: 0;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_services.scss */
+/* line 52, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover {
   color: #fff;
   background-color: #926fb1;
   top: -10px;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover .icon {
   color: #926fb1;
   background-color: #fff;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple:hover .service-btn {
   color: #926fb1;
   background-color: #fff;
 }
 
-/* line 131, ../../html_css_assessment/website/scss/_services.scss */
+/* line 143, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink {
   display: block;
   position: relative;
@@ -1850,11 +1900,11 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.pink {
     margin: 0;
   }
@@ -1868,50 +1918,56 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 50%;
   color: #fff;
   background-color: #f62459;
-  margin: 0 auto 10px;
+  margin: 0 auto 17px;
   font-size: 2rem;
   line-height: 3.875rem;
 }
 
 /* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink h2 {
-  font-size: 1.75rem;
-  margin: 0 0 21px;
+  font-size: 1.3rem;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+  line-height: 1.43rem;
+  letter-spacing: 0.4px;
   float: none;
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink p {
   font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 43, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink .service-btn {
   background-color: #f62459;
   margin: 0;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_services.scss */
+/* line 52, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover {
   color: #fff;
   background-color: #f62459;
   top: -10px;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover .icon {
   color: #f62459;
   background-color: #fff;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink:hover .service-btn {
   color: #f62459;
   background-color: #fff;
 }
 
-/* line 131, ../../html_css_assessment/website/scss/_services.scss */
+/* line 143, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange {
   display: block;
   position: relative;
@@ -1922,11 +1978,11 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.orange {
     margin: 0;
   }
@@ -1940,50 +1996,56 @@ header form.search-mobile .search-bar-mobile-icon {
   border-radius: 50%;
   color: #fff;
   background-color: #ce4125;
-  margin: 0 auto 10px;
+  margin: 0 auto 17px;
   font-size: 2rem;
   line-height: 3.875rem;
 }
 
 /* line 28, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange h2 {
-  font-size: 1.75rem;
-  margin: 0 0 21px;
+  font-size: 1.3rem;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+  line-height: 1.43rem;
+  letter-spacing: 0.4px;
   float: none;
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_services.scss */
+/* line 36, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange p {
   font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1.375rem;
+  letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_services.scss */
+/* line 43, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange .service-btn {
   background-color: #ce4125;
   margin: 0;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_services.scss */
+/* line 52, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover {
   color: #fff;
   background-color: #ce4125;
   top: -10px;
 }
 
-/* line 50, ../../html_css_assessment/website/scss/_services.scss */
+/* line 56, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover .icon {
   color: #ce4125;
   background-color: #fff;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_services.scss */
+/* line 60, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange:hover .service-btn {
   color: #ce4125;
   background-color: #fff;
 }
 
-/* line 135, ../../html_css_assessment/website/scss/_services.scss */
+/* line 147, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.bespoke {
   grid-area: bespoke;
 }
@@ -1997,7 +2059,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 141, ../../html_css_assessment/website/scss/_services.scss */
+/* line 153, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.IT {
   grid-area: IT;
 }
@@ -2011,7 +2073,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 147, ../../html_css_assessment/website/scss/_services.scss */
+/* line 159, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.marketing {
   grid-area: marketing;
 }
@@ -2025,7 +2087,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 153, ../../html_css_assessment/website/scss/_services.scss */
+/* line 165, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.telecoms {
   grid-area: telecoms;
 }
@@ -2039,7 +2101,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 159, ../../html_css_assessment/website/scss/_services.scss */
+/* line 171, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.web {
   grid-area: web;
 }
@@ -2053,7 +2115,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 165, ../../html_css_assessment/website/scss/_services.scss */
+/* line 177, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.security {
   grid-area: security;
 }
@@ -2067,7 +2129,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 171, ../../html_css_assessment/website/scss/_services.scss */
+/* line 183, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.training {
   grid-area: training;
 }
@@ -2081,66 +2143,65 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 1, ../../html_css_assessment/website/scss/_news.scss */
-.latest-news {
-  padding-bottom: 32px;
-}
-
-/* line 4, ../../html_css_assessment/website/scss/_news.scss */
+/* line 2, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news h2 {
   font-size: 2.25rem;
   font-weight: 600;
+  line-height: 2.475rem;
+  margin: 0 0 46px;
+  padding-top: 51px;
   float: left;
   letter-spacing: 0.4px;
   color: #333645;
 }
 
-/* line 11, ../../html_css_assessment/website/scss/_news.scss */
+/* line 12, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news h3 {
   font-size: 1.625rem;
 }
 
-/* line 14, ../../html_css_assessment/website/scss/_news.scss */
+/* line 15, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 19, ../../html_css_assessment/website/scss/_news.scss */
+/* line 20, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-view a {
   font-weight: 600;
   color: #333645;
   font-size: inherit;
 }
 
-/* line 23, ../../html_css_assessment/website/scss/_news.scss */
+/* line 24, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-view a:hover {
   text-decoration: underline;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_news.scss */
+/* line 28, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-view.top {
   display: none;
   float: right;
 }
 
-/* line 31, ../../html_css_assessment/website/scss/_news.scss */
+/* line 32, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-view.bottom {
+  margin: 49px 0 15px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 35, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 37, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-view.top {
     display: inline;
   }
-  /* line 39, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 41, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-view.bottom {
     display: none;
   }
 }
 
-/* line 45, ../../html_css_assessment/website/scss/_news.scss */
+/* line 47, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-item {
   display: block;
   position: relative;
@@ -2149,46 +2210,46 @@ header form.search-mobile .search-bar-mobile-icon {
   margin-bottom: 32px;
 }
 
-/* line 52, ../../html_css_assessment/website/scss/_news.scss */
+/* line 54, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-item:hover {
   top: -10px;
 }
 
 @media (min-width: 768px) {
-  /* line 45, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 47, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-grid .news-item {
     max-width: 345px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 45, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 47, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-grid .news-item {
     max-width: 455px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 45, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 47, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-grid .news-item {
     max-width: 370px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1259px) {
-  /* line 66, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 68, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-grid .news-item:nth-child(n+3) {
     display: none;
   }
 }
 
-/* line 72, ../../html_css_assessment/website/scss/_news.scss */
+/* line 74, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid a > img {
   width: 100%;
   margin: 0;
 }
 
-/* line 78, ../../html_css_assessment/website/scss/_news.scss */
+/* line 80, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid p {
   font-size: 0.8125rem;
   font-weight: 300;
@@ -2196,7 +2257,7 @@ header form.search-mobile .search-bar-mobile-icon {
   line-height: 1.375rem;
 }
 
-/* line 85, ../../html_css_assessment/website/scss/_news.scss */
+/* line 87, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-tooltip {
   position: absolute;
   right: 0;
@@ -2209,7 +2270,7 @@ header form.search-mobile .search-bar-mobile-icon {
   text-transform: uppercase;
 }
 
-/* line 98, ../../html_css_assessment/website/scss/_news.scss */
+/* line 100, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description {
   padding: 30px;
   margin: -8px 0 0;
@@ -2217,21 +2278,21 @@ header form.search-mobile .search-bar-mobile-icon {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* line 104, ../../html_css_assessment/website/scss/_news.scss */
+/* line 106, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description h3 {
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 0;
+  margin: 0 0 12px;
   text-align: left;
   padding-right: 16px;
 }
 
-/* line 111, ../../html_css_assessment/website/scss/_news.scss */
+/* line 113, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description p {
   margin: 0 0 25px 0;
 }
 
-/* line 115, ../../html_css_assessment/website/scss/_news.scss */
+/* line 117, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description .news-btn {
   color: #fff;
   text-decoration: none;
@@ -2240,26 +2301,27 @@ header form.search-mobile .search-bar-mobile-icon {
   text-transform: uppercase;
   display: inline-block;
   border-radius: 4px;
-  padding: 10px 14px;
-  margin: 0 8px 30px 0;
+  padding: 12.5px 16px;
+  margin: 0;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_news.scss */
+/* line 129, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description .news-author {
-  padding-top: 32px;
+  padding-top: 30px;
   border-top: 0.5px solid #ccc;
   display: flex;
   flex-direction: row;
+  margin: 30px 0 -2px;
 }
 
-/* line 133, ../../html_css_assessment/website/scss/_news.scss */
+/* line 136, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description .news-author img {
   margin: 0;
   aspect-ratio: 1;
   border-radius: 50%;
 }
 
-/* line 138, ../../html_css_assessment/website/scss/_news.scss */
+/* line 141, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description .news-author p {
   margin: 0;
   padding: 2px 0 2px 20px;
@@ -2267,29 +2329,29 @@ header form.search-mobile .search-bar-mobile-icon {
   letter-spacing: 0.01em;
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_news.scss */
+/* line 146, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid .news-description .news-author p strong {
   font-weight: 500;
 }
 
-/* line 150, ../../html_css_assessment/website/scss/_news.scss */
+/* line 153, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid h3 {
   font-size: 1.625rem;
   text-align: center;
 }
 
-/* line 153, ../../html_css_assessment/website/scss/_news.scss */
+/* line 156, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid h3 a {
   text-decoration: none;
 }
 
-/* line 155, ../../html_css_assessment/website/scss/_news.scss */
+/* line 158, ../../html_css_assessment/website/scss/_news.scss */
 .latest-news .news-grid h3 a:hover {
   text-decoration: underline;
 }
 
 @media (min-width: 768px) {
-  /* line 44, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 46, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2299,38 +2361,38 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 1260px) {
-  /* line 44, ../../html_css_assessment/website/scss/_news.scss */
+  /* line 46, ../../html_css_assessment/website/scss/_news.scss */
   .latest-news .news-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-/* line 174, ../../html_css_assessment/website/scss/_news.scss */
+/* line 177, ../../html_css_assessment/website/scss/_news.scss */
 .news-item.purple .news-tooltip {
   background-color: #926fb1;
 }
 
-/* line 179, ../../html_css_assessment/website/scss/_news.scss */
+/* line 182, ../../html_css_assessment/website/scss/_news.scss */
 .news-item.purple .news-description h3 {
   color: #926fb1;
 }
 
-/* line 183, ../../html_css_assessment/website/scss/_news.scss */
+/* line 186, ../../html_css_assessment/website/scss/_news.scss */
 .news-item.purple .news-description .news-btn {
   background-color: #926fb1;
 }
 
-/* line 174, ../../html_css_assessment/website/scss/_news.scss */
+/* line 177, ../../html_css_assessment/website/scss/_news.scss */
 .news-item.blue .news-tooltip {
   background-color: #4183d7;
 }
 
-/* line 179, ../../html_css_assessment/website/scss/_news.scss */
+/* line 182, ../../html_css_assessment/website/scss/_news.scss */
 .news-item.blue .news-description h3 {
   color: #4183d7;
 }
 
-/* line 183, ../../html_css_assessment/website/scss/_news.scss */
+/* line 186, ../../html_css_assessment/website/scss/_news.scss */
 .news-item.blue .news-description .news-btn {
   background-color: #4183d7;
 }
@@ -2374,7 +2436,7 @@ header form.search-mobile .search-bar-mobile-icon {
 
 /* line 37, ../../html_css_assessment/website/scss/_partners.scss */
 .cases {
-  margin: 16px 0 8px;
+  padding: 50px 0 20px;
   grid-auto-columns: 300px;
   grid-gap: 10px;
 }
@@ -2485,7 +2547,7 @@ header form.search-mobile .search-bar-mobile-icon {
 .about {
   background-color: #333645;
   color: #fff;
-  padding: 40px 0 0;
+  padding: 50px 0 0;
   position: relative;
 }
 
@@ -2534,63 +2596,71 @@ header form.search-mobile .search-bar-mobile-icon {
 
 /* line 32, ../../html_css_assessment/website/scss/_about.scss */
 .about .welcome-btns {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 /* line 35, ../../html_css_assessment/website/scss/_about.scss */
 .about .clients-btns {
   margin-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 }
 
 /* line 41, ../../html_css_assessment/website/scss/_about.scss */
 .about h1 {
   font-size: 2.25rem;
-  margin: 0 0 32px;
+  line-height: 2.475rem;
+  margin: -6px 0 40px;
   font-weight: 600;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_about.scss */
+/* line 48, ../../html_css_assessment/website/scss/_about.scss */
+.about .clients h1 {
+  margin: -10px 0 40px;
+}
+
+/* line 52, ../../html_css_assessment/website/scss/_about.scss */
 .about p {
+  font-size: 1rem;
   line-height: 1.875rem;
   letter-spacing: 0.4px;
   font-weight: 400;
   margin: 0 0 25px;
 }
 
-/* line 51, ../../html_css_assessment/website/scss/_about.scss */
+/* line 58, ../../html_css_assessment/website/scss/_about.scss */
 .about p strong {
   font-weight: 600;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_about.scss */
+/* line 61, ../../html_css_assessment/website/scss/_about.scss */
 .about p em {
   font-weight: 600;
   font-style: italic;
-  font-size: 1.4375rem;
+  font-size: 1.3rem;
 }
 
-/* line 61, ../../html_css_assessment/website/scss/_about.scss */
+/* line 67, ../../html_css_assessment/website/scss/_about.scss */
 .about .client-quote {
   font-size: 1.125rem;
   color: #a3a8ac;
   font-weight: 600;
+  margin: 27px 0 27px;
 }
 
-/* line 65, ../../html_css_assessment/website/scss/_about.scss */
+/* line 71, ../../html_css_assessment/website/scss/_about.scss */
 .about .client-quote a {
   font-weight: 600;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_about.scss */
+/* line 77, ../../html_css_assessment/website/scss/_about.scss */
 .about .star {
   color: orange;
   font-size: 3.125rem;
-  margin: -25px 0 16px;
+  margin: -15px 0 12px;
   padding: 0;
 }
 
-/* line 75, ../../html_css_assessment/website/scss/_about.scss */
+/* line 82, ../../html_css_assessment/website/scss/_about.scss */
 .about .star .icon-star {
   margin-right: 5px;
 }
@@ -2681,7 +2751,22 @@ footer .footer-row .footer-menu a:hover {
   text-decoration: underline;
 }
 
-/* line 63, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 62, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company {
+  max-width: 320px;
+}
+
+/* line 64, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company img {
+  max-width: 100%;
+}
+
+/* line 67, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company h4 {
+  margin-top: 12px;
+}
+
+/* line 71, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -2692,7 +2777,7 @@ footer .footer-company .footer-social-media {
   font-size: 1.625rem;
 }
 
-/* line 73, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 82, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .fb:hover {
   background-color: #3b5998;
 }
@@ -2706,7 +2791,7 @@ footer .footer-company .footer-social-media .icon-fb::before {
   content: "";
 }
 
-/* line 81, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 90, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .li:hover {
   background-color: #0077b5;
 }
@@ -2720,7 +2805,7 @@ footer .footer-company .footer-social-media .icon-li::before {
   content: "";
 }
 
-/* line 89, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 98, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .tw:hover {
   background-color: #00aced;
 }
@@ -2734,7 +2819,7 @@ footer .footer-company .footer-social-media .icon-tw::before {
   content: "";
 }
 
-/* line 97, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 106, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .in:hover {
   background-color: #d93175;
 }
@@ -2748,7 +2833,7 @@ footer .footer-company .footer-social-media .icon-in::before {
   content: "";
 }
 
-/* line 105, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 114, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media a {
   color: #fff;
   text-decoration: none;
@@ -2760,14 +2845,14 @@ footer .footer-company .footer-social-media a {
 }
 
 @media (max-width: 480px) {
-  /* line 63, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 71, ../../html_css_assessment/website/scss/_footer.scss */
   footer .footer-company .footer-social-media {
     grid-template-columns: 1fr 1fr;
     width: 136px;
   }
 }
 
-/* line 122, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 131, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright {
   margin: 0;
   background-color: #212330;
@@ -2778,33 +2863,33 @@ footer .footer-company .footer-social-media a {
   line-height: 1.16071rem;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 139, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright p {
   margin: 0;
 }
 
-/* line 133, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 142, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 136, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 145, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright a:hover {
   text-decoration: underline;
 }
 
-/* line 140, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 149, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright .copyright-- {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 144, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 153, ../../html_css_assessment/website/scss/_footer.scss */
   .copyright .copyright-newline {
     display: none;
   }
-  /* line 147, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 156, ../../html_css_assessment/website/scss/_footer.scss */
   .copyright .copyright-- {
     display: inline;
   }

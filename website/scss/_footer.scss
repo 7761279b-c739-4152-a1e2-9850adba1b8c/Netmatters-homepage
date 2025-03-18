@@ -60,6 +60,14 @@ footer {
 
    }
    .footer-company {
+      max-width: 320px;
+      img {
+         max-width: 100%;
+      }
+      h4 {
+         margin-top: 12px;
+      }
+
       .footer-social-media {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -68,6 +76,7 @@ footer {
          margin-bottom: 36px;
          width: 280px;
          font-size: rems(26px);
+
 
          .fb {
             &:hover {

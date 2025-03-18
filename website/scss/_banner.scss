@@ -24,6 +24,8 @@
         height: 550px;
         z-index: 5;
         position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     text-align: center;
 
@@ -31,6 +33,7 @@
     h1 {
         font-size: rems(40px);
         line-height: rems(48px);
+        letter-spacing: 0.4px;
         margin: 0 0 20px;
         font-weight: 600;
     }
