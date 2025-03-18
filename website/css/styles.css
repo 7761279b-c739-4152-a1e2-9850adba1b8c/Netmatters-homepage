@@ -1396,12 +1396,12 @@ header form.search-mobile .search-bar-mobile-icon {
   }
 }
 
-/* line 67, ../../html_css_assessment/website/scss/_services.scss */
+/* line 70, ../../html_css_assessment/website/scss/_services.scss */
 .services {
   padding-top: 50px;
 }
 
-/* line 69, ../../html_css_assessment/website/scss/_services.scss */
+/* line 72, ../../html_css_assessment/website/scss/_services.scss */
 .services h2 {
   color: #333645;
   font-size: 2.7rem;
@@ -1412,13 +1412,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 69, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 72, ../../html_css_assessment/website/scss/_services.scss */
   .services h2 {
     float: left;
   }
 }
 
-/* line 80, ../../html_css_assessment/website/scss/_services.scss */
+/* line 83, ../../html_css_assessment/website/scss/_services.scss */
 .services h3 {
   font-size: 1.625rem;
   font-weight: 600;
@@ -1427,25 +1427,25 @@ header form.search-mobile .search-bar-mobile-icon {
   text-align: center;
 }
 
-/* line 87, ../../html_css_assessment/website/scss/_services.scss */
+/* line 90, ../../html_css_assessment/website/scss/_services.scss */
 .services h1 {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 0.0625rem;
 }
 
-/* line 94, ../../html_css_assessment/website/scss/_services.scss */
+/* line 97, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view a {
   color: #333645;
   text-decoration: none;
 }
 
-/* line 97, ../../html_css_assessment/website/scss/_services.scss */
+/* line 100, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view a:hover {
   text-decoration: underline;
 }
 
-/* line 102, ../../html_css_assessment/website/scss/_services.scss */
+/* line 105, ../../html_css_assessment/website/scss/_services.scss */
 .services .services-view.top {
   margin: 36px 0 0;
   display: none;
@@ -1453,53 +1453,53 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 108, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 111, ../../html_css_assessment/website/scss/_services.scss */
   .services .services-view.top {
     display: inline;
   }
-  /* line 112, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 115, ../../html_css_assessment/website/scss/_services.scss */
   .services .services-view.bottom {
     display: none;
   }
 }
 
-/* line 118, ../../html_css_assessment/website/scss/_services.scss */
+/* line 121, ../../html_css_assessment/website/scss/_services.scss */
 .services .service-grid {
   margin-top: 50px;
 }
 
 @media (min-width: 768px) {
-  /* line 118, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 121, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     display: grid;
     grid-gap: 30px;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: "bespoke bespoke" "IT IT" "marketing marketing" "telecoms web" "security training";
     margin-bottom: 100px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 118, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 121, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: "bespoke bespoke IT IT marketing marketing" "telecoms telecoms telecoms web web web" "security security security training training training";
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 118, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 121, ../../html_css_assessment/website/scss/_services.scss */
   .services .service-grid {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: "bespoke bespoke bespoke bespoke IT IT IT IT marketing marketing marketing marketing" "telecoms telecoms telecoms web web web security security security training training training";
   }
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_services.scss */
+/* line 146, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.grey {
   display: block;
   position: relative;
@@ -1514,7 +1514,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 146, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.grey {
     margin: 0;
   }
@@ -1577,7 +1577,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #fff;
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_services.scss */
+/* line 64, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.grey:hover h2 {
+  color: #fff;
+}
+
+/* line 146, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.blue {
   display: block;
   position: relative;
@@ -1592,7 +1597,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 146, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.blue {
     margin: 0;
   }
@@ -1655,7 +1660,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #fff;
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_services.scss */
+/* line 64, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.blue:hover h2 {
+  color: #fff;
+}
+
+/* line 146, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.green {
   display: block;
   position: relative;
@@ -1670,7 +1680,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 146, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.green {
     margin: 0;
   }
@@ -1733,7 +1743,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #fff;
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_services.scss */
+/* line 64, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.green:hover h2 {
+  color: #fff;
+}
+
+/* line 146, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.red {
   display: block;
   position: relative;
@@ -1748,7 +1763,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 146, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.red {
     margin: 0;
   }
@@ -1811,7 +1826,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #fff;
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_services.scss */
+/* line 64, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.red:hover h2 {
+  color: #fff;
+}
+
+/* line 146, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.purple {
   display: block;
   position: relative;
@@ -1826,7 +1846,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 146, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.purple {
     margin: 0;
   }
@@ -1889,7 +1909,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #fff;
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_services.scss */
+/* line 64, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.purple:hover h2 {
+  color: #fff;
+}
+
+/* line 146, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.pink {
   display: block;
   position: relative;
@@ -1904,7 +1929,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 146, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.pink {
     margin: 0;
   }
@@ -1967,7 +1992,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #fff;
 }
 
-/* line 143, ../../html_css_assessment/website/scss/_services.scss */
+/* line 64, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.pink:hover h2 {
+  color: #fff;
+}
+
+/* line 146, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.orange {
   display: block;
   position: relative;
@@ -1982,7 +2012,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../../html_css_assessment/website/scss/_services.scss */
+  /* line 146, ../../html_css_assessment/website/scss/_services.scss */
   .services .service.orange {
     margin: 0;
   }
@@ -2045,7 +2075,12 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #fff;
 }
 
-/* line 147, ../../html_css_assessment/website/scss/_services.scss */
+/* line 64, ../../html_css_assessment/website/scss/_services.scss */
+.services .service.orange:hover h2 {
+  color: #fff;
+}
+
+/* line 150, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.bespoke {
   grid-area: bespoke;
 }
@@ -2059,7 +2094,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 153, ../../html_css_assessment/website/scss/_services.scss */
+/* line 156, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.IT {
   grid-area: IT;
 }
@@ -2073,7 +2108,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 159, ../../html_css_assessment/website/scss/_services.scss */
+/* line 162, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.marketing {
   grid-area: marketing;
 }
@@ -2087,7 +2122,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 165, ../../html_css_assessment/website/scss/_services.scss */
+/* line 168, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.telecoms {
   grid-area: telecoms;
 }
@@ -2101,7 +2136,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 171, ../../html_css_assessment/website/scss/_services.scss */
+/* line 174, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.web {
   grid-area: web;
 }
@@ -2115,7 +2150,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 177, ../../html_css_assessment/website/scss/_services.scss */
+/* line 180, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.security {
   grid-area: security;
 }
@@ -2129,7 +2164,7 @@ header form.search-mobile .search-bar-mobile-icon {
   content: "";
 }
 
-/* line 183, ../../html_css_assessment/website/scss/_services.scss */
+/* line 186, ../../html_css_assessment/website/scss/_services.scss */
 .services .service.training {
   grid-area: training;
 }

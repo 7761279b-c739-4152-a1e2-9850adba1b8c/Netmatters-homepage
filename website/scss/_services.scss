@@ -61,6 +61,9 @@
             color: $color;
             background-color: #fff;
         }
+        h2 {
+            color: #fff;
+        }
     }
 }
 
@@ -122,18 +125,18 @@
             grid-gap: 30px;
             width: 100%;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: repeat(5, auto);
             grid-template-areas: "bespoke bespoke" "IT IT" "marketing marketing" "telecoms web" "security training";
             margin-bottom: 100px;
         }
         @include mq('medium') {
             grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
             grid-template-areas: "bespoke bespoke IT IT marketing marketing" "telecoms telecoms telecoms web web web" "security security security training training training";
         }
         @include mq('large') {
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
             grid-template-areas: "bespoke bespoke bespoke bespoke IT IT IT IT marketing marketing marketing marketing" "telecoms telecoms telecoms web web web security security security training training training";
         }
         
