@@ -11,7 +11,7 @@
         margin: 0 auto;
         text-align: center;
         width: 940px;
-        @media (min-width: $breakpoint-large) {
+        @include mq('large') {
             width: 1170px;
         }
 
@@ -102,7 +102,7 @@
                     border-color: inherit;
                     border-style: solid;
                     border-width: 35px 68px 0;
-                    @media (min-width: $breakpoint-large) {
+                    @include mq('large') {
                         border-width: 35px 84px 0;
                     }
                     z-index: 90;
@@ -135,7 +135,7 @@
 
     }
 
-    @media (min-width: $breakpoint-medium) {
+    @include mq('medium') {
         display: block;
     }
 

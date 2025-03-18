@@ -9,7 +9,7 @@
     padding: 30px;
     text-align: center;
     margin: 25px 0;
-    @media (min-width: $breakpoint-small) {
+    @include mq('small') {
         margin: 0; // no margin when in grid
     }
 
@@ -91,7 +91,7 @@
             display: none;
             float: right;
         }
-        @media (min-width: $breakpoint-small) {
+        @include mq('small') {
             &.top {
                 display: inline;
             }
@@ -103,7 +103,7 @@
     }
 
     .service-grid {
-        @media (min-width: $breakpoint-small) {
+        @include mq('small') {
             display: grid;
             grid-gap: 25px;
             width: 100%;
@@ -112,12 +112,12 @@
             grid-template-areas: "bespoke bespoke" "IT IT" "marketing marketing" "telecoms web" "security training";
             margin-bottom: 100px;
         }
-        @media (min-width: $breakpoint-medium) {
+        @include mq('medium') {
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-template-areas: "bespoke bespoke IT IT marketing marketing" "telecoms telecoms telecoms web web web" "security security security training training training";
         }
-        @media (min-width: $breakpoint-large) {
+        @include mq('large') {
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-template-areas: "bespoke bespoke bespoke bespoke IT IT IT IT marketing marketing marketing marketing" "telecoms telecoms telecoms web web web security security security training training training";

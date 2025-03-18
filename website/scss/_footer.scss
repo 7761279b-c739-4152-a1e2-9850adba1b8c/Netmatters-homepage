@@ -20,15 +20,15 @@ footer {
          flex: 100%;
          margin-bottom: 26px;
          
-         @media (min-width: $breakpoint-small) {
+         @include mq('small') {
             flex: 50%;
          }
 
-         @media (min-width: $breakpoint-medium) {
+         @include mq('medium') {
             flex: 25%;
          }
 
-         @media (min-width: $breakpoint-large) {
+         @include mq('large') {
             margin-bottom: 40px;
          }
 
@@ -120,7 +120,7 @@ footer {
    .copyright-- {
       display: none;
    }
-   @media (min-width: $breakpoint-small) {
+   @include mq('small') {
       .copyright-newline {
          display: none;
       }

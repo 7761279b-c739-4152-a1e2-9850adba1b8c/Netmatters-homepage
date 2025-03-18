@@ -14,7 +14,7 @@
         right: 0;
         z-index: 3;
         background-color: rgba(#000, 0.5);
-        @media (min-width: $breakpoint-medium) {
+        @include mq('medium') {
             background: linear-gradient(270deg, transparent 25%, #000);
         }
     }
@@ -85,7 +85,7 @@
         }
     }
 
-    @media (min-width: $breakpoint-medium) {
+    @include mq('medium') {
         text-align: left;
         h1 {
             font-size: 64px;
@@ -96,7 +96,7 @@
             font-size: 26px;
         }
     }
-    @media (min-width: $breakpoint-large) {
+    @include mq('large') {
         h1 {
             width: 1170px;
         }

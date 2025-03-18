@@ -42,7 +42,7 @@ header {
             color: $color-background;
             @include icon("\E902");
 
-            @media (min-width: $breakpoint-small) {
+            @include mq('small') {
                 display: none;
             }
         }
@@ -87,13 +87,13 @@ header {
                 @extend %search-btn;
             }
 
-            @media (min-width: $breakpoint-small) {
+            @include mq('small') {
                 display: flex;
             }
-            @media (min-width: $breakpoint-medium) {
+            @include mq('medium') {
                 display: none;
             }
-            @media (min-width: $breakpoint-large) {
+            @include mq('large') {
                 display: flex;
                 input {
                     width: 240px;
@@ -110,10 +110,10 @@ header {
             font-size: 23px;
             text-align: center;
 
-            @media (min-width: $breakpoint-medium) {
+            @include mq('medium') {
                 display: inline-block;
             }
-            @media (min-width: $breakpoint-large) {
+            @include mq('large') {
                 display: none;
             }
         }
@@ -126,7 +126,7 @@ header {
             @include icon("\E903");
             display: none;
             
-            @media (min-width: $breakpoint-medium) {
+            @include mq('medium') {
                 display: inline-block;
             }
         }
@@ -140,7 +140,7 @@ header {
             @include icon("\E90C");
             display: none;
             
-            @media (min-width: $breakpoint-medium) {
+            @include mq('medium') {
                 display: inline-block;
             }
         }
@@ -175,7 +175,7 @@ header {
             top: 10px;
         }
         
-        @media (min-width: $breakpoint-small) {
+        @include mq('small') {
             display: none;
         }
     }

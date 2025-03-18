@@ -4,7 +4,7 @@
     padding: 40px 0 0;
     position: relative;
 
-    @media (min-width: $breakpoint-medium) {
+    @include mq('medium') {
         .container {
             display: flex;
             flex-direction: row;
