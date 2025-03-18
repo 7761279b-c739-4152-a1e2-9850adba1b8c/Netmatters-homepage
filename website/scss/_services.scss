@@ -64,11 +64,12 @@
         font-weight: 400;
         margin-top: 0;
         float: left;
+        margin-bottom: 15px;
     }
     h3 {
         font-size: rems(26px);
         font-weight: 600;
-        margin: 0 0 30px;
+        margin: 36px 0 8px;
         line-height: rems(1px);
         text-align: center;
     }
@@ -80,7 +81,7 @@
 
     .services-view {
         a {
-            color: inherit;
+            color: $color-background;
             text-decoration: none;
             &:hover {
                 text-decoration: underline;

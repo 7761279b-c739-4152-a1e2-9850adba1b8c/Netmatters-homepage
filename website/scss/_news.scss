@@ -6,6 +6,7 @@
         font-weight: 600;
         float: left;
         letter-spacing: 0.4px;
+        color: $color-background;
     }
     h3 {
         font-size: rems(26px);
@@ -16,6 +17,8 @@
     }
     .news-view {
         a {
+            font-weight: 600;
+            color: $color-background;
             font-size: inherit;
             &:hover {
                 text-decoration: underline;
@@ -24,6 +27,9 @@
         &.top {
             display: none;
             float: right;
+        }
+        &.bottom {
+            text-align: center;
         }
         @include mq('small') {
             &.top {

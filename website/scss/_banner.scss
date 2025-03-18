@@ -21,7 +21,6 @@
     .container {
         display: flex;
         flex-direction: column;
-        padding: 40px 0 0;
         height: 550px;
         z-index: 5;
         position: relative;
@@ -38,9 +37,9 @@
 
     p {
         font-size: rems(20px);
-        letter-spacing: 0.4px;
+        line-height: rems(28px);
         font-weight: 600;
-        margin: 0 0 25px;
+        margin-bottom: calc(#{rems(5.2px)} + 31px);
     }
 
     a {
@@ -74,10 +73,10 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    top: -8px;
-                    left: -8px;
-                    width: 23px;
-                    height: 23px;
+                    top: -6px;
+                    left: -6px;
+                    width: 19px;
+                    height: 19px;
                     border-radius: 50%;
                     border: 2px solid #fff;
                 }

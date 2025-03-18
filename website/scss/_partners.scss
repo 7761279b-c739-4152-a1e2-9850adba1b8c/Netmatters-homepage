@@ -2,11 +2,10 @@
     display: grid;
     grid-auto-flow: column;
     overflow: visible;
-    margin: 16px 0 44px;
 }
 
 .partners {
-    margin: 16px 0 44px;
+    padding: 50px 0 50px;
     grid-gap: 100px;
 
     .partner-img {
@@ -66,6 +65,7 @@
                 margin: 0;
                 padding-bottom: 8px;
                 font-weight: 400;
+                display: block;
             }
             p {
                 font-size: rems(13px);
