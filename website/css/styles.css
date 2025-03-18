@@ -198,28 +198,40 @@ header .header-row .icon-phone::before {
 
 /* line 50, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .hamburger-box {
-  width: 56px;
+  width: 63px;
   height: 56px;
   margin: 8px 20px 0 0;
   line-height: 46px;
   font-size: 18px;
   border-radius: 3px;
   background-color: #333645;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
 }
 
-/* line 60, ../../html_css_assessment/website/scss/_header.scss */
+/* line 63, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row .hamburger-box div {
+  background-color: #fff;
+  width: 30px;
+  height: 4px;
+}
+
+/* line 70, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form {
   display: none;
   flex-direction: row;
   margin: 8px 20px 0 0;
 }
 
-/* line 61, ../../html_css_assessment/website/scss/_header.scss */
+/* line 71, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form label {
   display: none;
 }
 
-/* line 67, ../../html_css_assessment/website/scss/_header.scss */
+/* line 77, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form input {
   font-family: inherit;
   width: 147px;
@@ -230,31 +242,31 @@ header .header-row form input {
 }
 
 @media (min-width: 768px) {
-  /* line 60, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 70, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 60, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 70, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 60, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 70, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
-  /* line 88, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 98, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form input {
     width: 240px;
   }
 }
 
-/* line 93, ../../html_css_assessment/website/scss/_header.scss */
+/* line 103, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-search {
   margin: 8px 20px 0 0;
   padding: 15px;
@@ -266,20 +278,20 @@ header .header-row .btn-search {
 }
 
 @media (min-width: 992px) {
-  /* line 93, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 103, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: inline-block;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 93, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 103, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: none;
   }
 }
 
-/* line 110, ../../html_css_assessment/website/scss/_header.scss */
+/* line 120, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-support {
   background-color: #4183d7;
   margin: 8px 20px 0 0;
@@ -304,13 +316,13 @@ header .header-row .btn-support::before {
 }
 
 @media (min-width: 992px) {
-  /* line 110, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 120, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-support {
     display: inline-block;
   }
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_header.scss */
+/* line 134, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-contact {
   background-color: #999aa2;
   margin: 8px 20px 0 0;
@@ -335,23 +347,24 @@ header .header-row .btn-contact::before {
 }
 
 @media (min-width: 992px) {
-  /* line 124, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 134, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-contact {
     display: inline-block;
   }
 }
 
-/* line 139, ../../html_css_assessment/website/scss/_header.scss */
+/* line 149, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile {
+  position: relative;
   margin-top: 8px;
 }
 
-/* line 140, ../../html_css_assessment/website/scss/_header.scss */
+/* line 151, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile label {
   display: none;
 }
 
-/* line 144, ../../html_css_assessment/website/scss/_header.scss */
+/* line 155, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input {
   font-family: inherit;
   width: 100%;
@@ -362,7 +375,7 @@ header form.search-mobile input {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 155, ../../html_css_assessment/website/scss/_header.scss */
+/* line 166, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .icon-search {
   color: #333645;
 }
@@ -376,8 +389,17 @@ header form.search-mobile .icon-search::before {
   content: "";
 }
 
+/* line 170, ../../html_css_assessment/website/scss/_header.scss */
+header form.search-mobile .search-bar-mobile-icon {
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  right: 10px;
+  top: 10px;
+}
+
 @media (min-width: 768px) {
-  /* line 139, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 149, ../../html_css_assessment/website/scss/_header.scss */
   header form.search-mobile {
     display: none;
   }
@@ -2547,9 +2569,23 @@ header form.search-mobile .icon-search::before {
 /* line 70, ../../html_css_assessment/website/scss/_about.scss */
 .about .star {
   color: orange;
-  font-size: 60px;
+  font-size: 50px;
   margin: -25px 0 16px;
   padding: 0;
+}
+
+/* line 75, ../../html_css_assessment/website/scss/_about.scss */
+.about .star .icon-star {
+  margin-right: 5px;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+.about .star .icon-star::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_footer.scss */
@@ -2686,6 +2722,13 @@ footer .footer-company .footer-social-media a {
   height: 56px;
   padding-top: 12px;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  /* line 63, ../../html_css_assessment/website/scss/_footer.scss */
+  footer .footer-company .footer-social-media {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

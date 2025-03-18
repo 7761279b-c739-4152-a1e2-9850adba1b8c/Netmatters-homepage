@@ -48,13 +48,23 @@ header {
         }
 
         .hamburger-box {
-            width: 56px;
+            width: 63px;
             height: 56px;
             margin: 8px 20px 0 0;
             line-height: 46px;
             font-size: 18px;
             border-radius: 3px;
             background-color: $color-background;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px 0;
+            align-items: center;
+            div {
+                background-color: #fff;
+                width: 30px;
+                height: 4px;
+            }
         }
 
         form {
@@ -137,6 +147,7 @@ header {
     }
 
     form.search-mobile {
+        position: relative;
         label {
             display: none;
         }
@@ -155,7 +166,13 @@ header {
         .icon-search {
             color: $color-background;
             @include icon("\E003");
-            
+        }
+        .search-bar-mobile-icon {
+            position: absolute;
+            cursor: pointer;
+            font-size: 20px;
+            right: 10px;
+            top: 10px;
         }
         
         @media (min-width: $breakpoint-small) {

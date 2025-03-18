@@ -69,9 +69,13 @@
 
     .star {
         color: orange;
-        font-size: 60px;
+        font-size: 50px;
         margin: -25px 0 16px;
         padding: 0;
+        .icon-star {
+            @include icon("\F005");
+            margin-right: 5px;
+        }
     }
 
 

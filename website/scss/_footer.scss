@@ -92,6 +92,9 @@ footer {
             padding-top: 12px;
             text-align: center;
          }
+         @media (max-width: 480px) {
+            grid-template-columns: 1fr 1fr;
+         }
       }
    }
 }
