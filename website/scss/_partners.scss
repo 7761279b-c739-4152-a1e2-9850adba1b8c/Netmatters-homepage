@@ -19,6 +19,22 @@
 
 }
 
+%case-hover-arrow {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -35px;
+        left: 40%;
+        right: 40%;
+        margin: auto;
+        border-color: $color-background transparent transparent;
+        border-style: solid;
+        border-width: 35px 36px 0;
+        z-index: 90;
+    }
+}
+
+
 .cases {
     margin: 16px 0 8px;
     grid-auto-columns: 300px;
@@ -63,13 +79,23 @@
             }
             &:hover {
                 display: block;
+                @extend %case-hover-arrow;
             }
         }
         &:hover {
             filter: none;
             .case-item-description {
                 display: block;
+                @extend %case-hover-arrow;
             }
         }
+    }
+    @each $key, $value in $colors {
+        .btn.#{$key} {
+            background-color: $value;
+        }
+    }
+    .btn.yellow {
+        background-color: $color-yellow;
     }
 }

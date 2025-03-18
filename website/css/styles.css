@@ -2150,14 +2150,28 @@ header form.search-mobile .icon-search::before {
   filter: none;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 23, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .case-item .case-item-description:hover::after, .cases .case-item:hover .case-item-description::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 40%;
+  right: 40%;
+  margin: auto;
+  border-color: #333645 transparent transparent;
+  border-style: solid;
+  border-width: 35px 36px 0;
+  z-index: 90;
+}
+
+/* line 38, ../../html_css_assessment/website/scss/_partners.scss */
 .cases {
   margin: 16px 0 8px;
   grid-auto-columns: 300px;
   grid-gap: 10px;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 43, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item {
   filter: grayscale(100%);
   position: relative;
@@ -2166,7 +2180,7 @@ header form.search-mobile .icon-search::before {
   text-align: center;
 }
 
-/* line 34, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 50, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item .case-item-description {
   display: none;
   position: absolute;
@@ -2181,7 +2195,7 @@ header form.search-mobile .icon-search::before {
   margin-bottom: 50px;
 }
 
-/* line 48, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 64, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item .case-item-description h3 {
   font-size: 18px;
   margin: 0;
@@ -2189,33 +2203,73 @@ header form.search-mobile .icon-search::before {
   font-weight: 400;
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 70, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item .case-item-description p {
   font-size: 13px;
   line-height: 22px;
   margin-bottom: 0;
 }
 
-/* line 59, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 75, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item .case-item-description a {
   font-size: 16px;
   margin-top: 11px;
   margin-bottom: 0;
 }
 
-/* line 64, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 80, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item .case-item-description:hover {
   display: block;
 }
 
-/* line 68, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 85, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item:hover {
   filter: none;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 87, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .case-item:hover .case-item-description {
   display: block;
+}
+
+/* line 94, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.grey {
+  background-color: #67809f;
+}
+
+/* line 94, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.blue {
+  background-color: #4183d7;
+}
+
+/* line 94, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.green {
+  background-color: #2ecc71;
+}
+
+/* line 94, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.red {
+  background-color: #d64541;
+}
+
+/* line 94, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.purple {
+  background-color: #926fb1;
+}
+
+/* line 94, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.pink {
+  background-color: #f62459;
+}
+
+/* line 94, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.orange {
+  background-color: #ce4125;
+}
+
+/* line 98, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .btn.yellow {
+  background-color: #f7b322;
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_about.scss */
