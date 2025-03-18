@@ -35,6 +35,9 @@
     .clients-btns {
         margin-top: 45px;
         padding-bottom: 30px;
+        @media (min-width: $breakpoint-large) {
+            margin-top: 53px;
+        }
     }
 
 
