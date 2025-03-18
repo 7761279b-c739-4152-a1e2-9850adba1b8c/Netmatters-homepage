@@ -110,21 +110,22 @@ footer .footer-row .footer-menu a:hover {
   text-decoration: underline;
 }
 
-/* line 55, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-row .footer-company {
+/* line 56, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company {
   height: 200px;
 }
 
-/* line 58, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-row .footer-company .footer-social-media {
+/* line 59, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company .footer-social-media {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 8px;
   margin-top: 0;
+  max-width: 0px;
 }
 
-/* line 65, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-row .footer-company h4 {
+/* line 67, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company h4 {
   text-transform: uppercase;
   font-size: 1rem;
   margin-bottom: 26px;
@@ -132,8 +133,8 @@ footer .footer-row .footer-company h4 {
   padding-top: 0;
 }
 
-/* line 73, ../../html_css_assessment/website/scss/_footer.scss */
-footer .footer-row .footer-company a {
+/* line 75, ../../html_css_assessment/website/scss/_footer.scss */
+footer .footer-company a {
   color: #fff;
   text-decoration: none;
   background-color: #212330;
