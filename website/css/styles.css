@@ -1,14 +1,15 @@
 /* line 1, ../../html_css_assessment/website/scss/_layout.scss */
 body {
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
-/* line 5, ../../html_css_assessment/website/scss/_layout.scss */
+/* line 6, ../../html_css_assessment/website/scss/_layout.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 9, ../../html_css_assessment/website/scss/_layout.scss */
+/* line 10, ../../html_css_assessment/website/scss/_layout.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -17,21 +18,21 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 9, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 10, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 9, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 10, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 9, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 10, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 1200px;
   }
@@ -41,7 +42,7 @@ body {
 .about {
   background-color: #333645;
   color: #fff;
-  padding: 30px 0 0;
+  padding: 40px 0 0;
   position: relative;
 }
 
@@ -60,50 +61,100 @@ body {
 .about .btn, .about .google-reviews, .about .trustpilot-reviews {
   color: #fff;
   text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
   background-color: #272936;
   display: inline-block;
   border-radius: 5px;
-  padding: 16px;
+  padding: 20px;
 }
 
-/* line 23, ../../html_css_assessment/website/scss/_about.scss */
+/* line 25, ../../html_css_assessment/website/scss/_about.scss */
 .about .btn::after, .about .google-reviews::after, .about .trustpilot-reviews::after {
   content: "";
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_about.scss */
+/* line 28, ../../html_css_assessment/website/scss/_about.scss */
 .about .btn:hover, .about .google-reviews:hover, .about .trustpilot-reviews:hover {
   background-color: #121318;
 }
 
-/* line 31, ../../html_css_assessment/website/scss/_about.scss */
+/* line 32, ../../html_css_assessment/website/scss/_about.scss */
 .about .google-reviews {
   background-color: #4387f6;
 }
 
-/* line 35, ../../html_css_assessment/website/scss/_about.scss */
+/* line 36, ../../html_css_assessment/website/scss/_about.scss */
 .about .google-reviews:hover {
   background-color: #166af4;
 }
 
-/* line 39, ../../html_css_assessment/website/scss/_about.scss */
+/* line 40, ../../html_css_assessment/website/scss/_about.scss */
 .about .trustpilot-reviews {
   background-color: #00b67b;
 }
 
-/* line 43, ../../html_css_assessment/website/scss/_about.scss */
+/* line 44, ../../html_css_assessment/website/scss/_about.scss */
 .about .trustpilot-reviews:hover {
   background-color: #009b69;
 }
 
 /* line 48, ../../html_css_assessment/website/scss/_about.scss */
-.about .client-quote {
-  color: #a3a8ac;
+.about .welcome-btns {
+  margin-bottom: 40px;
 }
 
 /* line 51, ../../html_css_assessment/website/scss/_about.scss */
+.about .clients-btns {
+  margin-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* line 57, ../../html_css_assessment/website/scss/_about.scss */
+.about h1 {
+  font-size: 40px;
+  margin: 0 0 40px;
+  font-weight: 700;
+}
+
+/* line 62, ../../html_css_assessment/website/scss/_about.scss */
+.about p {
+  line-height: 1.85em;
+  letter-spacing: 0.4px;
+  font-weight: 200;
+  margin: 0 0 26px;
+}
+
+/* line 67, ../../html_css_assessment/website/scss/_about.scss */
+.about p strong {
+  font-weight: 600;
+}
+
+/* line 70, ../../html_css_assessment/website/scss/_about.scss */
+.about p em {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+/* line 77, ../../html_css_assessment/website/scss/_about.scss */
+.about .client-quote {
+  color: #a3a8ac;
+  font-weight: 600;
+}
+
+/* line 80, ../../html_css_assessment/website/scss/_about.scss */
 .about .client-quote a {
   font-weight: 600;
+}
+
+/* line 85, ../../html_css_assessment/website/scss/_about.scss */
+.about .star {
+  color: orange;
+  font-size: 60px;
+  margin: -25px 0 16px;
+  padding: 0;
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_footer.scss */
