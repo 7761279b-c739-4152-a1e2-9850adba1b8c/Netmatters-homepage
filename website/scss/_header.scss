@@ -2,7 +2,8 @@
     color: #fff;
     text-decoration: none;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 23px;
+    padding: 15px;
     text-transform: uppercase;
     display: inline-block;
     width: 60px;
@@ -92,9 +93,12 @@ header {
         .btn-search {
             @extend %search-btn;
             margin: 8px 20px 0 0;
+            padding: 15px;
             height: 56px;
             border-radius: 3px;
             display: none;
+            font-size: 23px;
+            text-align: center;
 
             @media (min-width: $breakpoint-medium) {
                 display: inline-block;
