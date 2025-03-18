@@ -1,0 +1,56 @@
+.about {
+    background-color: $color-background;
+    color: #fff;
+    padding: 30px 0 0;
+    position: relative;
+
+    a:not(.btn) {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+           text-decoration: underline;
+        }
+    }
+
+    .btn {
+        color: #fff;
+        text-decoration: none;
+        background-color: $color-button-dark;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 16px;
+        &::after {
+            content: ""; // arrow icon
+        }
+
+        &:hover {
+            background-color: $color-button-dark-hover;
+        }
+    }
+    .google-reviews {
+        @extend .btn;
+        background-color: #4387f6;
+
+        &:hover {
+            background-color: #166af4;
+        }
+    }
+    .trustpilot-reviews {
+        @extend .btn;
+        background-color: #00b67b;
+
+        &:hover {
+            background-color: #009b69;
+        }
+    }
+
+    .client-quote {
+        color: #a3a8ac;
+
+        a {
+            font-weight: 600;
+        }
+    }
+
+}

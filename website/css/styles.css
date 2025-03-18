@@ -37,9 +37,78 @@ body {
   }
 }
 
+/* line 1, ../../html_css_assessment/website/scss/_about.scss */
+.about {
+  background-color: #333645;
+  color: #fff;
+  padding: 30px 0 0;
+  position: relative;
+}
+
+/* line 7, ../../html_css_assessment/website/scss/_about.scss */
+.about a:not(.btn) {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_about.scss */
+.about a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_about.scss */
+.about .btn, .about .google-reviews, .about .trustpilot-reviews {
+  color: #fff;
+  text-decoration: none;
+  background-color: #272936;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+/* line 23, ../../html_css_assessment/website/scss/_about.scss */
+.about .btn::after, .about .google-reviews::after, .about .trustpilot-reviews::after {
+  content: "";
+}
+
+/* line 27, ../../html_css_assessment/website/scss/_about.scss */
+.about .btn:hover, .about .google-reviews:hover, .about .trustpilot-reviews:hover {
+  background-color: #121318;
+}
+
+/* line 31, ../../html_css_assessment/website/scss/_about.scss */
+.about .google-reviews {
+  background-color: #4387f6;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_about.scss */
+.about .google-reviews:hover {
+  background-color: #166af4;
+}
+
+/* line 39, ../../html_css_assessment/website/scss/_about.scss */
+.about .trustpilot-reviews {
+  background-color: #00b67b;
+}
+
+/* line 43, ../../html_css_assessment/website/scss/_about.scss */
+.about .trustpilot-reviews:hover {
+  background-color: #009b69;
+}
+
+/* line 48, ../../html_css_assessment/website/scss/_about.scss */
+.about .client-quote {
+  color: #a3a8ac;
+}
+
+/* line 51, ../../html_css_assessment/website/scss/_about.scss */
+.about .client-quote a {
+  font-weight: 600;
+}
+
 /* line 1, ../../html_css_assessment/website/scss/_footer.scss */
 footer {
-  background-color: #323544;
+  background-color: #333645;
   color: #fff;
   padding: 30px 0 0;
   position: relative;
@@ -137,7 +206,7 @@ footer .footer-company h4 {
 footer .footer-company a {
   color: #fff;
   text-decoration: none;
-  background-color: #212330;
+  background-color: #272936;
   display: block;
   width: 64px;
   height: 56px;
