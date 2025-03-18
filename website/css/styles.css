@@ -1,15 +1,16 @@
-/* line 1, ../../html_css_assessment/website/scss/_layout.scss */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* line 3, ../../html_css_assessment/website/scss/_layout.scss */
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
 }
 
-/* line 6, ../../html_css_assessment/website/scss/_layout.scss */
+/* line 8, ../../html_css_assessment/website/scss/_layout.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_layout.scss */
+/* line 12, ../../html_css_assessment/website/scss/_layout.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -18,21 +19,21 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 10, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 12, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 10, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 12, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 10, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 12, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 1200px;
   }
@@ -46,110 +47,124 @@ body {
   position: relative;
 }
 
-/* line 7, ../../html_css_assessment/website/scss/_about.scss */
+@media (min-width: 992px) {
+  /* line 8, ../../html_css_assessment/website/scss/_about.scss */
+  .about .container {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 11, ../../html_css_assessment/website/scss/_about.scss */
+  .about .container .welcome, .about .container .clients {
+    flex: 1 200px;
+  }
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_about.scss */
 .about a:not(.btn) {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 11, ../../html_css_assessment/website/scss/_about.scss */
+/* line 21, ../../html_css_assessment/website/scss/_about.scss */
 .about a:not(.btn):hover {
   text-decoration: underline;
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_about.scss */
+/* line 26, ../../html_css_assessment/website/scss/_about.scss */
 .about .btn, .about .google-reviews, .about .trustpilot-reviews {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
+  font-size: 1.25em;
   text-transform: uppercase;
   background-color: #272936;
   display: inline-block;
   border-radius: 5px;
-  padding: 20px;
+  padding: 14px 32px;
+  margin: 0 8px 16px 0;
 }
 
-/* line 25, ../../html_css_assessment/website/scss/_about.scss */
+/* line 37, ../../html_css_assessment/website/scss/_about.scss */
 .about .btn::after, .about .google-reviews::after, .about .trustpilot-reviews::after {
   content: "";
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_about.scss */
+/* line 40, ../../html_css_assessment/website/scss/_about.scss */
 .about .btn:hover, .about .google-reviews:hover, .about .trustpilot-reviews:hover {
   background-color: #121318;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_about.scss */
+/* line 44, ../../html_css_assessment/website/scss/_about.scss */
 .about .google-reviews {
   background-color: #4387f6;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_about.scss */
+/* line 48, ../../html_css_assessment/website/scss/_about.scss */
 .about .google-reviews:hover {
   background-color: #166af4;
 }
 
-/* line 40, ../../html_css_assessment/website/scss/_about.scss */
+/* line 52, ../../html_css_assessment/website/scss/_about.scss */
 .about .trustpilot-reviews {
   background-color: #00b67b;
 }
 
-/* line 44, ../../html_css_assessment/website/scss/_about.scss */
+/* line 56, ../../html_css_assessment/website/scss/_about.scss */
 .about .trustpilot-reviews:hover {
   background-color: #009b69;
 }
 
-/* line 48, ../../html_css_assessment/website/scss/_about.scss */
+/* line 60, ../../html_css_assessment/website/scss/_about.scss */
 .about .welcome-btns {
   margin-bottom: 40px;
 }
 
-/* line 51, ../../html_css_assessment/website/scss/_about.scss */
+/* line 63, ../../html_css_assessment/website/scss/_about.scss */
 .about .clients-btns {
   margin-top: 45px;
   padding-bottom: 45px;
 }
 
-/* line 57, ../../html_css_assessment/website/scss/_about.scss */
+/* line 69, ../../html_css_assessment/website/scss/_about.scss */
 .about h1 {
-  font-size: 40px;
-  margin: 0 0 40px;
-  font-weight: 700;
+  font-size: 36px;
+  margin: 0 0 32px;
+  font-weight: 600;
 }
 
-/* line 62, ../../html_css_assessment/website/scss/_about.scss */
+/* line 74, ../../html_css_assessment/website/scss/_about.scss */
 .about p {
-  line-height: 1.85em;
+  line-height: 1.865em;
   letter-spacing: 0.4px;
-  font-weight: 200;
-  margin: 0 0 26px;
+  font-weight: 400;
+  margin: 0 0 25px;
 }
 
-/* line 67, ../../html_css_assessment/website/scss/_about.scss */
+/* line 79, ../../html_css_assessment/website/scss/_about.scss */
 .about p strong {
   font-weight: 600;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_about.scss */
+/* line 82, ../../html_css_assessment/website/scss/_about.scss */
 .about p em {
   font-weight: 600;
   font-style: italic;
-  font-size: 20px;
-  line-height: 2rem;
+  font-size: 23px;
 }
 
-/* line 77, ../../html_css_assessment/website/scss/_about.scss */
+/* line 89, ../../html_css_assessment/website/scss/_about.scss */
 .about .client-quote {
+  font-size: 18px;
   color: #a3a8ac;
   font-weight: 600;
 }
 
-/* line 80, ../../html_css_assessment/website/scss/_about.scss */
+/* line 93, ../../html_css_assessment/website/scss/_about.scss */
 .about .client-quote a {
   font-weight: 600;
 }
 
-/* line 85, ../../html_css_assessment/website/scss/_about.scss */
+/* line 98, ../../html_css_assessment/website/scss/_about.scss */
 .about .star {
   color: orange;
   font-size: 60px;
