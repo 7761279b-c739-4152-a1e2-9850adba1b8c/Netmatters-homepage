@@ -2731,4 +2731,70 @@ footer .footer-company .footer-social-media a {
   }
 }
 
+/* line 102, ../../html_css_assessment/website/scss/_footer.scss */
+.copyright {
+  margin: 0;
+  background-color: #212330;
+  color: #fff;
+  padding: 15px 0 10px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 18.5714px;
+}
+
+/* line 110, ../../html_css_assessment/website/scss/_footer.scss */
+.copyright p {
+  margin: 0;
+}
+
+/* line 113, ../../html_css_assessment/website/scss/_footer.scss */
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 116, ../../html_css_assessment/website/scss/_footer.scss */
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+/* line 120, ../../html_css_assessment/website/scss/_footer.scss */
+.copyright .copyright-- {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 124, ../../html_css_assessment/website/scss/_footer.scss */
+  .copyright .copyright-newline {
+    display: none;
+  }
+  /* line 127, ../../html_css_assessment/website/scss/_footer.scss */
+  .copyright .copyright-- {
+    display: inline;
+  }
+}
+
+/* line 2, ../../html_css_assessment/website/scss/_other.scss */
+.manage-consent {
+  display: block;
+  color: #fff;
+  background-color: #75788a;
+  border-radius: 0 10px 0 0;
+  position: fixed;
+  border-width: 1px 1px 0 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  border: solid #75788a;
+  font-weight: 600;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* line 18, ../../html_css_assessment/website/scss/_other.scss */
+.manage-consent:hover {
+  background-color: #999aa2;
+  border-color: #999aa2;
+}
+
 /*# sourceMappingURL=styles.css.map */

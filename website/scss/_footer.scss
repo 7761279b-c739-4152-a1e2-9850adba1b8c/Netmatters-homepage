@@ -98,3 +98,34 @@ footer {
       }
    }
 }
+
+.copyright {
+   margin: 0;
+   background-color: $color-copyright-background;
+   color: #fff;
+   padding: 15px 0 10px;
+   width: 100%;
+   font-size: 13px;
+   line-height: 18.5714px;
+   p {
+      margin: 0;
+   }
+   a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+   .copyright-- {
+      display: none;
+   }
+   @media (min-width: $breakpoint-small) {
+      .copyright-newline {
+         display: none;
+      }
+      .copyright-- {
+         display: inline;
+      }
+   }
+}

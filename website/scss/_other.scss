@@ -1,0 +1,22 @@
+
+.manage-consent {
+    display: block;
+    color: #fff;
+    background-color: $color-manage-consent;
+    border-radius: 0 10px 0 0;
+    position: fixed;
+    border-width: 1px 1px 0 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    border: solid $color-manage-consent;
+    font-weight: 600;
+    padding: 0 10px;
+    cursor: pointer;
+    
+
+    &:hover {
+        background-color: $color-button-grey;
+        border-color: $color-button-grey;
+    }
+}
