@@ -1,0 +1,27 @@
+
+%btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 14px 32px;
+    margin: 0 8px 16px 0;
+    &::after {
+        content: ""; // arrow icon
+    }
+}
+
+@mixin button($color) {
+    @extend %btn;
+    background-color: $color;
+    &:hover {
+        background-color: darken($color, 8%)
+    }
+}
+
+.btn {
+    @include button($color-button-dark)
+}

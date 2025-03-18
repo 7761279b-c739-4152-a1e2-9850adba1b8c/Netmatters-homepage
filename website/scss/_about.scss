@@ -23,39 +23,11 @@
         }
     }
 
-    .btn {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 1.25em;
-        text-transform: uppercase;
-        background-color: $color-button-dark;
-        display: inline-block;
-        border-radius: 5px;
-        padding: 14px 32px;
-        margin: 0 8px 16px 0;
-        &::after {
-            content: ""; // arrow icon
-        }
-        &:hover {
-            background-color: $color-button-dark-hover;
-        }
-    }
     .google-reviews {
-        @extend .btn;
-        background-color: #4387f6;
-
-        &:hover {
-            background-color: #166af4;
-        }
+        @include button(#4387f6);
     }
     .trustpilot-reviews {
-        @extend .btn;
-        background-color: #00b67b;
-
-        &:hover {
-            background-color: #009b69;
-        }
+        @include button(#00b67b);
     }
     .welcome-btns {
         margin-bottom: 40px;
