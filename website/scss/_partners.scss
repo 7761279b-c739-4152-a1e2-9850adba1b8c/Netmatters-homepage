@@ -1,10 +1,12 @@
-.partners {
+.partners, .cases {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 100px;
     overflow-x: hidden;
     margin: 16px 0 44px;
+}
 
+.partners {
     .partner-img {
         filter: grayscale(100%);
         &:hover {
@@ -13,4 +15,13 @@
 
     }
 
+}
+
+.cases {
+    .cases-img {
+        filter: grayscale(100%);
+        &:hover {
+            filter: none;
+        }
+    }
 }

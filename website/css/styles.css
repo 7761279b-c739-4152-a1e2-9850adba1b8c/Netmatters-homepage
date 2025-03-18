@@ -278,7 +278,7 @@ body {
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_partners.scss */
-.partners {
+.partners, .cases {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 100px;
@@ -286,13 +286,23 @@ body {
   margin: 16px 0 44px;
 }
 
-/* line 8, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 10, ../../html_css_assessment/website/scss/_partners.scss */
 .partners .partner-img {
   filter: grayscale(100%);
 }
 
-/* line 10, ../../html_css_assessment/website/scss/_partners.scss */
+/* line 12, ../../html_css_assessment/website/scss/_partners.scss */
 .partners .partner-img:hover {
+  filter: none;
+}
+
+/* line 21, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .cases-img {
+  filter: grayscale(100%);
+}
+
+/* line 23, ../../html_css_assessment/website/scss/_partners.scss */
+.cases .cases-img:hover {
   filter: none;
 }
 
