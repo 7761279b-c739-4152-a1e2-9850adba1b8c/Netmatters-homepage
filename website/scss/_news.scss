@@ -2,13 +2,13 @@
     padding-bottom: 32px;
 
     h2 {
-        font-size: 36px;
+        font-size: rems(36px);
         font-weight: 600;
         float: left;
         letter-spacing: 0.4px;
     }
     h3 {
-        font-size: 26px;
+        font-size: rems(26px);
     }
     a {
         color: inherit;
@@ -70,10 +70,10 @@
         }
 
         p {
-            font-size: 13px;
+            font-size: rems(13px);
             font-weight: 300;
             letter-spacing: 0.4px;
-            line-height: 22px;
+            line-height: rems(22px);
 
         }
         .news-tooltip {
@@ -82,9 +82,9 @@
             top: 8px;
             color: #fff;
             padding: 0 10px;
-            font-size: 12px;
+            font-size: rems(12px);
             font-weight: 600;
-            line-height: 23px;
+            line-height: rems(23px);
             text-transform: uppercase;
 
         }
@@ -95,7 +95,7 @@
             border: 0.5px solid #ccc;
 
             h3 {
-                font-size: 16px;
+                font-size: rems(16px);
                 font-weight: 600;
                 margin-top: 0;
                 text-align: left;
@@ -109,7 +109,7 @@
                 color: #fff;
                 text-decoration: none;
                 font-weight: 400;
-                font-size: 1.125em;
+                font-size: rems(18px);
                 text-transform: uppercase;
                 display: inline-block;
                 border-radius: 4px;
@@ -141,7 +141,7 @@
             }
         }
         h3 {
-            font-size: 26px;
+            font-size: rems(26px);
             text-align: center; // mobile viewport bottom header is centered
             a {
                 text-decoration: none;

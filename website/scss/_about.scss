@@ -39,12 +39,12 @@
 
 
     h1 {
-        font-size: 36px;
+        font-size: rems(36px);
         margin: 0 0 32px;
         font-weight: 600;
     }
     p {
-        line-height: 1.865em;
+        line-height: rems(30px);
         letter-spacing: 0.4px;
         font-weight: 400;
         margin: 0 0 25px;
@@ -54,12 +54,12 @@
         em {
             font-weight: 600;
             font-style: italic;
-            font-size: 23px;
+            font-size: rems(23px);
             // line-height: 2rem;
         }
     }
     .client-quote {
-        font-size: 18px;
+        font-size: rems(18px);
         color: #a3a8ac;
         font-weight: 600;
         a {
@@ -69,7 +69,7 @@
 
     .star {
         color: orange;
-        font-size: 50px;
+        font-size: rems(50px);
         margin: -25px 0 16px;
         padding: 0;
         .icon-star {

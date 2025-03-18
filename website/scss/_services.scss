@@ -21,17 +21,17 @@
         color: #fff;
         background-color: $color;
         margin: 0 auto 10px;
-        font-size: 32px;
-        line-height: 62px;
+        font-size: rems(32px);
+        line-height: rems(62px);
     }
     h2 {
-        font-size: 28px;
+        font-size: rems(28px);
         margin: 0 0 21px;
         float: none;
     }
     p {
-        font-size: 13px;
-        line-height: 22px;
+        font-size: rems(13px);
+        line-height: rems(22px);
     }
     .service-btn {
         @extend %btn-small;
@@ -60,22 +60,22 @@
 .services {
     margin-top: 50px;
     h2 {
-        font-size: 43px;
+        font-size: rems(43px);
         font-weight: 400;
         margin-top: 0;
         float: left;
     }
     h3 {
-        font-size: 26px;
+        font-size: rems(26px);
         font-weight: 600;
         margin: 0 0 30px;
-        line-height: 1.1;
+        line-height: rems(1px);
         text-align: center;
     }
     h1 {
-        font-size: 36px;
+        font-size: rems(36px);
         font-weight: 600;
-        line-height: 1.1;
+        line-height: rems(1px);
     }
 
     .services-view {

@@ -30,14 +30,14 @@
 
 
     h1 {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: rems(40px);
+        line-height: rems(48px);
         margin: 0 0 20px;
         font-weight: 600;
     }
 
     p {
-        font-size: 20px;
+        font-size: rems(20px);
         letter-spacing: 0.4px;
         font-weight: 600;
         margin: 0 0 25px;
@@ -88,12 +88,12 @@
     @include mq('medium') {
         text-align: left;
         h1 {
-            font-size: 64px;
-            line-height: 80px;
+            font-size: rems(64px);
+            line-height: rems(80px);
             width: 940px;
         }
         p {
-            font-size: 26px;
+            font-size: rems(26px);
         }
     }
     @include mq('large') {

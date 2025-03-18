@@ -5,7 +5,7 @@ footer {
 
    h4 {
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: rems(16px);
       font-weight: 400;
       margin-bottom: 26px;
       margin-top: 0;
@@ -42,13 +42,13 @@ footer {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            line-height: 21px;
+            line-height: rems(21px);
          }
 
          a {
             color: #fff;
             text-decoration: none;
-            font-size: 13px;
+            font-size: rems(13px);
             letter-spacing: 0.4px;
 
 
@@ -67,7 +67,7 @@ footer {
          margin-top: 0;
          margin-bottom: 36px;
          max-width: 0px;
-         font-size: 26px;
+         font-size: rems(26px);
 
          .icon-fb {
             @include icon("\E907");
@@ -105,8 +105,8 @@ footer {
    color: #fff;
    padding: 15px 0 10px;
    width: 100%;
-   font-size: 13px;
-   line-height: 18.5714px;
+   font-size: rems(13px);
+   line-height: rems(18.5714px);
    p {
       margin: 0;
    }

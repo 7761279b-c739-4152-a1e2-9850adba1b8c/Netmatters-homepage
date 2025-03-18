@@ -24,17 +24,17 @@
             .icon {
                 padding: 16px 0 0;
                 margin: 0;
-                font-size: 23px;
+                font-size: rems(23px);
             }
             p {
-                font-size: 18px;
+                font-size: rems(18px);
                 margin: 0;
                 text-transform: uppercase;
                 padding-bottom: 13px;
                 small {
-                    font-size: 10px;
+                    font-size: rems(10px);
                     display: block;
-                    line-height: 10px;
+                    line-height: rems(10px);
                 }
             }
 
@@ -51,11 +51,11 @@
                     display: block;
                 }
                 h2 {
-                    font-size: 32px;
+                    font-size: rems(32px);
                     font-weight: 500;
                 }
                 p {
-                    font-size: 19px;
+                    font-size: rems(19px);
                     text-transform: none;
                 }
                 ul {
