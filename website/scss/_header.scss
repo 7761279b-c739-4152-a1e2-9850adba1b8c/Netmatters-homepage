@@ -38,8 +38,14 @@ header {
             top: 30px;
             font-size: rems(32px);
             font-weight: 400;
-            line-height: rems(1px);
+            line-height: 0;
             color: $color-background;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                color: darken($color-background, 8%)
+            }
+            cursor: pointer;
             @include icon("\E902");
 
             @include mq('small') {
@@ -58,6 +64,10 @@ header {
             font-size: rems(18px);
             border-radius: 3px;
             background-color: $color-background;
+            &:hover {
+                background-color: darken($color-background, 8%)
+            }
+            cursor: pointer;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -88,6 +98,7 @@ header {
             }
             #submit-search {
                 @extend %search-btn;
+                cursor: pointer;
             }
 
             @include mq('small') {
