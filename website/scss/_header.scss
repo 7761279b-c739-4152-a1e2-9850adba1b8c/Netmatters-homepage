@@ -20,11 +20,17 @@
 
 header {
     margin: 20px 0;
-    img {
+    .header-img {
         max-width: 100%;
-        object-fit: contain;
         vertical-align: middle;
         margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        img {
+            max-width: 100%;
+            object-fit: contain;
+        }
     }
     .header-row {
         display: flex;
