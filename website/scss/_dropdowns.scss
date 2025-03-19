@@ -47,12 +47,14 @@
                 color: #fff;
                 text-align: left;
                 z-index: 50;
+                cursor: default;
                 &:hover {
                     display: block;
                 }
                 h2 {
                     font-size: rems(32px);
                     font-weight: 500;
+                    cursor: text;
                 }
                 p {
                     font-size: rems(19px);
