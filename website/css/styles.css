@@ -2682,27 +2682,32 @@ header form.search-mobile .search-bar-mobile-icon {
 @media (min-width: 992px) {
   /* line 8, ../../html_css_assessment/website/scss/_about.scss */
   .about .container {
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     flex-direction: row;
   }
-  /* line 11, ../../html_css_assessment/website/scss/_about.scss */
+  /* line 13, ../../html_css_assessment/website/scss/_about.scss */
   .about .container .welcome, .about .container .clients {
     flex: 1 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
   }
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_about.scss */
+/* line 23, ../../html_css_assessment/website/scss/_about.scss */
 .about a:not(.btn) {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 21, ../../html_css_assessment/website/scss/_about.scss */
+/* line 27, ../../html_css_assessment/website/scss/_about.scss */
 .about a:not(.btn):hover {
   text-decoration: underline;
 }
 
-/* line 26, ../../html_css_assessment/website/scss/_about.scss */
+/* line 32, ../../html_css_assessment/website/scss/_about.scss */
 .about .google-reviews {
   background-color: #4387f6;
 }
@@ -2712,9 +2717,10 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #1c6ef4;
 }
 
-/* line 29, ../../html_css_assessment/website/scss/_about.scss */
+/* line 35, ../../html_css_assessment/website/scss/_about.scss */
 .about .trustpilot-reviews {
   background-color: #00b67b;
+  margin-right: 0;
 }
 
 /* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
@@ -2722,25 +2728,19 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #008d5f;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_about.scss */
-.about .welcome-btns {
-  margin-bottom: 36px;
+/* line 39, ../../html_css_assessment/website/scss/_about.scss */
+.about .btn {
+  white-space: nowrap;
+  max-width: fit-content;
 }
 
-/* line 35, ../../html_css_assessment/website/scss/_about.scss */
-.about .clients-btns {
-  margin-top: 45px;
-  padding-bottom: 30px;
+/* line 43, ../../html_css_assessment/website/scss/_about.scss */
+.about .clients-btns, .about .welcome-btns {
+  margin-top: auto;
+  padding-bottom: 32px;
 }
 
-@media (min-width: 1260px) {
-  /* line 35, ../../html_css_assessment/website/scss/_about.scss */
-  .about .clients-btns {
-    margin-top: 53px;
-  }
-}
-
-/* line 44, ../../html_css_assessment/website/scss/_about.scss */
+/* line 49, ../../html_css_assessment/website/scss/_about.scss */
 .about h1 {
   font-size: 2.25rem;
   line-height: 2.475rem;
@@ -2748,12 +2748,12 @@ header form.search-mobile .search-bar-mobile-icon {
   font-weight: 600;
 }
 
-/* line 51, ../../html_css_assessment/website/scss/_about.scss */
+/* line 56, ../../html_css_assessment/website/scss/_about.scss */
 .about .clients h1 {
-  margin: -10px 0 40px;
+  margin: -6 0 40px;
 }
 
-/* line 55, ../../html_css_assessment/website/scss/_about.scss */
+/* line 60, ../../html_css_assessment/website/scss/_about.scss */
 .about p {
   font-size: 1rem;
   line-height: 1.875rem;
@@ -2762,32 +2762,32 @@ header form.search-mobile .search-bar-mobile-icon {
   margin: 0 0 25px;
 }
 
-/* line 61, ../../html_css_assessment/website/scss/_about.scss */
+/* line 66, ../../html_css_assessment/website/scss/_about.scss */
 .about p strong {
   font-weight: 600;
 }
 
-/* line 64, ../../html_css_assessment/website/scss/_about.scss */
+/* line 69, ../../html_css_assessment/website/scss/_about.scss */
 .about p em {
   font-weight: 600;
   font-style: italic;
   font-size: 1.3rem;
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_about.scss */
+/* line 75, ../../html_css_assessment/website/scss/_about.scss */
 .about .client-quote {
   font-size: 1.125rem;
   color: #a3a8ac;
   font-weight: 600;
-  margin: 27px 0 27px;
+  margin: 2px 0 27px;
 }
 
-/* line 74, ../../html_css_assessment/website/scss/_about.scss */
+/* line 79, ../../html_css_assessment/website/scss/_about.scss */
 .about .client-quote a {
   font-weight: 600;
 }
 
-/* line 80, ../../html_css_assessment/website/scss/_about.scss */
+/* line 85, ../../html_css_assessment/website/scss/_about.scss */
 .about .star {
   color: orange;
   font-size: 3.125rem;
@@ -2795,7 +2795,7 @@ header form.search-mobile .search-bar-mobile-icon {
   padding: 0;
 }
 
-/* line 85, ../../html_css_assessment/website/scss/_about.scss */
+/* line 90, ../../html_css_assessment/website/scss/_about.scss */
 .about .star .icon-star {
   margin-right: 5px;
 }

@@ -6,10 +6,16 @@
 
     @include mq('medium') {
         .container {
+            padding-left: 0;
+            padding-right: 0;
             display: flex;
             flex-direction: row;
             .welcome, .clients {
                 flex: 1 200px;
+                display: flex;
+                flex-direction: column;
+                padding: 0 15px;
+
             }
         }
     }
@@ -28,16 +34,15 @@
     }
     .trustpilot-reviews {
         @include button($color-trustpilot-review);
+        margin-right: 0;
     }
-    .welcome-btns {
-        margin-bottom: 36px;
+    .btn {
+        white-space: nowrap;
+        max-width: fit-content;
     }
-    .clients-btns {
-        margin-top: 45px;
-        padding-bottom: 30px;
-        @media (min-width: $breakpoint-large) {
-            margin-top: 53px;
-        }
+    .clients-btns, .welcome-btns {
+        margin-top: auto;
+        padding-bottom: 32px;
     }
 
 
@@ -49,7 +54,7 @@
     }
     .clients {
         h1 {
-            margin: -10px 0 40px;
+            margin: -6 0 40px;
         }
     }
     p {
@@ -74,7 +79,7 @@
         a {
             font-weight: 600;
         }
-        margin: 27px 0 27px;
+        margin: 2px 0 27px;
     }
 
     .star {
