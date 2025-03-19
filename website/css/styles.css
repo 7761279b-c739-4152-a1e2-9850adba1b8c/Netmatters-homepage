@@ -47,7 +47,7 @@ body {
 }
 
 /* line 2, ../../html_css_assessment/website/scss/_buttons.scss */
-.btn, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, header .header-row .btn-support, header .header-row .btn-contact, .banner a, .about .google-reviews, .about .trustpilot-reviews {
+.btn, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, header .header-row .btn-support, header .header-row .btn-contact, .banner a, .cases .btn.grey, .cases .btn.blue, .cases .btn.green, .cases .btn.red, .cases .btn.purple, .cases .btn.pink, .cases .btn.orange, .cases .btn.yellow, .about .google-reviews, .about .trustpilot-reviews {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
@@ -2595,9 +2595,19 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #67809f;
 }
 
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.grey:hover {
+  background-color: #566c88;
+}
+
 /* line 105, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .btn.blue {
   background-color: #4183d7;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.blue:hover {
+  background-color: #2a6ec6;
 }
 
 /* line 105, ../../html_css_assessment/website/scss/_partners.scss */
@@ -2605,9 +2615,19 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #2ecc71;
 }
 
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.green:hover {
+  background-color: #26ab5f;
+}
+
 /* line 105, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .btn.red {
   background-color: #d64541;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.red:hover {
+  background-color: #c42e2a;
 }
 
 /* line 105, ../../html_css_assessment/website/scss/_partners.scss */
@@ -2615,9 +2635,19 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #926fb1;
 }
 
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.purple:hover {
+  background-color: #7e57a0;
+}
+
 /* line 105, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .btn.pink {
   background-color: #f62459;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.pink:hover {
+  background-color: #e80a42;
 }
 
 /* line 105, ../../html_css_assessment/website/scss/_partners.scss */
@@ -2625,9 +2655,19 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #ce4125;
 }
 
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.orange:hover {
+  background-color: #ab361f;
+}
+
 /* line 109, ../../html_css_assessment/website/scss/_partners.scss */
 .cases .btn.yellow {
   background-color: #f7b322;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.cases .btn.yellow:hover {
+  background-color: #e8a008;
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_about.scss */

@@ -103,10 +103,10 @@
     }
     @each $key, $value in $colors {
         .btn.#{$key} {
-            background-color: $value;
+            @include button($value);
         }
     }
     .btn.yellow {
-        background-color: $color-yellow;
+        @include button($color-yellow);
     }
 }
