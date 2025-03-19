@@ -15,21 +15,23 @@
         }
 
     }
-
 }
 
 %case-hover-arrow {
     &::after {
         content: "";
         position: absolute;
-        bottom: -34px;
-        left: 40%;
-        right: 40%;
+        bottom: 16px;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        text-align: center;
         margin: auto;
         border-color: $color-background transparent transparent;
         border-style: solid;
         border-width: 35px 36px 0;
         z-index: 90;
+        width: 0;
     }
 }
 
@@ -46,47 +48,56 @@
         width: 100%;
         text-align: center;
 
-        .case-item-description {
+        .case-item-hover {
             display: none;
             position: absolute;
             overflow: visible;
-            background-color: $color-background;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            left: -10px;
-            right: -10px;
-            // top: -100px;
+            left: -200px;
+            right: -200px;
             bottom: 100%;
-            margin-bottom: 50px;
+            .case-item-description {
+                background-color: $color-background;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+                margin: 0 auto 50px;
+                max-width: 280px;
 
-            h3 {
-                font-size: rems(18px);
-                margin: 0;
-                padding-bottom: 8px;
-                font-weight: 400;
-                display: block;
-            }
-            p {
-                font-size: rems(13px);
-                line-height: rems(22px);
-                margin-bottom: 0;
-            }
-            a {
-                font-size: rems(16px);
-                margin-top: 11px;
-                margin-bottom: 0;
+                h3 {
+                    font-size: rems(18px);
+                    margin: 0;
+                    padding-bottom: 8px;
+                    font-weight: 400;
+                    display: block;
+                }
+                p {
+                    font-size: rems(13px);
+                    line-height: rems(22px);
+                    margin-bottom: 0;
+                }
+                a {
+                    font-size: rems(16px);
+                    margin-top: 11px;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    padding: 10px 15px;
+                }
             }
             &:hover {
                 display: block;
-                @extend %case-hover-arrow;
+                .case-item-description {
+                    @extend %case-hover-arrow;
+                }
             }
         }
         &:hover {
             filter: none;
-            .case-item-description {
+            .case-item-hover {
                 display: block;
-                @extend %case-hover-arrow;
+                .case-item-description {
+                    @extend %case-hover-arrow;
+                }
             }
         }
     }
