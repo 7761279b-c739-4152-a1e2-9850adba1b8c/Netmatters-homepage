@@ -39,6 +39,7 @@ header {
         justify-content: space-between;
 
         .icon-phone {
+            // mobile view phone icon
             margin: 8px 20px 0 0;
             position: relative;
             top: 30px;
@@ -87,6 +88,7 @@ header {
         }
 
         form {
+            // single-row search bar and icon
             label {
                 display: none;
             }
@@ -101,6 +103,11 @@ header {
 
                 background-color: #fff;
                 border: 1px solid #e5e5e5;
+                &:focus {
+                    border-color: $color-form-focus;
+                    outline: 0;
+                    box-shadow: inset 0 1px 1px rgba(#000, 0.075), 0 0 8px rgba($color-form-focus, 0.6);
+                }
             }
             #submit-search {
                 @extend %search-btn;
@@ -121,6 +128,7 @@ header {
             }
         }
         .btn-search {
+            // non-mobile search icon at widths where there is no search bar
             @extend %search-btn;
             margin: 8px 20px 0 0;
             padding: 15px;
@@ -167,6 +175,7 @@ header {
     }
 
     form.search-mobile {
+        // mobile search bar
         position: relative;
         label {
             display: none;
@@ -181,7 +190,11 @@ header {
             background-color: rgba(#000, .1);
             outline: 1px solid rgba(#fff, .2);
             border: 2px solid rgba(#000, .1);
+            border-radius: 2px;
             
+            &:active, &:focus {
+                box-shadow: 0 0 3px #fff;
+            }
         }
         .icon-search {
             color: $color-background;

@@ -189,7 +189,7 @@ header .header-row .icon-phone {
   cursor: pointer;
 }
 
-/* line 49, ../../html_css_assessment/website/scss/_header.scss */
+/* line 50, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .icon-phone:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -212,7 +212,7 @@ header .header-row .icon-phone::before {
   }
 }
 
-/* line 62, ../../html_css_assessment/website/scss/_header.scss */
+/* line 63, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .hamburger-box {
   flex-basis: 63px;
   flex-grow: 0;
@@ -232,31 +232,31 @@ header .header-row .hamburger-box {
   align-items: center;
 }
 
-/* line 73, ../../html_css_assessment/website/scss/_header.scss */
+/* line 74, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .hamburger-box:hover {
   background-color: #22242e;
 }
 
-/* line 82, ../../html_css_assessment/website/scss/_header.scss */
+/* line 83, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .hamburger-box div {
   background-color: #fff;
   width: 30px;
   height: 4px;
 }
 
-/* line 89, ../../html_css_assessment/website/scss/_header.scss */
+/* line 90, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form {
   display: none;
   flex-direction: row;
   margin: 8px 20px 0 0;
 }
 
-/* line 90, ../../html_css_assessment/website/scss/_header.scss */
+/* line 92, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form label {
   display: none;
 }
 
-/* line 96, ../../html_css_assessment/website/scss/_header.scss */
+/* line 98, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form input {
   font-family: inherit;
   width: 147px;
@@ -266,37 +266,44 @@ header .header-row form input {
   border: 1px solid #e5e5e5;
 }
 
-/* line 105, ../../html_css_assessment/website/scss/_header.scss */
+/* line 106, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row form input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+/* line 112, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form #submit-search {
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  /* line 89, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 90, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 89, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 90, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 89, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 90, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
-  /* line 118, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 125, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form input {
     width: 240px;
   }
 }
 
-/* line 123, ../../html_css_assessment/website/scss/_header.scss */
+/* line 130, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-search {
   margin: 8px 20px 0 0;
   padding: 15px;
@@ -308,20 +315,20 @@ header .header-row .btn-search {
 }
 
 @media (min-width: 992px) {
-  /* line 123, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 130, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: inline-block;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 123, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 130, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: none;
   }
 }
 
-/* line 140, ../../html_css_assessment/website/scss/_header.scss */
+/* line 148, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-support {
   background-color: #4183d7;
   margin: 8px 20px 0 0;
@@ -346,13 +353,13 @@ header .header-row .btn-support::before {
 }
 
 @media (min-width: 992px) {
-  /* line 140, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 148, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-support {
     display: inline-block;
   }
 }
 
-/* line 154, ../../html_css_assessment/website/scss/_header.scss */
+/* line 162, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-contact {
   background-color: #999aa2;
   margin: 8px 20px 0 0;
@@ -377,24 +384,24 @@ header .header-row .btn-contact::before {
 }
 
 @media (min-width: 992px) {
-  /* line 154, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 162, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-contact {
     display: inline-block;
   }
 }
 
-/* line 169, ../../html_css_assessment/website/scss/_header.scss */
+/* line 177, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile {
   position: relative;
   margin-top: 8px;
 }
 
-/* line 171, ../../html_css_assessment/website/scss/_header.scss */
+/* line 180, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile label {
   display: none;
 }
 
-/* line 175, ../../html_css_assessment/website/scss/_header.scss */
+/* line 184, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input {
   font-family: inherit;
   width: 100%;
@@ -403,9 +410,15 @@ header form.search-mobile input {
   background-color: rgba(0, 0, 0, 0.1);
   outline: 1px solid rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
 }
 
-/* line 186, ../../html_css_assessment/website/scss/_header.scss */
+/* line 195, ../../html_css_assessment/website/scss/_header.scss */
+header form.search-mobile input:active, header form.search-mobile input:focus {
+  box-shadow: 0 0 3px #fff;
+}
+
+/* line 199, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .icon-search {
   color: #333645;
 }
@@ -419,7 +432,7 @@ header form.search-mobile .icon-search::before {
   content: "";
 }
 
-/* line 190, ../../html_css_assessment/website/scss/_header.scss */
+/* line 203, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .search-bar-mobile-icon {
   position: absolute;
   cursor: pointer;
@@ -429,7 +442,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 169, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 177, ../../html_css_assessment/website/scss/_header.scss */
   header form.search-mobile {
     display: none;
   }
