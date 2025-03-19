@@ -90,6 +90,7 @@
 
     @include mq('medium') {
         text-align: left;
+        height: 577px; // only the first panel is larger but that's the only one I'm recreating
         h1 {
             font-size: rems(64px);
             line-height: rems(80px);
@@ -97,9 +98,11 @@
         }
         p {
             font-size: rems(26px);
+            line-height: rems(40px);
         }
     }
     @include mq('large') {
+        height: 550px;
         h1 {
             width: 1170px;
         }

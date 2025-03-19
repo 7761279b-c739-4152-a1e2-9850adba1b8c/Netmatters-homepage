@@ -1439,21 +1439,27 @@ header form.search-mobile .search-bar-mobile-icon {
   /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
   .banner {
     text-align: left;
+    height: 577px;
   }
-  /* line 93, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 94, ../../html_css_assessment/website/scss/_banner.scss */
   .banner h1 {
     font-size: 4rem;
     line-height: 5rem;
     width: 940px;
   }
-  /* line 98, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 99, ../../html_css_assessment/website/scss/_banner.scss */
   .banner p {
     font-size: 1.625rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 103, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner {
+    height: 550px;
+  }
+  /* line 106, ../../html_css_assessment/website/scss/_banner.scss */
   .banner h1 {
     width: 1170px;
   }
