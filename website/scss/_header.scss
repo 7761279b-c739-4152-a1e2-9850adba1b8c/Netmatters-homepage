@@ -21,15 +21,26 @@
 header {
     margin: 20px 0;
     .header-img {
-        max-width: 100%;
+        display: inline-block;
+        max-width: 402px;
         vertical-align: middle;
         margin-right: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        cursor: pointer;
         img {
             max-width: 100%;
             object-fit: contain;
+        }
+        @include mq('small') {
+            max-width: 345px;
+        }
+        @include mq('medium') {
+            max-width: 374.156px;
+        }
+        @include mq('large') {
+            max-width: 370px;
         }
     }
     .header-row {
