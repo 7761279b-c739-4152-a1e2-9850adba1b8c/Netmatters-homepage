@@ -2965,16 +2965,17 @@ footer .footer-company h4 {
 
 /* line 73, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 8px;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 36px;
-  width: 280px;
   font-size: 1.625rem;
+  max-width: 312.34px;
+  min-width: 250px;
 }
 
-/* line 84, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 87, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .fb:hover {
   background-color: #3b5998;
 }
@@ -2988,7 +2989,7 @@ footer .footer-company .footer-social-media .icon-fb::before {
   content: "";
 }
 
-/* line 92, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 95, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .li:hover {
   background-color: #0077b5;
 }
@@ -3002,7 +3003,7 @@ footer .footer-company .footer-social-media .icon-li::before {
   content: "";
 }
 
-/* line 100, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 103, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .tw:hover {
   background-color: #00aced;
 }
@@ -3016,7 +3017,7 @@ footer .footer-company .footer-social-media .icon-tw::before {
   content: "";
 }
 
-/* line 108, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 111, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media .in:hover {
   background-color: #d93175;
 }
@@ -3030,34 +3031,36 @@ footer .footer-company .footer-social-media .icon-in::before {
   content: "";
 }
 
-/* line 116, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 119, ../../html_css_assessment/website/scss/_footer.scss */
 footer .footer-company .footer-social-media a {
   color: #fff;
   text-decoration: none;
   background-color: #212330;
   display: block;
   height: 56px;
-  padding-top: 12px;
+  padding: 12px 22px 16px;
   text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 480px) {
-  /* line 73, ../../html_css_assessment/website/scss/_footer.scss */
-  footer .footer-company .footer-social-media {
-    grid-template-columns: 1fr 1fr;
-    width: 136px;
+  /* line 131, ../../html_css_assessment/website/scss/_footer.scss */
+  footer .footer-company .footer-social-media a {
+    width: 35%;
+    min-width: 87.5px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 131, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 138, ../../html_css_assessment/website/scss/_footer.scss */
   footer .container {
     display: flex;
     flex-direction: row;
   }
 }
 
-/* line 139, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 146, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright {
   margin: 0;
   background-color: #212330;
@@ -3068,33 +3071,33 @@ footer .footer-company .footer-social-media a {
   line-height: 1.16071rem;
 }
 
-/* line 147, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 154, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright p {
   margin: 0;
 }
 
-/* line 150, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 157, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 153, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 160, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright a:hover {
   text-decoration: underline;
 }
 
-/* line 157, ../../html_css_assessment/website/scss/_footer.scss */
+/* line 164, ../../html_css_assessment/website/scss/_footer.scss */
 .copyright .copyright-- {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 161, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 168, ../../html_css_assessment/website/scss/_footer.scss */
   .copyright .copyright-newline {
     display: none;
   }
-  /* line 164, ../../html_css_assessment/website/scss/_footer.scss */
+  /* line 171, ../../html_css_assessment/website/scss/_footer.scss */
   .copyright .copyright-- {
     display: inline;
   }

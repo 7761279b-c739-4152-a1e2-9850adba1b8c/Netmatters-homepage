@@ -71,13 +71,16 @@ footer {
       }
 
       .footer-social-media {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-gap: 8px;
+         display: flex;
+         align-items: start;
+         flex-wrap: wrap;
+         // grid-template-columns: 1fr 1fr 1fr 1fr;
+         // grid-gap: 8px;
          margin-top: 0;
          margin-bottom: 36px;
-         width: 280px;
          font-size: rems(26px);
+         max-width: 312.34px;
+         min-width: 250px;
 
 
          .fb {
@@ -119,12 +122,16 @@ footer {
             background-color: $color-button-socialmedia;
             display: block;
             height: 56px;
-            padding-top: 12px;
+            padding: 12px 22px 16px;
             text-align: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
          }
          @media (max-width: 480px) {
-            grid-template-columns: 1fr 1fr;
-            width: 136px;
+            a {
+               width: 35%;
+               min-width: 87.5px;
+            }
          }
       }
    }
