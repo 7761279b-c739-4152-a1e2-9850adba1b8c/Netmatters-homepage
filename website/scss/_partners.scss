@@ -101,12 +101,4 @@
             }
         }
     }
-    @each $key, $value in $colors {
-        .btn.#{$key} {
-            @include button($value);
-        }
-    }
-    .btn.yellow {
-        @include button($color-yellow);
-    }
 }

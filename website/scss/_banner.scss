@@ -1,57 +1,85 @@
 .banner {
-    color: #fff;
-    height: 550px;
-    background-image: url('../img/banner/home-YLei.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 3;
-        background-color: rgba(#000, 0.5);
-        @include mq('medium') {
-            background: linear-gradient(270deg, transparent 25%, #000);
-        }
-    }
-    .container {
+    .banner-list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: 550px;
-        z-index: 5;
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    text-align: center;
+        &:nth-child(1) {
+            background-image: url('../img/banner/home-YLei.webp');
+        }
+        &:nth-child(2) {
+            background-image: url('../img/banner/home-O67Y.webp');
+        }
+        &:nth-child(3) {
+            background-image: url('../img/banner/home-gay8.webp');
+        }
+        &:nth-child(4) {
+            background-image: url('../img/banner/home-6yTp.webp');
+        }
+        &:nth-child(5) {
+            background-image: url('../img/banner/home-J8Xx.webp');
+        }
+        &:nth-child(6) {
+            background-image: url('../img/banner/home-K0pn.webp');
+        }
+        &:nth-child(7) {
+            background-image: url('../img/banner/home-MSxH.webp');
+        }
+        &:nth-child(8) {
+            background-image: url('../img/banner/home-YLei.webp');
+        }
+        .banner-item {
+            flex: 0 0 100vw;
+            color: #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 3;
+                background-color: rgba(#000, 0.5);
+                @include mq('medium') {
+                    background: linear-gradient(270deg, transparent 25%, #000);
+                }
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 550px;
+                z-index: 5;
+                position: relative;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            text-align: center;
 
 
-    h1 {
-        font-size: rems(40px);
-        line-height: rems(48px);
-        letter-spacing: 0.4px;
-        margin: 0 0 20px;
-        font-weight: 600;
-    }
+            h1 {
+                font-size: rems(40px);
+                line-height: rems(48px);
+                letter-spacing: 0.4px;
+                margin: 0 0 20px;
+                font-weight: 600;
+            }
 
-    p {
-        font-size: rems(20px);
-        line-height: rems(28px);
-        font-weight: 600;
-        margin-bottom: calc(#{rems(5.2px)} + 31px);
-    }
+            p {
+                font-size: rems(20px);
+                line-height: rems(28px);
+                font-weight: 600;
+                margin-bottom: calc(#{rems(5.2px)} + 31px);
+            }
 
-    a {
-        @include button(#926fb1);
-    }
-
-    .banner-overlay {
-        margin: auto;
+            .banner-overlay {
+                margin: auto;
+            }
+        }
     }
 
     .banner-selector {
@@ -62,16 +90,16 @@
         left: 0;
         margin: 0 0 8px;
         width: 100%;
+        z-index: 10;
         .banner-circle {
             display: inline-block;
             background-color: rgba(#fff, 0.5);
-            z-index: 100;
             width: 11px;
             height: 11px;
             margin: 0 10px;
             border-radius: 50%;
             cursor: pointer;
-            &:nth-child(1) { // current active banner menu (except I'm just using a static background)
+            &.selected { // current active banner menu (except I'm just using a static background)
                 position: relative;
                 background-color: #fff;
                 &::after {

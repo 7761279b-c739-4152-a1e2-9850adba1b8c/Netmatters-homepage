@@ -23,6 +23,16 @@
     @include button($color-button-dark)
 }
 
+@each $key, $value in $colors {
+    .btn.#{$key} {
+        @include button($value);
+    }
+}
+.btn.yellow {
+    @include button($color-yellow);
+}
+
+
 %btn-small {
     @extend %btn;
     font-size: rems(17px);
@@ -30,3 +40,4 @@
     border-radius: 3px;
     line-height: rems(35px);
 }
+
