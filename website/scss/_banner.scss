@@ -1,33 +1,11 @@
 .banner {
     position: relative;
-    .banner-list {
+    #banner-list {
         display: flex;
         flex-direction: row;
         height: 550px;
-        &:nth-child(1) {
-            background-image: url('../img/banner/home-YLei.webp');
-        }
-        &:nth-child(2) {
-            background-image: url('../img/banner/home-O67Y.webp');
-        }
-        &:nth-child(3) {
-            background-image: url('../img/banner/home-gay8.webp');
-        }
-        &:nth-child(4) {
-            background-image: url('../img/banner/home-6yTp.webp');
-        }
-        &:nth-child(5) {
-            background-image: url('../img/banner/home-J8Xx.webp');
-        }
-        &:nth-child(6) {
-            background-image: url('../img/banner/home-K0pn.webp');
-        }
-        &:nth-child(7) {
-            background-image: url('../img/banner/home-MSxH.webp');
-        }
-        &:nth-child(8) {
-            background-image: url('../img/banner/home-YLei.webp');
-        }
+        transition: 0.25s ease;
+        transform: translateX(0vw);
         .banner-item {
             flex: 0 0 100vw;
             color: #fff;
@@ -35,6 +13,30 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+            &:nth-child(1) {
+                background-image: url('../img/banner/home-YLei.webp');
+            }
+            &:nth-child(2) {
+                background-image: url('../img/banner/home-O67Y.webp');
+            }
+            &:nth-child(3) {
+                background-image: url('../img/banner/home-gay8.webp');
+            }
+            &:nth-child(4) {
+                background-image: url('../img/banner/home-6yTp.webp');
+            }
+            &:nth-child(5) {
+                background-image: url('../img/banner/home-J8Xx.webp');
+            }
+            &:nth-child(6) {
+                background-image: url('../img/banner/home-K0pn.webp');
+            }
+            &:nth-child(7) {
+                background-image: url('../img/banner/home-MSxH.webp');
+            }
+            &:nth-child(8) {
+                background-image: url('../img/banner/home-YLei.webp');
+            }
             &::before {
                 content: "";
                 position: absolute;
