@@ -197,56 +197,269 @@ body {
   content: "";
 }
 
-/* line 2, ../../html_css_assessment/website/scss/_sidemenu.scss */
+/* line 4, ../../html_css_assessment/website/scss/_sidemenu.scss */
 #not-side-menu {
   transition: 0.5s ease;
   transform: translateX(0vw);
   overflow-x: hidden;
 }
 
-/* line 7, ../../html_css_assessment/website/scss/_sidemenu.scss */
+/* line 9, ../../html_css_assessment/website/scss/_sidemenu.scss */
 #not-side-menu.menu-open {
   cursor: pointer;
-  transform: translateX(-258px);
+  transform: translateX(-275px);
 }
 
 @media (min-width: 992px) {
-  /* line 7, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  /* line 9, ../../html_css_assessment/website/scss/_sidemenu.scss */
   #not-side-menu.menu-open {
-    transform: translateX(-333px);
+    transform: translateX(-350px);
   }
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_sidemenu.scss */
+/* line 18, ../../html_css_assessment/website/scss/_sidemenu.scss */
 #side-menu {
-  position: absolute;
+  position: fixed;
+  overflow-Y: scroll;
   top: 0;
   right: 0;
   background-color: #333645;
   height: 100vh;
-  width: 258px;
+  width: 275px;
+  color: #fff;
   transition: 0.5s ease;
-  transform: translateX(258px);
+  transform: translateX(275px);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 @media (min-width: 992px) {
-  /* line 16, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  /* line 18, ../../html_css_assessment/website/scss/_sidemenu.scss */
   #side-menu {
-    width: 333px;
+    width: 350px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 16, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  /* line 18, ../../html_css_assessment/website/scss/_sidemenu.scss */
   #side-menu {
-    transform: translateX(333px);
+    transform: translateX(350px);
   }
 }
 
-/* line 31, ../../html_css_assessment/website/scss/_sidemenu.scss */
+/* line 35, ../../html_css_assessment/website/scss/_sidemenu.scss */
 #side-menu.menu-open {
   transform: translateX(0);
-  box-shadow: 0 0 0 100000vw rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 100000vw rgba(0, 0, 0, 0.25);
+}
+
+/* line 40, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  padding-left: 20px;
+}
+
+/* line 49, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* line 53, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu ul li {
+  font-size: 14px;
+  list-style: none;
+}
+
+/* line 56, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu ul li a {
+  padding: 15px 20px;
+}
+
+/* line 60, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu ul li a:not(.side-heading) {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* line 64, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu ul li a.side-heading {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* line 70, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu ul li:hover .side-heading {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* line 77, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .side-dropdown {
+  font-size: 18px;
+}
+
+/* line 78, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .side-dropdown ul {
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* line 81, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .side-dropdown ul li {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+/* line 85, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .side-dropdown ul li a:not(.side-heading) {
+  padding: 10px;
+  line-height: 22.8571px;
+}
+
+/* line 89, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .side-dropdown ul li a.side-heading {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* line 97, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .side-dropdown small {
+  font-size: 10px;
+}
+
+@media (min-width: 992px) {
+  /* line 77, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  #side-menu .side-dropdown {
+    display: none;
+  }
+}
+
+/* line 105, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .side-services {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* line 105, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  #side-menu .side-services {
+    display: block;
+  }
+}
+
+/* line 114, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .arrow-icon {
+  padding-right: 15px;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .arrow-icon::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "»";
+}
+
+/* line 120, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .icon-bespoke {
+  color: #67809f;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .icon-bespoke::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 124, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .icon-IT {
+  color: #4183d7;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .icon-IT::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 128, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .icon-marketing {
+  color: #2ecc71;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .icon-marketing::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 132, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .icon-telecoms {
+  color: #d64541;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .icon-telecoms::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 136, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .icon-web {
+  color: #926fb1;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .icon-web::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 140, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .icon-security {
+  color: #f62459;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .icon-security::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
+/* line 144, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu .icon-training {
+  color: #ce4125;
+}
+
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#side-menu .icon-training::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
 }
 
 /* line 1, ../../html_css_assessment/website/scss/_header.scss */

@@ -1,3 +1,5 @@
+$side-width-small: 275px;
+$side-width-large: 350px;
 
 #not-side-menu {
     transition: 0.5s ease;
@@ -6,30 +8,141 @@
 
     &.menu-open {
         cursor: pointer;
-        transform: translateX(-258px);
+        transform: translateX(-$side-width-small);
         @include mq('medium') {
-            transform: translateX(-333px);
+            transform: translateX(-$side-width-large);
         }
     }
 }
 
 #side-menu {
-    position: absolute;
+    position: fixed;
+    overflow-Y: scroll;
     top: 0;
     right: 0;
     background-color: $color-background;
     height: 100vh;
-    width: 258px;
+    width: $side-width-small;
+    color: #fff;
     @include mq('medium') {
-        width: 333px;
+        width: $side-width-large;
     }
     transition: 0.5s ease;
-    transform: translateX(258px);
+    transform: translateX($side-width-small);
     @include mq('medium') {
-        transform: translateX(333px);
+        transform: translateX($side-width-large);
     }
     &.menu-open {
         transform: translateX(0);
-        box-shadow: 0 0 0 100000vw rgba(#000, 0.5);
+        box-shadow: 0 0 0 100000vw rgba(#000, 0.25);
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        padding-left: 20px;
+    }
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+            font-size: 14px;
+            list-style: none;
+            a {
+                padding: 15px 20px;
+            }
+            a {
+                &:not(.side-heading) {
+                    background-color: rgba(#000, 0.25);
+                    border-top: 1px solid rgba(#fff, 0.05);
+                }
+                &.side-heading {
+                    border: 1px solid rgba(#fff, 0.1);
+                    outline: 1px solid rgba(#000, 0.25);
+                }
+            }
+            &:hover {
+                .side-heading {
+                    background-color: rgba(#fff, 0.05);
+                }
+            }
+        }
+    }
+
+    .side-dropdown {
+        ul {
+            padding: 0 20px;
+            text-align: center;
+            li {
+                font-size: 16px;
+                margin: 20px 0;
+                a {
+                    &:not(.side-heading) {
+                        padding: 10px;
+                        line-height: 22.8571px;
+                    }
+                    &.side-heading {
+                        margin: 20px 0;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        font-size: 18px;
+        small {
+            font-size: 10px;
+        }
+        @include mq(medium) {
+            display: none;
+        }
+    }
+
+    .side-services {
+        display: none;
+        @include mq(medium) {
+            display: block;
+        }
+    }
+
+
+
+    .arrow-icon {
+        @include icon("\BB");
+        padding-right: 15px;
+    }
+
+    
+    .icon-bespoke {
+        color: $color-grey;
+        @include icon("\E918");
+    }
+    .icon-IT {
+        color: $color-blue;
+        @include icon("\E905");
+    }
+    .icon-marketing {
+        color: $color-green;
+        @include icon("\E904");
+    }
+    .icon-telecoms {
+        color: $color-red;
+        @include icon("\E902");
+    }
+    .icon-web {
+        color: $color-purple;
+        @include icon("\E908");
+    }
+    .icon-security {
+        color: $color-pink;
+        @include icon("\E900");
+    }
+    .icon-training {
+        color: $color-orange;
+        @include icon("\E8DE");
     }
 }
