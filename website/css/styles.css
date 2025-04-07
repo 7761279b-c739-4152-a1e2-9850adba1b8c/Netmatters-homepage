@@ -4,15 +4,14 @@
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
-  overflow-x: hidden;
 }
 
-/* line 9, ../../html_css_assessment/website/scss/_layout.scss */
+/* line 8, ../../html_css_assessment/website/scss/_layout.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 13, ../../html_css_assessment/website/scss/_layout.scss */
+/* line 12, ../../html_css_assessment/website/scss/_layout.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -21,27 +20,27 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 13, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 12, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 13, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 12, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 13, ../../html_css_assessment/website/scss/_layout.scss */
+  /* line 12, ../../html_css_assessment/website/scss/_layout.scss */
   .container {
     width: 1200px;
   }
 }
 
-/* line 33, ../../html_css_assessment/website/scss/_layout.scss */
+/* line 32, ../../html_css_assessment/website/scss/_layout.scss */
 .clearfix {
   clear: both;
 }
@@ -198,6 +197,58 @@ body {
   content: "";
 }
 
+/* line 2, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#not-side-menu {
+  transition: 0.5s ease;
+  transform: translateX(0vw);
+  overflow-x: hidden;
+}
+
+/* line 7, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#not-side-menu.menu-open {
+  cursor: pointer;
+  transform: translateX(-258px);
+}
+
+@media (min-width: 992px) {
+  /* line 7, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  #not-side-menu.menu-open {
+    transform: translateX(-333px);
+  }
+}
+
+/* line 16, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333645;
+  height: 100vh;
+  width: 258px;
+  transition: 0.5s ease;
+  transform: translateX(258px);
+}
+
+@media (min-width: 992px) {
+  /* line 16, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  #side-menu {
+    width: 333px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 16, ../../html_css_assessment/website/scss/_sidemenu.scss */
+  #side-menu {
+    transform: translateX(333px);
+  }
+}
+
+/* line 31, ../../html_css_assessment/website/scss/_sidemenu.scss */
+#side-menu.menu-open {
+  transform: translateX(0);
+  box-shadow: 0 0 0 100000vw rgba(0, 0, 0, 0.5);
+}
+
 /* line 1, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form #submit-search, header .header-row .btn-search {
   color: #fff;
@@ -316,7 +367,7 @@ header .header-row .icon-phone::before {
 }
 
 /* line 74, ../../html_css_assessment/website/scss/_header.scss */
-header .header-row .hamburger-box {
+header .header-row #hamburger-box {
   flex-basis: 63px;
   flex-grow: 0;
   flex-shrink: 0;
@@ -336,12 +387,12 @@ header .header-row .hamburger-box {
 }
 
 /* line 85, ../../html_css_assessment/website/scss/_header.scss */
-header .header-row .hamburger-box:hover {
+header .header-row #hamburger-box:hover {
   background-color: #22242e;
 }
 
 /* line 94, ../../html_css_assessment/website/scss/_header.scss */
-header .header-row .hamburger-box div {
+header .header-row #hamburger-box div {
   background-color: #fff;
   width: 30px;
   height: 4px;

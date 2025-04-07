@@ -3,7 +3,6 @@ const buttonsList = document.getElementsByClassName('banner-circle');
 let currentSlide = 0;
 
 function setSlide(num) {
-    console.log(buttonsList[currentSlide % 7].classList);
     buttonsList[currentSlide % 7].classList.remove('selected');
     currentSlide = num;
     slideList.style.transform = `translateX(-${100 * currentSlide}vw)`;
