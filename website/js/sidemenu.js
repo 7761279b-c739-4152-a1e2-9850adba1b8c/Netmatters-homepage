@@ -7,12 +7,14 @@ function open() {
     notSideMenu.classList.add('menu-open');
     sideMenu.classList.add('menu-open');
     menuOpen = true;
+    openAnimation();
 }
 
 function close() {
     notSideMenu.classList.remove('menu-open');
     sideMenu.classList.remove('menu-open');
     menuOpen = false;
+    closeAnimation();
 }
 
 menuButton.addEventListener('click', (event) => {
@@ -31,3 +33,30 @@ notSideMenu.addEventListener('click', (event) => {
         event.stopPropagation();
     }
 })
+
+function menuTransition(time) {
+    for (let div of menuButton.children) {
+        div.style.transition = `all ${time}s ease`;
+    }
+}
+async function openAnimation() {
+    menuTransition(0.125);
+    menuButton.classList.add('open1');
+    setTimeout(() => {
+        menuTransition(0.25);
+        menuButton.classList.remove('open1');
+        menuButton.classList.add('open2');
+    }, 125);
+}
+
+async function closeAnimation() {
+    menuTransition(0.25);
+    if (menuButton.classList.contains('open2')) {
+        menuButton.classList.remove('open2');
+    }
+    menuButton.classList.add('open1');
+    setTimeout(() => {
+        menuTransition(0.125);
+        menuButton.classList.remove('open1');
+    }, 250);
+}

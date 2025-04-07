@@ -611,19 +611,44 @@ header .header-row #hamburger-box div {
   height: 4px;
 }
 
-/* line 101, ../../html_css_assessment/website/scss/_header.scss */
+/* line 100, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row #hamburger-box.open1 div:first-child {
+  transform: translateY(10px);
+}
+
+/* line 103, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row #hamburger-box.open1 div:last-child {
+  transform: translateY(-10px);
+}
+
+/* line 108, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row #hamburger-box.open2 div:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+/* line 112, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row #hamburger-box.open2 div:first-child {
+  transform: translateY(10px) rotate(135deg);
+}
+
+/* line 115, ../../html_css_assessment/website/scss/_header.scss */
+header .header-row #hamburger-box.open2 div:last-child {
+  transform: translateY(-10px) rotate(225deg);
+}
+
+/* line 121, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form {
   display: none;
   flex-direction: row;
   margin: 8px 20px 0 0;
 }
 
-/* line 103, ../../html_css_assessment/website/scss/_header.scss */
+/* line 123, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form label {
   display: none;
 }
 
-/* line 109, ../../html_css_assessment/website/scss/_header.scss */
+/* line 129, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form input {
   font-family: inherit;
   width: 174px;
@@ -633,44 +658,44 @@ header .header-row form input {
   border: 1px solid #e5e5e5;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_header.scss */
+/* line 137, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form input:focus {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 123, ../../html_css_assessment/website/scss/_header.scss */
+/* line 143, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row form #submit-search {
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  /* line 101, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 121, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 101, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 121, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 101, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 121, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form {
     display: flex;
   }
-  /* line 136, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 156, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row form input {
     width: 240px;
   }
 }
 
-/* line 141, ../../html_css_assessment/website/scss/_header.scss */
+/* line 161, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-search {
   margin: 8px 20px 0 0;
   padding: 15px;
@@ -682,20 +707,20 @@ header .header-row .btn-search {
 }
 
 @media (min-width: 992px) {
-  /* line 141, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 161, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: inline-block;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 141, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 161, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-search {
     display: none;
   }
 }
 
-/* line 159, ../../html_css_assessment/website/scss/_header.scss */
+/* line 179, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-support {
   background-color: #4183d7;
   margin: 8px 20px 0 0;
@@ -720,13 +745,13 @@ header .header-row .btn-support::before {
 }
 
 @media (min-width: 992px) {
-  /* line 159, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 179, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-support {
     display: inline-block;
   }
 }
 
-/* line 173, ../../html_css_assessment/website/scss/_header.scss */
+/* line 193, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-contact {
   background-color: #999aa2;
   margin: 8px 20px 0 0;
@@ -751,24 +776,24 @@ header .header-row .btn-contact::before {
 }
 
 @media (min-width: 992px) {
-  /* line 173, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 193, ../../html_css_assessment/website/scss/_header.scss */
   header .header-row .btn-contact {
     display: inline-block;
   }
 }
 
-/* line 188, ../../html_css_assessment/website/scss/_header.scss */
+/* line 208, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile {
   position: relative;
   margin-top: 8px;
 }
 
-/* line 191, ../../html_css_assessment/website/scss/_header.scss */
+/* line 211, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile label {
   display: none;
 }
 
-/* line 195, ../../html_css_assessment/website/scss/_header.scss */
+/* line 215, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input {
   font-family: inherit;
   width: 100%;
@@ -780,12 +805,12 @@ header form.search-mobile input {
   border-radius: 2px;
 }
 
-/* line 206, ../../html_css_assessment/website/scss/_header.scss */
+/* line 226, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input:active, header form.search-mobile input:focus {
   box-shadow: 0 0 3px #fff;
 }
 
-/* line 210, ../../html_css_assessment/website/scss/_header.scss */
+/* line 230, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .icon-search {
   color: #333645;
 }
@@ -799,7 +824,7 @@ header form.search-mobile .icon-search::before {
   content: "";
 }
 
-/* line 214, ../../html_css_assessment/website/scss/_header.scss */
+/* line 234, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .search-bar-mobile-icon {
   position: absolute;
   cursor: pointer;
@@ -809,7 +834,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 188, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 208, ../../html_css_assessment/website/scss/_header.scss */
   header form.search-mobile {
     display: none;
   }
