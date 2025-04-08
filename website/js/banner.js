@@ -2,6 +2,10 @@ const slideList = document.getElementById('banner-list');
 const buttonsList = document.getElementsByClassName('banner-circle');
 let currentSlide = 0;
 
+// sliding from the last to the first should look the same direction
+// so create a duplicate copy of the first element to slide to before snapping back to the start
+slideList.appendChild(slideList.children[0].cloneNode(true));
+
 function setSlide(num) {
     buttonsList[currentSlide % 7].classList.remove('selected');
     currentSlide = num;
