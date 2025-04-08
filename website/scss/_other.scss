@@ -20,3 +20,16 @@
         border-color: $color-button-grey;
     }
 }
+
+#header {
+    padding-top: 20px;
+    transition: 0.25s ease;
+    background-color: #fff;
+    position: sticky;
+    // top: -225px;
+    top: -700px;
+    z-index: 100;
+    &.sticky {
+        top: 0;
+    }
+}

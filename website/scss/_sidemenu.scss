@@ -4,7 +4,6 @@ $side-width-large: 350px;
 #not-side-menu {
     transition: 0.5s ease;
     transform: translateX(0vw);
-    overflow-x: hidden;
 
     &.menu-open {
         cursor: pointer;
