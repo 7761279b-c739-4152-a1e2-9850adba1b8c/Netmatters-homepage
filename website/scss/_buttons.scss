@@ -31,7 +31,9 @@
 .btn.yellow {
     @include button($color-yellow);
 }
-
+.btn.grey2 {
+    @include button($color-button-grey);
+}
 
 %btn-small {
     @extend %btn;

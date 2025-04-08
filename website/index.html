@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <button type="button" class="manage-consent">Manage Consent</button>
+        <button type="button" id="manage-consent">Manage Consent</button>
         <div id="not-side-menu">
             <div id="header">
                 <header>
@@ -18,7 +18,7 @@
                         <div class="header-row">
                             <a href="#" class="header-img"><img src="img/f-logo.webp" alt="Netmatters" /></a>
                             <a href="#" class="btn-support"><span class="icon-support"></span> Support</a>
-                            <a href="#" class="btn-contact"><span class="icon-contact"></span> Contact</a>
+                            <a href="#" class="btn-contact grey2"><span class="icon-contact"></span> Contact</a>
                             <form class="search">
                                 <label for="search-bar">Search:</label>
                                 <input id="search-bar" placeholder="Search..." name="keyword" type="text" />
@@ -738,8 +738,20 @@
                 </ul></li>
             </ul>
         </div>
+        <div id="cookies">
+            <div class="cookies-popup">
+                <h2>Cookies Policy</h2>
+                <p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "Privacy Policy" otherwise click "Accept Cookies" to enter.</p>
+                <div class="cookies-buttons">
+                    <a href="#" class="btn grey2">Change Settings</a>
+                    <div></div>
+                    <a href="#" class="btn purple" id="accept-cookies">Accept Cookies</a>
+                </div>
+            </div>
+        </div>
         <script src="js/banner.js"></script>
         <script src="js/sidemenu.js"></script>
         <script src="js/stickyheader.js"></script>
+        <script src="js/cookies.js"></script>
     </body>
 </html>

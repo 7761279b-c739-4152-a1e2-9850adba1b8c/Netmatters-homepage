@@ -47,7 +47,7 @@ body {
 }
 
 /* line 2, ../../html_css_assessment/website/scss/_buttons.scss */
-.btn, .btn.grey, .btn.blue, .btn.green, .btn.red, .btn.purple, .btn.pink, .btn.orange, .btn.yellow, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, header .header-row .btn-support, header .header-row .btn-contact, .about .google-reviews, .about .trustpilot-reviews {
+.btn, .btn.grey, .btn.blue, .btn.green, .btn.red, .btn.purple, .btn.pink, .btn.orange, .btn.yellow, .btn.grey2, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, header .header-row .btn-support, .about .google-reviews, .about .trustpilot-reviews {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
@@ -149,7 +149,17 @@ body {
   background-color: #e8a008;
 }
 
-/* line 36, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 34, ../../html_css_assessment/website/scss/_buttons.scss */
+.btn.grey2 {
+  background-color: #999aa2;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+.btn.grey2:hover {
+  background-color: #84858f;
+}
+
+/* line 38, ../../html_css_assessment/website/scss/_buttons.scss */
 .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn {
   font-size: 1.0625rem;
   padding: 6px 15px;
@@ -754,17 +764,11 @@ header .header-row .btn-support::before {
 
 /* line 194, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-contact {
-  background-color: #999aa2;
   margin: 8px 20px 0 0;
   padding: 14px;
   height: 56px;
   border-radius: 3px;
   display: none;
-}
-
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
-header .header-row .btn-contact:hover {
-  background-color: #84858f;
 }
 
 /* line 35, ../../html_css_assessment/website/scss/_icons.scss */
@@ -783,18 +787,18 @@ header .header-row .btn-contact::before {
   }
 }
 
-/* line 209, ../../html_css_assessment/website/scss/_header.scss */
+/* line 208, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile {
   position: relative;
   margin-top: 8px;
 }
 
-/* line 212, ../../html_css_assessment/website/scss/_header.scss */
+/* line 211, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile label {
   display: none;
 }
 
-/* line 216, ../../html_css_assessment/website/scss/_header.scss */
+/* line 215, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input {
   font-family: inherit;
   width: 100%;
@@ -806,12 +810,12 @@ header form.search-mobile input {
   border-radius: 2px;
 }
 
-/* line 227, ../../html_css_assessment/website/scss/_header.scss */
+/* line 226, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input:active, header form.search-mobile input:focus {
   box-shadow: 0 0 3px #fff;
 }
 
-/* line 231, ../../html_css_assessment/website/scss/_header.scss */
+/* line 230, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .icon-search {
   color: #333645;
 }
@@ -825,7 +829,7 @@ header form.search-mobile .icon-search::before {
   content: "";
 }
 
-/* line 235, ../../html_css_assessment/website/scss/_header.scss */
+/* line 234, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .search-bar-mobile-icon {
   position: absolute;
   cursor: pointer;
@@ -835,7 +839,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 209, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 208, ../../html_css_assessment/website/scss/_header.scss */
   header form.search-mobile {
     display: none;
   }
@@ -3437,7 +3441,7 @@ footer .footer-company .footer-social-media a {
 }
 
 /* line 2, ../../html_css_assessment/website/scss/_other.scss */
-.manage-consent {
+#manage-consent {
   display: block;
   color: #fff;
   background-color: #75788a;
@@ -3454,7 +3458,7 @@ footer .footer-company .footer-social-media a {
 }
 
 /* line 18, ../../html_css_assessment/website/scss/_other.scss */
-.manage-consent:hover {
+#manage-consent:hover {
   background-color: #999aa2;
   border-color: #999aa2;
 }
@@ -3472,6 +3476,96 @@ footer .footer-company .footer-social-media a {
 /* line 32, ../../html_css_assessment/website/scss/_other.scss */
 #header.sticky {
   top: 0;
+}
+
+/* line 2, ../../html_css_assessment/website/scss/_cookies.scss */
+#cookies {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  z-index: 200;
+}
+
+/* line 15, ../../html_css_assessment/website/scss/_cookies.scss */
+#cookies .cookies-popup {
+  color: #333645;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 15, ../../html_css_assessment/website/scss/_cookies.scss */
+  #cookies .cookies-popup {
+    max-width: 600px;
+  }
+}
+
+/* line 24, ../../html_css_assessment/website/scss/_cookies.scss */
+#cookies .cookies-popup h2 {
+  margin: 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0.4px;
+}
+
+/* line 32, ../../html_css_assessment/website/scss/_cookies.scss */
+#cookies .cookies-popup p {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  color: #666;
+}
+
+/* line 41, ../../html_css_assessment/website/scss/_cookies.scss */
+#cookies .cookies-popup .cookies-buttons {
+  padding: 19px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+  /* line 41, ../../html_css_assessment/website/scss/_cookies.scss */
+  #cookies .cookies-popup .cookies-buttons {
+    flex-direction: row;
+  }
+}
+
+/* line 50, ../../html_css_assessment/website/scss/_cookies.scss */
+#cookies .cookies-popup .cookies-buttons .btn {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  padding: 10.5px 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 50, ../../html_css_assessment/website/scss/_cookies.scss */
+  #cookies .cookies-popup .cookies-buttons .btn {
+    width: 264px;
+  }
+}
+
+/* line 60, ../../html_css_assessment/website/scss/_cookies.scss */
+#cookies .cookies-popup .cookies-buttons div {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
