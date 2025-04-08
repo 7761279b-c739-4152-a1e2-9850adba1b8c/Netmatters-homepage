@@ -192,6 +192,7 @@ header {
         }
 
         .btn-contact {
+            @include button($color-button-grey);
             margin: 8px 20px 0 0;
             padding: 14px;
             height: 56px;

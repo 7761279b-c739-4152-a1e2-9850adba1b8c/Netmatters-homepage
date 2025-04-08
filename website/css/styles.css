@@ -47,7 +47,7 @@ body {
 }
 
 /* line 2, ../../html_css_assessment/website/scss/_buttons.scss */
-.btn, .btn.grey, .btn.blue, .btn.green, .btn.red, .btn.purple, .btn.pink, .btn.orange, .btn.yellow, .btn.grey2, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, header .header-row .btn-support, .about .google-reviews, .about .trustpilot-reviews {
+.btn, .btn.grey, .btn.blue, .btn.green, .btn.red, .btn.purple, .btn.pink, .btn.orange, .btn.yellow, .btn.grey2, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, header .header-row .btn-support, header .header-row .btn-contact, .about .google-reviews, .about .trustpilot-reviews {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
@@ -764,11 +764,17 @@ header .header-row .btn-support::before {
 
 /* line 194, ../../html_css_assessment/website/scss/_header.scss */
 header .header-row .btn-contact {
+  background-color: #999aa2;
   margin: 8px 20px 0 0;
   padding: 14px;
   height: 56px;
   border-radius: 3px;
   display: none;
+}
+
+/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+header .header-row .btn-contact:hover {
+  background-color: #84858f;
 }
 
 /* line 35, ../../html_css_assessment/website/scss/_icons.scss */
@@ -787,18 +793,18 @@ header .header-row .btn-contact::before {
   }
 }
 
-/* line 208, ../../html_css_assessment/website/scss/_header.scss */
+/* line 209, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile {
   position: relative;
   margin-top: 8px;
 }
 
-/* line 211, ../../html_css_assessment/website/scss/_header.scss */
+/* line 212, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile label {
   display: none;
 }
 
-/* line 215, ../../html_css_assessment/website/scss/_header.scss */
+/* line 216, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input {
   font-family: inherit;
   width: 100%;
@@ -810,12 +816,12 @@ header form.search-mobile input {
   border-radius: 2px;
 }
 
-/* line 226, ../../html_css_assessment/website/scss/_header.scss */
+/* line 227, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile input:active, header form.search-mobile input:focus {
   box-shadow: 0 0 3px #fff;
 }
 
-/* line 230, ../../html_css_assessment/website/scss/_header.scss */
+/* line 231, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .icon-search {
   color: #333645;
 }
@@ -829,7 +835,7 @@ header form.search-mobile .icon-search::before {
   content: "";
 }
 
-/* line 234, ../../html_css_assessment/website/scss/_header.scss */
+/* line 235, ../../html_css_assessment/website/scss/_header.scss */
 header form.search-mobile .search-bar-mobile-icon {
   position: absolute;
   cursor: pointer;
@@ -839,7 +845,7 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 768px) {
-  /* line 208, ../../html_css_assessment/website/scss/_header.scss */
+  /* line 209, ../../html_css_assessment/website/scss/_header.scss */
   header form.search-mobile {
     display: none;
   }
@@ -3485,8 +3491,8 @@ footer .footer-company .footer-social-media a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
