@@ -14,7 +14,7 @@ function setSlide(num) {
 }
 
 function slideTo(num) {
-    const slideTime = 0.3 * Math.abs(currentSlide - num)
+    const slideTime = 0.3 * Math.abs(currentSlide - num);
     slideList.style.transition = `${slideTime}s ease`;
     setSlide(num);
     checkWrap(slideTime * 1000);
