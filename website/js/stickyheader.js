@@ -13,15 +13,15 @@ window.addEventListener('scrollend', (event) => {
 window.addEventListener('scroll', () => {
     scrollDirection = lastScrollY < window.scrollY;
     lastScrollY = window.scrollY;
+    if (lastScrollY == 0) {
+        scrollDirection = true;
+        scrollDown();
+    }
 });
 
 function scrollUp() {
-    if (window.scrollY > 0) {
-        if (!headerElement.classList.contains('sticky')) {
-            headerElement.classList.add('sticky');
-        }
-    } else {
-        scrollDown();
+    if (!headerElement.classList.contains('sticky')) {
+        headerElement.classList.add('sticky');
     }
 }
 
