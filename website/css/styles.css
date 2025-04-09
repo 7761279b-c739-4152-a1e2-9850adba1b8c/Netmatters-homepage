@@ -3484,11 +3484,18 @@ footer .footer-company .footer-social-media a {
   transition: 0.25s ease;
   background-color: #fff;
   position: sticky;
-  top: -700px;
+  top: -110px;
   z-index: 100;
 }
 
-/* line 32, ../../html_css_assessment/website/scss/_other.scss */
+@media (min-width: 992px) {
+  /* line 24, ../../html_css_assessment/website/scss/_other.scss */
+  #header {
+    top: -225px;
+  }
+}
+
+/* line 36, ../../html_css_assessment/website/scss/_other.scss */
 #header.sticky {
   top: 0;
 }

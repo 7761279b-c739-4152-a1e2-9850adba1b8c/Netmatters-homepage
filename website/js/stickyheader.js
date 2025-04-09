@@ -1,14 +1,19 @@
 const headerElement = document.getElementById('header')
 let lastScrollY = window.scrollY;
+let scrollDirection = true;
 
-window.addEventListener('scroll', (event) => {
-    if (window.scrollY > lastScrollY) {
+window.addEventListener('scrollend', (event) => {
+    if (scrollDirection) {
         scrollDown();
-    } else if (window.scrollY < lastScrollY) {
+    } else {
         scrollUp();
     }
-    lastScrollY = window.scrollY
 })
+
+window.addEventListener('scroll', () => {
+    scrollDirection = lastScrollY < window.scrollY;
+    lastScrollY = window.scrollY;
+});
 
 function scrollUp() {
     if (window.scrollY > 0) {
@@ -25,5 +30,3 @@ function scrollDown() {
         headerElement.classList.remove('sticky');
     }
 }
-
-headerElement.classList.add('sticky');

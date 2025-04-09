@@ -22,12 +22,16 @@
 }
 
 #header {
+    // styles for both the header and dropdown, for when they appear from scrolling
     padding-top: 20px;
     transition: 0.25s ease;
     background-color: #fff;
     position: sticky;
-    // top: -225px;
-    top: -700px;
+    top: -110px;
+    @include mq(medium) {
+        top: -225px;
+    }
+    // top: -700px;
     z-index: 100;
     &.sticky {
         top: 0;
