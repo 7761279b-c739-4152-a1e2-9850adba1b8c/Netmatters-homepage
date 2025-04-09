@@ -15,13 +15,13 @@ async function createSlide(element, initialDelay) {
     }
     async function checkWrap(delay = 0) {
         // if we're on repeat slides, disable transition and move to slide 0
-        if (currentSlide < numPositions) {return;}
+        if (currentSlide < numPositions + 1) {return;}
         // check if we need to wait for an animation to finish
         if (delay > 0) {
             await new Promise(resolve => setTimeout(resolve, delay));
         }
         slideList.style.transition = "none";
-        setSlide(currentSlide % numPositions);
+        setSlide(((currentSlide - 1) % numPositions) + 1);
     }
     function autoSlide() {
         slideList.style.transition = '0.25s ease';
@@ -29,8 +29,9 @@ async function createSlide(element, initialDelay) {
         setTimeout(autoSlide, 3000);
     }
     slideList.style.transform = 'translateX(20px)';
+    currentSlide -= 1;
     setTimeout(autoSlide, initialDelay);
 }
 
-createSlide('partners', 3000);
-createSlide('cases', 2500);
+createSlide('partners', 500);
+createSlide('cases', 0);
