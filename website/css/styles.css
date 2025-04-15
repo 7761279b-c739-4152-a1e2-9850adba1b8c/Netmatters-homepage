@@ -1840,7 +1840,37 @@ header form.search-mobile .search-bar-mobile-icon {
   margin: auto;
 }
 
-/* line 87, ../../html_css_assessment/website/scss/_banner.scss */
+@media (min-width: 992px) {
+  /* line 9, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner #banner-list .banner-item {
+    text-align: left;
+    height: 577px;
+  }
+  /* line 88, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner #banner-list .banner-item h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    width: 940px;
+  }
+  /* line 93, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner #banner-list .banner-item p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 9, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner #banner-list .banner-item {
+    height: 550px;
+  }
+  /* line 100, ../../html_css_assessment/website/scss/_banner.scss */
+  .banner #banner-list .banner-item h1 {
+    width: 1170px;
+  }
+}
+
+/* line 107, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector {
   text-align: center;
   display: block;
@@ -1852,7 +1882,7 @@ header form.search-mobile .search-bar-mobile-icon {
   z-index: 10;
 }
 
-/* line 96, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 116, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1863,13 +1893,13 @@ header form.search-mobile .search-bar-mobile-icon {
   cursor: pointer;
 }
 
-/* line 104, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 124, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected {
   position: relative;
   background-color: #fff;
 }
 
-/* line 107, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 127, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected::after {
   content: "";
   position: absolute;
@@ -1879,36 +1909,6 @@ header form.search-mobile .search-bar-mobile-icon {
   height: 19px;
   border-radius: 50%;
   border: 2px solid #fff;
-}
-
-@media (min-width: 992px) {
-  /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
-  .banner {
-    text-align: left;
-    height: 577px;
-  }
-  /* line 124, ../../html_css_assessment/website/scss/_banner.scss */
-  .banner h1 {
-    font-size: 4rem;
-    line-height: 5rem;
-    width: 940px;
-  }
-  /* line 129, ../../html_css_assessment/website/scss/_banner.scss */
-  .banner p {
-    font-size: 1.625rem;
-    line-height: 2.5rem;
-  }
-}
-
-@media (min-width: 1260px) {
-  /* line 1, ../../html_css_assessment/website/scss/_banner.scss */
-  .banner {
-    height: 550px;
-  }
-  /* line 136, ../../html_css_assessment/website/scss/_banner.scss */
-  .banner h1 {
-    width: 1170px;
-  }
 }
 
 /* line 71, ../../html_css_assessment/website/scss/_services.scss */
