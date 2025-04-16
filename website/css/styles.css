@@ -1740,6 +1740,7 @@ header form.search-mobile .search-bar-mobile-icon {
 
 /* line 9, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item {
+  user-select: none;
   flex: 0 0 100vw;
   color: #fff;
   background-position: center;
@@ -1749,47 +1750,47 @@ header form.search-mobile .search-bar-mobile-icon {
   text-align: center;
 }
 
-/* line 16, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 18, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(1) {
   background-image: url("../img/banner/home-YLei.webp");
 }
 
-/* line 19, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 21, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(2) {
   background-image: url("../img/banner/home-O67Y.webp");
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 24, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(3) {
   background-image: url("../img/banner/home-gay8.webp");
 }
 
-/* line 25, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 27, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(4) {
   background-image: url("../img/banner/home-6yTp.webp");
 }
 
-/* line 28, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 30, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(5) {
   background-image: url("../img/banner/home-J8Xx.webp");
 }
 
-/* line 31, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 33, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(6) {
   background-image: url("../img/banner/home-K0pn.webp");
 }
 
-/* line 34, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 36, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(7) {
   background-image: url("../img/banner/home-MSxH.webp");
 }
 
-/* line 37, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 39, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item:nth-child(8) {
   background-image: url("../img/banner/home-YLei.webp");
 }
 
-/* line 40, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 42, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item::before {
   content: "";
   position: absolute;
@@ -1802,13 +1803,13 @@ header form.search-mobile .search-bar-mobile-icon {
 }
 
 @media (min-width: 992px) {
-  /* line 40, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 42, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item::before {
     background: linear-gradient(270deg, transparent 25%, #000);
   }
 }
 
-/* line 54, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 56, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item .container {
   display: flex;
   flex-direction: column;
@@ -1819,7 +1820,7 @@ header form.search-mobile .search-bar-mobile-icon {
   padding-right: 30px;
 }
 
-/* line 66, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 68, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item h1 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -1828,7 +1829,7 @@ header form.search-mobile .search-bar-mobile-icon {
   font-weight: 600;
 }
 
-/* line 74, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 76, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item p {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1836,7 +1837,7 @@ header form.search-mobile .search-bar-mobile-icon {
   margin-bottom: calc(0.325rem + 31px);
 }
 
-/* line 81, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 83, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item .banner-overlay {
   margin: auto;
   padding: 60px 0;
@@ -1848,13 +1849,13 @@ header form.search-mobile .search-bar-mobile-icon {
     text-align: left;
     height: 577px;
   }
-  /* line 89, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 91, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     font-size: 4rem;
     line-height: 5rem;
     width: 940px;
   }
-  /* line 94, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 96, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item p {
     font-size: 1.625rem;
     line-height: 2.5rem;
@@ -1866,13 +1867,13 @@ header form.search-mobile .search-bar-mobile-icon {
   .banner #banner-list .banner-item {
     height: 550px;
   }
-  /* line 101, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 103, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     width: 1170px;
   }
 }
 
-/* line 108, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 110, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector {
   text-align: center;
   display: block;
@@ -1884,7 +1885,7 @@ header form.search-mobile .search-bar-mobile-icon {
   z-index: 10;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 119, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1895,13 +1896,13 @@ header form.search-mobile .search-bar-mobile-icon {
   cursor: pointer;
 }
 
-/* line 125, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 127, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected {
   position: relative;
   background-color: #fff;
 }
 
-/* line 128, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 130, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected::after {
   content: "";
   position: absolute;
