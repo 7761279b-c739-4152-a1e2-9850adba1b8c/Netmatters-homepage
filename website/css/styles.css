@@ -57,109 +57,110 @@ body {
   border-radius: 5px;
   padding: 12.5px 32px;
   margin: 0 8px 20px 0;
+  text-wrap: nowrap;
 }
 
-/* line 22, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 23, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn {
   background-color: #272936;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn:hover {
   background-color: #16171e;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 28, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.grey {
   background-color: #67809f;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.grey:hover {
   background-color: #566c88;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 28, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.blue {
   background-color: #4183d7;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.blue:hover {
   background-color: #2a6ec6;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 28, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.green {
   background-color: #2ecc71;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.green:hover {
   background-color: #26ab5f;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 28, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.red {
   background-color: #d64541;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.red:hover {
   background-color: #c42e2a;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 28, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.purple {
   background-color: #926fb1;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.purple:hover {
   background-color: #7e57a0;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 28, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.pink {
   background-color: #f62459;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.pink:hover {
   background-color: #e80a42;
 }
 
-/* line 27, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 28, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.orange {
   background-color: #ce4125;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.orange:hover {
   background-color: #ab361f;
 }
 
-/* line 31, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 32, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.yellow {
   background-color: #f7b322;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.yellow:hover {
   background-color: #e8a008;
 }
 
-/* line 34, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 35, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.grey2 {
   background-color: #999aa2;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .btn.grey2:hover {
   background-color: #84858f;
 }
 
-/* line 38, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 39, ../../html_css_assessment/website/scss/_buttons.scss */
 .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn {
   font-size: 1.0625rem;
   padding: 6px 15px;
@@ -741,7 +742,7 @@ header .header-row .btn-support {
   display: none;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 header .header-row .btn-support:hover {
   background-color: #2a6ec6;
 }
@@ -772,7 +773,7 @@ header .header-row .btn-contact {
   display: none;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 header .header-row .btn-contact:hover {
   background-color: #84858f;
 }
@@ -1732,9 +1733,9 @@ header form.search-mobile .search-bar-mobile-icon {
 .banner #banner-list {
   display: flex;
   flex-direction: row;
-  height: 550px;
   transition: 0.25s ease;
   transform: translateX(0vw);
+  max-height: 1000px;
 }
 
 /* line 9, ../../html_css_assessment/website/scss/_banner.scss */
@@ -1811,7 +1812,7 @@ header form.search-mobile .search-bar-mobile-icon {
 .banner #banner-list .banner-item .container {
   display: flex;
   flex-direction: column;
-  height: 550px;
+  min-height: 550px;
   z-index: 5;
   position: relative;
   padding-left: 30px;
@@ -1838,6 +1839,7 @@ header form.search-mobile .search-bar-mobile-icon {
 /* line 81, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item .banner-overlay {
   margin: auto;
+  padding: 60px 0;
 }
 
 @media (min-width: 992px) {
@@ -1846,13 +1848,13 @@ header form.search-mobile .search-bar-mobile-icon {
     text-align: left;
     height: 577px;
   }
-  /* line 88, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 89, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     font-size: 4rem;
     line-height: 5rem;
     width: 940px;
   }
-  /* line 93, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 94, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item p {
     font-size: 1.625rem;
     line-height: 2.5rem;
@@ -1864,25 +1866,25 @@ header form.search-mobile .search-bar-mobile-icon {
   .banner #banner-list .banner-item {
     height: 550px;
   }
-  /* line 100, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 101, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     width: 1170px;
   }
 }
 
-/* line 107, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 108, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector {
   text-align: center;
   display: block;
   position: absolute;
-  bottom: 44px;
+  bottom: 40px;
   left: 0;
   margin: 0 0 8px;
   width: 100%;
   z-index: 10;
 }
 
-/* line 116, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 117, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1893,13 +1895,13 @@ header form.search-mobile .search-bar-mobile-icon {
   cursor: pointer;
 }
 
-/* line 124, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 125, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected {
   position: relative;
   background-color: #fff;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 128, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected::after {
   content: "";
   position: absolute;
@@ -3124,7 +3126,7 @@ header form.search-mobile .search-bar-mobile-icon {
   background-color: #4387f6;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .about .google-reviews:hover {
   background-color: #1c6ef4;
 }
@@ -3135,7 +3137,7 @@ header form.search-mobile .search-bar-mobile-icon {
   margin-right: 0;
 }
 
-/* line 17, ../../html_css_assessment/website/scss/_buttons.scss */
+/* line 18, ../../html_css_assessment/website/scss/_buttons.scss */
 .about .trustpilot-reviews:hover {
   background-color: #008d5f;
 }

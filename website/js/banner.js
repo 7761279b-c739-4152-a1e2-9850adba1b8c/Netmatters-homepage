@@ -11,6 +11,11 @@ function setSlide(num) {
     currentSlide = num;
     slideList.style.transform = `translateX(-${100 * currentSlide}vw)`;
     buttonsList[currentSlide % 7].classList.add('selected');
+    if (currentSlide == 0) {
+        slideList.style.maxHeight = "";
+    } else {
+        slideList.style.maxHeight = "550px";
+    }
 }
 
 function slideTo(num) {

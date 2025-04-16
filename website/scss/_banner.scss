@@ -3,9 +3,9 @@
     #banner-list {
         display: flex;
         flex-direction: row;
-        height: 550px;
         transition: 0.25s ease;
         transform: translateX(0vw);
+        max-height: 1000px;
         .banner-item {
             flex: 0 0 100vw;
             color: #fff;
@@ -54,7 +54,7 @@
             .container {
                 display: flex;
                 flex-direction: column;
-                height: 550px;
+                min-height: 550px;
                 z-index: 5;
                 position: relative;
                 padding-left: 30px;
@@ -80,6 +80,7 @@
 
             .banner-overlay {
                 margin: auto;
+                padding: 60px 0;
             }
 
             @include mq('medium') {
@@ -108,7 +109,7 @@
         text-align: center;
         display: block;
         position: absolute;
-        bottom: 44px;
+        bottom: 40px;
         left: 0;
         margin: 0 0 8px;
         width: 100%;
