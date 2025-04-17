@@ -1,11 +1,13 @@
 const menuButton = document.getElementById('hamburger-box');
 const notSideMenu = document.getElementById('not-side-menu');
+const inert = document.getElementById('side-menu-inert');
 const sideMenu = document.getElementById('side-menu');
 let menuOpen = false;
 
 function open() {
     notSideMenu.classList.add('menu-open');
     sideMenu.classList.add('menu-open');
+    inert.setAttribute('inert', '');
     menuOpen = true;
     openAnimation();
 }
@@ -13,6 +15,7 @@ function open() {
 function close() {
     notSideMenu.classList.remove('menu-open');
     sideMenu.classList.remove('menu-open');
+    inert.removeAttribute('inert');
     menuOpen = false;
     closeAnimation();
 }
