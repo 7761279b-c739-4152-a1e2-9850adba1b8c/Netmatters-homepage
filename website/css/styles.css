@@ -1816,11 +1816,9 @@ header form.search-mobile .search-bar-mobile-icon {
   min-height: 550px;
   z-index: 5;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
-/* line 68, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 66, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item h1 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -1829,7 +1827,7 @@ header form.search-mobile .search-bar-mobile-icon {
   font-weight: 600;
 }
 
-/* line 76, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 74, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item p {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1837,7 +1835,7 @@ header form.search-mobile .search-bar-mobile-icon {
   margin-bottom: calc(0.325rem + 31px);
 }
 
-/* line 83, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 81, ../../html_css_assessment/website/scss/_banner.scss */
 .banner #banner-list .banner-item .banner-overlay {
   margin: auto;
   padding: 60px 0;
@@ -1849,13 +1847,13 @@ header form.search-mobile .search-bar-mobile-icon {
     text-align: left;
     height: 577px;
   }
-  /* line 91, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 89, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     font-size: 4rem;
     line-height: 5rem;
     width: 940px;
   }
-  /* line 96, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 94, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item p {
     font-size: 1.625rem;
     line-height: 2.5rem;
@@ -1867,13 +1865,13 @@ header form.search-mobile .search-bar-mobile-icon {
   .banner #banner-list .banner-item {
     height: 550px;
   }
-  /* line 103, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 101, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     width: 1170px;
   }
 }
 
-/* line 110, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 108, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector {
   text-align: center;
   display: block;
@@ -1885,7 +1883,7 @@ header form.search-mobile .search-bar-mobile-icon {
   z-index: 10;
 }
 
-/* line 119, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 117, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1896,13 +1894,13 @@ header form.search-mobile .search-bar-mobile-icon {
   cursor: pointer;
 }
 
-/* line 127, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 125, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected {
   position: relative;
   background-color: #fff;
 }
 
-/* line 130, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 128, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected::after {
   content: "";
   position: absolute;
