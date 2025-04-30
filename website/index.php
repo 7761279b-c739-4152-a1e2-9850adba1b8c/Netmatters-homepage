@@ -1,7 +1,7 @@
 <?php
 $scripts = [];
 
-// require 'php/database.php';
+require 'php/database.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -190,53 +190,7 @@ $scripts = [];
                         <h3 class="news-view top"><a href="#">View All <span class="icon-right"></span></a></h3>
                         <div class="clearfix"></div>
 
-                        <div class="news-grid">
-                            <div class="news-item blue">
-                                <a href="#" class="news-tooltip"> News </a>
-                                <a href="#">
-                                    <img src="img/news/february-notables-2025-mda2.webp" alt />
-                                    <div class="news-description">
-                                        <h3>February Notables 2025 - Celebrating Our Team...</h3>
-                                        <p>February Notables 2025 At Netmatters, we take time each month to celebrate the dedication and achiev...</p>
-                                        <p class="news-btn">Read more</p>
-                                        <div class="news-author">
-                                            <img src="img/netmatters-ltd-VXAv.webp" alt="Netmatters" />
-                                            <p><strong>Posted by Netmatters</strong><br>4th March 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="news-item purple">
-                                <a href="#" class="news-tooltip"> Case Studies </a>
-                                <a href="#">
-                                    <img src="img/news/case-study-revamping-qE8y.webp" alt />
-                                    <div class="news-description">
-                                        <h3>Case Study: Revamping Searles Leisure Resort’...</h3>
-                                        <p>Who Is The Client? Searles Leisure Resort, located in the heart of Norfolk, offers a diverse range o...</p>
-                                        <p class="news-btn">Read more</p>
-                                        <div class="news-author">
-                                            <img src="img/netmatters-ltd-VXAv.webp" alt="Netmatters" />
-                                            <p><strong>Posted by Netmatters</strong><br>27th February 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="news-item purple">
-                                <a href="#" class="news-tooltip"> Case Studies </a>
-                                <a href="#">
-                                    <img src="img/news/case-study-website-gFeC.webp" alt />
-                                    <div class="news-description">
-                                        <h3>Case Study: Website Development for Streatham...</h3>
-                                        <p>Client Overview Streatham & Clapham High School is a leading independent school in South London,...</p>
-                                        <p class="news-btn">Read more</p>
-                                        <div class="news-author">
-                                            <img src="img/netmatters-ltd-VXAv.webp" alt="Netmatters" />
-                                            <p><strong>Posted by Netmatters</strong><br>20th February 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php require 'php/news.php'; ?>
 
                         <h3 class="news-view bottom"><a href="#">View All <span class="icon-right"></span></a></h3>
                     </div>
