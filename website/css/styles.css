@@ -209,6 +209,15 @@ body {
   content: "";
 }
 
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+.icon-down::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
+}
+
 /* line 4, ../../html_css_assessment/website/scss/_sidemenu.scss */
 #not-side-menu {
   transition: 0.5s ease;
@@ -3747,6 +3756,48 @@ footer .footer-company .footer-social-media a {
     width: 100%;
     grid-gap: 30px;
   }
+}
+
+/* line 2, ../../html_css_assessment/website/scss/_contact.scss */
+.contact p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.4px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+/* line 11, ../../html_css_assessment/website/scss/_contact.scss */
+.contact p strong {
+  color: #333645;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+/* line 18, ../../html_css_assessment/website/scss/_contact.scss */
+.contact p a {
+  color: #926fb1;
+  font-size: 1.625rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 23, ../../html_css_assessment/website/scss/_contact.scss */
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+/* line 28, ../../html_css_assessment/website/scss/_contact.scss */
+.contact #ooh-button {
+  cursor: pointer;
+}
+
+/* line 31, ../../html_css_assessment/website/scss/_contact.scss */
+.contact #out-of-hours {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: 0.5s ease;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+.contact {
+    p {
+        color: #666;
+        font-size: rems(16px);
+        line-height: rems(30px);
+        letter-spacing: 0.4px;
+
+        margin: 0;
+        margin-bottom: 25px;
+
+        strong {
+            color: $color-background;
+            font-size: inherit;
+            font-weight: 600;
+    
+        }
+
+        a {
+            color: $color-purple;
+            font-size: rems(26px);
+            font-weight: 600;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    #ooh-button {
+        cursor: pointer;
+    }
+    #out-of-hours {
+        max-height: 0;
+        overflow-y: hidden;
+        transition: 0.5s ease;
+    }
+}
