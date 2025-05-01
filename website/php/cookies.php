@@ -1,4 +1,5 @@
 
+<button type="button" id="manage-consent">Manage Consent</button>
 <div id="cookies">
     <div class="cookies-popup">
         <h2>Cookies Policy</h2>
@@ -9,5 +10,5 @@
             <a href="#" class="btn purple" id="accept-cookies">Accept Cookies</a>
         </div>
     </div>
-    <?php  $scripts[] = "js/cookies.js" ?>
+    <?php  $scripts[] = "cookies" ?>
 </div>

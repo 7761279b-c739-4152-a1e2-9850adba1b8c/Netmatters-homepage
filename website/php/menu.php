@@ -3,7 +3,7 @@
     <div class="side-dropdown">
         <ul>
             <li>
-                <a href="#" class="side-heading">Contact Us</a>
+                <a href="contact-us.php" class="side-heading">Contact Us</a>
             </li>
             <li>
                 <a href="#" class="side-heading"><span class="icon-bespoke"></span><br><small>Bespoke</small><br>Software</a>
@@ -118,11 +118,11 @@
             <li><a href="#"><span class="arrow-icon"></span> Our Accreditations</a></li>
         </ul></li>
         <li><ul>
-            <li><a href="#" class="side-heading">Contact Us</a></li>
+            <li><a href="contact-us.php" class="side-heading">Contact Us</a></li>
             <li><a href="#"><span class="arrow-icon"></span> Cambridge Office</a></li>
             <li><a href="#"><span class="arrow-icon"></span> Wymondham Office</a></li>
             <li><a href="#"><span class="arrow-icon"></span> Great Yarmouth Office</a></li>
         </ul></li>
     </ul>
-    <?php  $scripts[] = "js/sidemenu.js" ?>
+    <?php  $scripts[] = "sidemenu" ?>
 </div>

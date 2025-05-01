@@ -3,9 +3,9 @@
     <header>
         <div class="container">
             <div class="header-row">
-                <a href="#" class="header-img"><img src="img/f-logo.webp" alt="Netmatters" /></a>
+                <a href="." class="header-img"><img src="img/f-logo.webp" alt="Netmatters" /></a>
                 <a href="#" class="btn-support"><span class="icon-support"></span> Support</a>
-                <a href="#" class="btn-contact grey2"><span class="icon-contact"></span> Contact</a>
+                <a href="contact-us.php" class="btn-contact grey2"><span class="icon-contact"></span> Contact</a>
                 <form class="search">
                     <label for="search-bar">Search:</label>
                     <input id="search-bar" placeholder="Search..." name="keyword" type="text" />
@@ -166,5 +166,5 @@
             </div>
         </div>
     </div>
-    <?php  $scripts[] = "js/stickyheader.js" ?>
+    <?php  $scripts[] = "stickyheader" ?>
 </div>
