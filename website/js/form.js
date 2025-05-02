@@ -51,7 +51,7 @@ email.addEventListener('focusout', () => validEmail());
 
 function validPhone(keepValid = false) {
     if (phone.value == '') {
-        // seems official netmatters' site doesn't use phone regex?
+        // phone regex is only done serverside
         if (!keepValid) {
             phone.className = 'invalid';
         }
@@ -94,9 +94,9 @@ function checkAllValid() {
     return (!validName() + !validCompany() + !validEmail() + !validPhone() + !validMessage() == 0);
 }
 document.getElementById('contact-form').addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (checkAllValid()) {
-
-        // send to backend
+    if (!checkAllValid()) {
+        event.preventDefault();
+        return;
     }
+    // send to backend (through form action url)
 });

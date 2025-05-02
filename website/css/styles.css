@@ -3987,4 +3987,36 @@ footer .footer-company .footer-social-media a {
   color: #a94442;
 }
 
+/* line 129, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .form-error {
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  color: #d64541;
+  font-size: 1rem;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 141, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .form-error p {
+  margin: 0;
+}
+
+/* line 145, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .form-error button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  height: fit-content;
+  padding: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

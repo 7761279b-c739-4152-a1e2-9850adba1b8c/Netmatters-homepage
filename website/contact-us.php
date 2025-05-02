@@ -1,4 +1,10 @@
 <?php
+
+$form_errors = [];
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    include 'php/form-submit.php';
+}
+
 $scripts = ['ooh', 'form'];
 $title = "Contact Us | Netmatters";
 
@@ -73,7 +79,13 @@ $title = "Contact Us | Netmatters";
                     </div>
                 </div>
 
-                <form id="contact-form" action="POST" novalidate>
+                <form id="contact-form" method="POST" action="#contact-form" novalidate>
+                    <?php foreach($form_errors as $error): ?>
+                        <div class="form-error">
+                            <p><?= $error ?></p>
+                            <button type="button" class="close">&times;</button>
+                        </div>
+                    <?php endforeach; ?>
                     <div class="form-grid">
                         <div class="input-wrapper">
                             <label for="name" class="required">Your Name</label>
