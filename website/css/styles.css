@@ -3870,14 +3870,27 @@ footer .footer-company .footer-social-media a {
   outline: 0;
   max-width: 100%;
   height: 47px;
+  transition: border-color 0.156275s ease-in-out 0ms, box-shadow 0s ease-in-out;
 }
 
-/* line 42, ../../html_css_assessment/website/scss/_form.scss */
+/* line 43, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form input:focus, #contact-form textarea:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+/* line 48, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form input.invalid, #contact-form textarea.invalid {
+  border-color: #d64541;
+}
+
+/* line 52, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form textarea {
   height: 100px;
 }
 
-/* line 46, ../../html_css_assessment/website/scss/_form.scss */
+/* line 56, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form #checkbox-wrapper {
   display: flex;
   flex-direction: row;
@@ -3886,12 +3899,12 @@ footer .footer-company .footer-social-media a {
   margin-bottom: 15px;
 }
 
-/* line 53, ../../html_css_assessment/website/scss/_form.scss */
+/* line 63, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form #checkbox-wrapper #real-checkbox {
   display: none;
 }
 
-/* line 56, ../../html_css_assessment/website/scss/_form.scss */
+/* line 66, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form #checkbox-wrapper #fake-checkbox {
   width: 32px;
   height: 32px;
@@ -3900,7 +3913,7 @@ footer .footer-company .footer-social-media a {
   border-radius: 3px;
 }
 
-/* line 62, ../../html_css_assessment/website/scss/_form.scss */
+/* line 72, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form #checkbox-wrapper #fake-checkbox.enabled {
   background-color: #333645;
   color: #fff;
@@ -3917,7 +3930,7 @@ footer .footer-company .footer-social-media a {
   content: "";
 }
 
-/* line 71, ../../html_css_assessment/website/scss/_form.scss */
+/* line 81, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form #checkbox-wrapper p {
   color: #333645;
   font-weight: 600;
@@ -3926,14 +3939,14 @@ footer .footer-company .footer-social-media a {
   margin: 0;
 }
 
-/* line 79, ../../html_css_assessment/website/scss/_form.scss */
+/* line 89, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form a {
   color: inherit;
   font-size: inherit;
   text-decoration: underline;
 }
 
-/* line 84, ../../html_css_assessment/website/scss/_form.scss */
+/* line 94, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form .privacy-policy {
   font-size: 11px;
   font-weight: 600;
@@ -3941,7 +3954,7 @@ footer .footer-company .footer-social-media a {
   margin: 0 0 30px;
 }
 
-/* line 91, ../../html_css_assessment/website/scss/_form.scss */
+/* line 101, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form .button-wrapper {
   display: flex;
   flex-direction: row;
@@ -3949,13 +3962,13 @@ footer .footer-company .footer-social-media a {
   align-items: center;
 }
 
-/* line 96, ../../html_css_assessment/website/scss/_form.scss */
+/* line 106, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form .button-wrapper .required-notice {
   color: #333645;
   font-size: 0.85rem;
 }
 
-/* line 100, ../../html_css_assessment/website/scss/_form.scss */
+/* line 110, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form .button-wrapper .form-btn {
   background-color: #333645;
   cursor: pointer;
@@ -3963,12 +3976,12 @@ footer .footer-company .footer-social-media a {
   margin: 0;
 }
 
-/* line 103, ../../html_css_assessment/website/scss/_form.scss */
+/* line 113, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form .button-wrapper .form-btn:hover {
   background-color: #22242e;
 }
 
-/* line 113, ../../html_css_assessment/website/scss/_form.scss */
+/* line 123, ../../html_css_assessment/website/scss/_form.scss */
 #contact-form .required::after {
   content: ' *';
   color: #a94442;

@@ -38,6 +38,16 @@
         outline: 0;
         max-width: 100%;
         height: 47px;
+        transition: border-color 0.156275s ease-in-out 0ms, box-shadow 0s ease-in-out;
+
+        &:focus {
+            border-color: $color-form-focus;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(#000, 0.075), 0 0 8px rgba($color-form-focus, 0.6);
+        }
+        &.invalid {
+            border-color: $color-red;
+        }
     }
     textarea {
         height: 100px;
