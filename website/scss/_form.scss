@@ -1,5 +1,5 @@
 
-form.contact-us {
+#contact-form {
     background-color: $color-form-background;
     border-radius: 10px;
     padding: 30px;
@@ -53,7 +53,7 @@ form.contact-us {
         #real-checkbox {
             display: none;
         }
-        .fake-checkbox {
+        #fake-checkbox {
             width: 32px;
             height: 32px;
             flex: 32px 0 0;
@@ -62,9 +62,10 @@ form.contact-us {
             &.enabled {
                 background-color: $color-background;
                 color: #fff;
-                &::before {
-                    content: "\E623";
-                }
+                @include icon("\E623");
+                text-align: center;
+                font-size: 22px;
+
             }
         }
         p {

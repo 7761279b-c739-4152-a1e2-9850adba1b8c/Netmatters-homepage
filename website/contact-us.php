@@ -1,5 +1,5 @@
 <?php
-$scripts = ['ooh'];
+$scripts = ['ooh', 'form'];
 $title = "Contact Us | Netmatters";
 
 ?>
@@ -73,7 +73,7 @@ $title = "Contact Us | Netmatters";
                     </div>
                 </div>
 
-                <form class="contact-us" action="POST">
+                <form id="contact-form" action="POST" novalidate>
                     <div class="form-grid">
                         <div class="input-wrapper">
                             <label for="name" class="required">Your Name</label>
@@ -98,7 +98,7 @@ $title = "Contact Us | Netmatters";
                     </div>
                     <div id="checkbox-wrapper">
                         <input name="marketing" type="checkbox" id="real-checkbox" />
-                        <div class="fake-checkbox"><span id="fake-check"></span></div>
+                        <div id="fake-checkbox"></div>
                         <p>Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
                     </div>
                     <p class="privacy-policy">This site is protected by reCAPTCHA and the Google <a href target="_blank">Privacy Policy</a> and <a href target="_blank">Terms of Service</a> apply.</p>

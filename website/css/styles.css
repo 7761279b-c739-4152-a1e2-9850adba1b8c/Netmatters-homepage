@@ -48,7 +48,7 @@ body {
 }
 
 /* line 2, ../../html_css_assessment/website/scss/_buttons.scss */
-.btn, .btn.grey, .btn.blue, .btn.green, .btn.red, .btn.purple, .btn.pink, .btn.orange, .btn.yellow, .btn.grey2, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, form.contact-us .button-wrapper .form-btn, header .header-row .btn-support, header .header-row .btn-contact, .about .google-reviews, .about .trustpilot-reviews, .offices-grid .office-description .offices-btn {
+.btn, .btn.grey, .btn.blue, .btn.green, .btn.red, .btn.purple, .btn.pink, .btn.orange, .btn.yellow, .btn.grey2, .services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, #contact-form .button-wrapper .form-btn, header .header-row .btn-support, header .header-row .btn-contact, .about .google-reviews, .about .trustpilot-reviews, .offices-grid .office-description .offices-btn {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
@@ -162,7 +162,7 @@ body {
 }
 
 /* line 39, ../../html_css_assessment/website/scss/_buttons.scss */
-.services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, form.contact-us .button-wrapper .form-btn {
+.services .service.grey .service-btn, .services .service.blue .service-btn, .services .service.green .service-btn, .services .service.red .service-btn, .services .service.purple .service-btn, .services .service.pink .service-btn, .services .service.orange .service-btn, #contact-form .button-wrapper .form-btn {
   font-size: 1.0625rem;
   padding: 6px 15px;
   border-radius: 3px;
@@ -3823,7 +3823,7 @@ footer .footer-company .footer-social-media a {
 }
 
 /* line 2, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us {
+#contact-form {
   background-color: #e6e7e9;
   border-radius: 10px;
   padding: 30px;
@@ -3833,14 +3833,14 @@ form.contact-us {
 }
 
 /* line 11, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .input-wrapper {
+#contact-form .input-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
 
 /* line 16, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .form-grid {
+#contact-form .form-grid {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 30px;
@@ -3848,19 +3848,19 @@ form.contact-us .form-grid {
 
 @media (min-width: 992px) {
   /* line 16, ../../html_css_assessment/website/scss/_form.scss */
-  form.contact-us .form-grid {
+  #contact-form .form-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 /* line 25, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us label {
+#contact-form label {
   font-weight: 600;
   color: #333645;
 }
 
 /* line 30, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us input, form.contact-us textarea {
+#contact-form input, #contact-form textarea {
   font-size: 0.875rem;
   line-height: 1.43;
   color: #555;
@@ -3873,12 +3873,12 @@ form.contact-us input, form.contact-us textarea {
 }
 
 /* line 42, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us textarea {
+#contact-form textarea {
   height: 100px;
 }
 
 /* line 46, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us #checkbox-wrapper {
+#contact-form #checkbox-wrapper {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -3887,12 +3887,12 @@ form.contact-us #checkbox-wrapper {
 }
 
 /* line 53, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us #checkbox-wrapper #real-checkbox {
+#contact-form #checkbox-wrapper #real-checkbox {
   display: none;
 }
 
 /* line 56, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us #checkbox-wrapper .fake-checkbox {
+#contact-form #checkbox-wrapper #fake-checkbox {
   width: 32px;
   height: 32px;
   flex: 32px 0 0;
@@ -3901,18 +3901,24 @@ form.contact-us #checkbox-wrapper .fake-checkbox {
 }
 
 /* line 62, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us #checkbox-wrapper .fake-checkbox.enabled {
+#contact-form #checkbox-wrapper #fake-checkbox.enabled {
   background-color: #333645;
   color: #fff;
+  text-align: center;
+  font-size: 22px;
 }
 
-/* line 65, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us #checkbox-wrapper .fake-checkbox.enabled::before {
-  content: "\E623";
+/* line 35, ../../html_css_assessment/website/scss/_icons.scss */
+#contact-form #checkbox-wrapper #fake-checkbox.enabled::before {
+  font-family: 'icomoon', 'glyphicons', 'fontawesome', 'material design';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  content: "";
 }
 
-/* line 70, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us #checkbox-wrapper p {
+/* line 71, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form #checkbox-wrapper p {
   color: #333645;
   font-weight: 600;
   line-height: 32px;
@@ -3920,50 +3926,50 @@ form.contact-us #checkbox-wrapper p {
   margin: 0;
 }
 
-/* line 78, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us a {
+/* line 79, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form a {
   color: inherit;
   font-size: inherit;
   text-decoration: underline;
 }
 
-/* line 83, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .privacy-policy {
+/* line 84, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .privacy-policy {
   font-size: 11px;
   font-weight: 600;
   color: #333645;
   margin: 0 0 30px;
 }
 
-/* line 90, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .button-wrapper {
+/* line 91, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .button-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-/* line 95, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .button-wrapper .required-notice {
+/* line 96, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .button-wrapper .required-notice {
   color: #333645;
   font-size: 0.85rem;
 }
 
-/* line 99, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .button-wrapper .form-btn {
+/* line 100, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .button-wrapper .form-btn {
   background-color: #333645;
   cursor: pointer;
   border: 0;
   margin: 0;
 }
 
-/* line 102, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .button-wrapper .form-btn:hover {
+/* line 103, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .button-wrapper .form-btn:hover {
   background-color: #22242e;
 }
 
-/* line 112, ../../html_css_assessment/website/scss/_form.scss */
-form.contact-us .required::after {
+/* line 113, ../../html_css_assessment/website/scss/_form.scss */
+#contact-form .required::after {
   content: ' *';
   color: #a94442;
 }
