@@ -1,0 +1,117 @@
+
+form.contact-us {
+    background-color: $color-form-background;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+    grid-area: form;
+    height: fit-content;
+    
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 30px;
+        @include mq('medium') {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    label {
+        font-weight: 600;
+        color: $color-background;
+    }
+
+    input, textarea {
+        font-size: rems(14px);
+        line-height: 1.43;
+        color: #555;
+
+        padding: 5px 15px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        outline: 0;
+        max-width: 100%;
+        height: 47px;
+    }
+    textarea {
+        height: 100px;
+    }
+
+    #checkbox-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        cursor: pointer;
+        margin-bottom: 15px;
+
+        #real-checkbox {
+            display: none;
+        }
+        .fake-checkbox {
+            width: 32px;
+            height: 32px;
+            flex: 32px 0 0;
+            border: 3px solid $color-background;
+            border-radius: 3px;
+            &.enabled {
+                background-color: $color-background;
+                color: #fff;
+                &::before {
+                    content: "\E623";
+                }
+            }
+        }
+        p {
+            color: $color-background;
+            font-weight: 600;
+            line-height: 32px;
+            flex: 0 1 1;
+            margin: 0;
+        }
+    }
+    a {
+        color: inherit;
+        font-size: inherit;
+        text-decoration: underline;
+    }
+    .privacy-policy {
+        font-size: 11px;
+        font-weight: 600;
+        color: $color-background;
+        margin: 0 0 30px;
+    }
+    
+    .button-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .required-notice {
+            color: $color-background;
+            font-size: rems(13.6px);
+        }
+        .form-btn {
+            @extend %btn-small;
+            background-color: $color-background;
+            &:hover {
+                background-color: darken($color-background, 8%)
+            }
+            cursor: pointer;
+            border: 0;
+            margin: 0;
+        }
+    }
+
+    .required {
+        &::after {
+            content: ' *';
+            color: $color-form-required;
+        }
+    }
+}

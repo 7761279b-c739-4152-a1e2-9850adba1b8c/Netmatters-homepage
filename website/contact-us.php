@@ -55,19 +55,58 @@ $title = "Contact Us | Netmatters";
                 </div>
             </div>
         </div>
-        <div class="container contact">
-            <p><strong>Email us on:</strong></p>
-            <p><a href="#">sales@netmatters.com</a></p>
-            <p><strong>Business hours</strong></p>
-            <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
+        <div class="container">
+            <div class="contact">
+                <div class="hours">
+                    <p><strong>Email us on:</strong></p>
+                    <p><a href="#" class="email-link">sales@netmatters.com</a></p>
+                    <p><strong>Business hours</strong></p>
+                    <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
 
-            <p id="ooh-button"><strong>Out of Hours IT Support</strong> <span class="icon-down"></span></p>
-            <div id="out-of-hours">
-                <div>
-                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                    <p><strong>Monday - Friday 18:00 - 22:00</strong> <strong>Saturday 08:00 - 16:00</strong><br><strong>Sunday 10:00 - 18:00</strong></p>
-                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+                    <p id="ooh-button"><strong>Out of Hours IT Support</strong> <span class="icon-down"></span></p>
+                    <div id="out-of-hours">
+                        <div>
+                            <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                            <p><strong>Monday - Friday 18:00 - 22:00</strong> <strong>Saturday 08:00 - 16:00</strong><br><strong>Sunday 10:00 - 18:00</strong></p>
+                            <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <form class="contact-us" action="POST">
+                    <div class="form-grid">
+                        <div class="input-wrapper">
+                            <label for="name" class="required">Your Name</label>
+                            <input type="text" id="name" name="name" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email" class="required">Your Email</label>
+                            <input inputmode="email" type="text" id="email" name="email" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phone" class="required">Your Telephone Number</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message" class="required">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div id="checkbox-wrapper">
+                        <input name="marketing" type="checkbox" id="real-checkbox" />
+                        <div class="fake-checkbox"><span id="fake-check"></span></div>
+                        <p>Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
+                    </div>
+                    <p class="privacy-policy">This site is protected by reCAPTCHA and the Google <a href target="_blank">Privacy Policy</a> and <a href target="_blank">Terms of Service</a> apply.</p>
+                    <div class="button-wrapper">
+                        <button class="form-btn" id="send">Send Enquiry</button>
+                        <p class="required-notice"><span class="required"></span> Fields Required</p>
+                    </div>
+                </form>
             </div>
         </div>
 

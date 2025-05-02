@@ -8,7 +8,7 @@ oohButton.addEventListener('click', event => {
         ooh.style.maxHeight = '0';
         visible = false;
     } else {
-        ooh.style.maxHeight = '250px';
+        ooh.style.maxHeight = '375px';
         visible = true;
     }
 })
