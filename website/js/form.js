@@ -80,7 +80,6 @@ message.addEventListener('focusout', () => validMessage());
 
 
 function toggleCheckbox() {
-    console.log('toggle', checkbox.checked);
     checkbox.checked = !checkbox.checked;
     if (checkbox.checked) {
         fake_checkbox.classList = 'enabled';
@@ -89,6 +88,12 @@ function toggleCheckbox() {
     }
 }
 checkbox_clickable.addEventListener('click', toggleCheckbox);
+// if a submit was failed, might have a pre-set value
+if (checkbox.checked) {
+    fake_checkbox.classList = 'enabled';
+} else {
+    fake_checkbox.classList = '';
+}
 
 function checkAllValid() {
     return (!validName() + !validCompany() + !validEmail() + !validPhone() + !validMessage() == 0);
@@ -100,3 +105,14 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
     }
     // send to backend (through form action url)
 });
+
+for (let element of document.getElementsByClassName('form-error')) {
+    element.getElementsByClassName('close')[0].addEventListener('click', () => {
+        element.remove();
+    })
+}
+for (let element of document.getElementsByClassName('form-success')) {
+    element.getElementsByClassName('close')[0].addEventListener('click', () => {
+        element.remove();
+    })
+}

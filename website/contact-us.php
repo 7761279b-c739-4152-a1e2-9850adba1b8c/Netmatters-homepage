@@ -1,6 +1,7 @@
 <?php
 
 $form_errors = [];
+$form_success = false;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include 'php/form-submit.php';
 }
@@ -86,6 +87,12 @@ $title = "Contact Us | Netmatters";
                             <button type="button" class="close">&times;</button>
                         </div>
                     <?php endforeach; ?>
+                    <?php if($form_success):?>
+                        <div class="form-success">
+                            <p>Your message has been sent!"</p>
+                            <button type="button" class="close">&times;</button>
+                        </div>
+                    <?php endif; ?>
                     <div class="form-grid">
                         <div class="input-wrapper">
                             <label for="name" class="required">Your Name</label>
