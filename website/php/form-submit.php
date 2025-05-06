@@ -1,5 +1,4 @@
 <?php
-// code to add form to database if its valid
 
 const email_regex = '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
 const phone_regex = '/^((?:\+|00)[17](?: |\-)?|(?:\+|00)[1-9]\d{0,2}(?: |\-)?|(?:\+|00)1\-\d{3}(?: |\-)?)?(0\d|\([0-9]{3}\)|[1-9]{0,3})(?:((?: |\-)[0-9]{2}){4}|((?:[0-9]{2}){4})|((?: |\-)[0-9]{3}(?: |\-)[0-9]{4})|([0-9]{7}))$/';
@@ -24,14 +23,11 @@ if (strlen($_POST['phone']) < 1) {
     $form_errors[] = 'The telephone format is incorrect.';
 }
 
-// other errors
-
 
 if (!empty($form_errors)) {
     return;
 
 }
-// add to database
 
 require 'php/database.php';
 
