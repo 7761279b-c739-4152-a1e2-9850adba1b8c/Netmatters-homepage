@@ -96,27 +96,27 @@ $title = "Contact Us | Netmatters";
                     <div class="form-grid">
                         <div class="input-wrapper">
                             <label for="name" class="required">Your Name</label>
-                            <input type="text" id="name" name="name" value="<?= $_POST['name'] ?? '' ?>" />
+                            <input type="text" id="name" name="name" value="<?= $form_success ? '' : ($_POST['name'] ?? '') ?>" />
                         </div>
                         <div class="input-wrapper">
                             <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company" value="<?= $_POST['company'] ?? '' ?>" />
+                            <input type="text" id="company" name="company" value="<?= $form_success ? '' : ($_POST['company'] ?? '') ?>" />
                         </div>
                         <div class="input-wrapper">
                             <label for="email" class="required">Your Email</label>
-                            <input inputmode="email" type="text" id="email" name="email" value="<?= $_POST['email'] ?? '' ?>" />
+                            <input inputmode="email" type="text" id="email" name="email" value="<?= $form_success ? '' : ($_POST['email'] ?? '') ?>" />
                         </div>
                         <div class="input-wrapper">
                             <label for="phone" class="required">Your Telephone Number</label>
-                            <input type="tel" id="phone" name="phone" value="<?= $_POST['phone'] ?? '' ?>" />
+                            <input type="tel" id="phone" name="phone" value="<?= $form_success ? '' : ($_POST['phone'] ?? '') ?>" />
                         </div>
                     </div>
                     <div class="input-wrapper">
                         <label for="message" class="required">Message</label>
-                        <textarea id="message" name="message"><?= $_POST['message'] ?? '' ?></textarea>
+                        <textarea id="message" name="message"><?= $form_success ? '' : ($_POST['message'] ?? '') ?></textarea>
                     </div>
                     <div id="checkbox-wrapper">
-                        <input name="marketing" type="checkbox" id="real-checkbox"><?= $_POST['marketing'] ?? false ?></input>
+                        <input name="marketing" type="checkbox" id="real-checkbox" <?= $form_success ? '' : (isset($_POST['marketing']) ?  'checked="checked"' : '') ?>></input>
                         <div id="fake-checkbox"></div>
                         <p>Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
                     </div>

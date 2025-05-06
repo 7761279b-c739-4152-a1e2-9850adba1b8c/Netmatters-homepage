@@ -42,7 +42,7 @@ $db->query('insert into form_responses(name, company, email, phone, message, mar
     'email' => $_POST['email'],
     'phone' => $_POST['phone'],
     'message' => $_POST['message'],
-    'marketing' => isset($_POST['marketing']) ? true : false
+    'marketing' => isset($_POST['marketing']) ? 1 : 0
 ]);
 
 $form_success = true;
