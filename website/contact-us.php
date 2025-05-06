@@ -89,34 +89,34 @@ $title = "Contact Us | Netmatters";
                     <?php endforeach; ?>
                     <?php if($form_success):?>
                         <div class="form-success">
-                            <p>Your message has been sent!"</p>
+                            <p>Your message has been sent!</p>
                             <button type="button" class="close">&times;</button>
                         </div>
                     <?php endif; ?>
                     <div class="form-grid">
                         <div class="input-wrapper">
                             <label for="name" class="required">Your Name</label>
-                            <input type="text" id="name" name="name" />
+                            <input type="text" id="name" name="name" value="<?= $_POST['name'] ?? '' ?>" />
                         </div>
                         <div class="input-wrapper">
                             <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company" />
+                            <input type="text" id="company" name="company" value="<?= $_POST['company'] ?? '' ?>" />
                         </div>
                         <div class="input-wrapper">
                             <label for="email" class="required">Your Email</label>
-                            <input inputmode="email" type="text" id="email" name="email" />
+                            <input inputmode="email" type="text" id="email" name="email" value="<?= $_POST['email'] ?? '' ?>" />
                         </div>
                         <div class="input-wrapper">
                             <label for="phone" class="required">Your Telephone Number</label>
-                            <input type="tel" id="phone" name="phone" />
+                            <input type="tel" id="phone" name="phone" value="<?= $_POST['phone'] ?? '' ?>" />
                         </div>
                     </div>
                     <div class="input-wrapper">
                         <label for="message" class="required">Message</label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea id="message" name="message"><?= $_POST['message'] ?? '' ?></textarea>
                     </div>
                     <div id="checkbox-wrapper">
-                        <input name="marketing" type="checkbox" id="real-checkbox" />
+                        <input name="marketing" type="checkbox" id="real-checkbox"><?= $_POST['marketing'] ?? false ?></input>
                         <div id="fake-checkbox"></div>
                         <p>Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
                     </div>
