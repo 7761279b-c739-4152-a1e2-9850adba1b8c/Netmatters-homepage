@@ -67,6 +67,8 @@ $title = "Contact Us | Netmatters";
                 <div class="hours">
                     <p><strong>Email us on:</strong></p>
                     <p><a href="#" class="email-link">sales@netmatters.com</a></p>
+                    <p><strong>Speak to Sales on:</strong></p>
+                    <p><a href="#" class="phone-link">01603 515007</a></p>
                     <p><strong>Business hours</strong></p>
                     <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
 

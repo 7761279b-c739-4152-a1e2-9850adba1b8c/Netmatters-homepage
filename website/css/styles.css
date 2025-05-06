@@ -3798,7 +3798,7 @@ footer .footer-company .footer-social-media a {
 }
 
 /* line 29, ../../html_css_assessment/website/scss/_contact.scss */
-.contact .hours p a.email-link {
+.contact .hours p a.email-link, .contact .hours p a.phone-link {
   color: #926fb1;
   font-size: 1.625rem;
   font-weight: 600;
@@ -3806,7 +3806,7 @@ footer .footer-company .footer-social-media a {
 }
 
 /* line 34, ../../html_css_assessment/website/scss/_contact.scss */
-.contact .hours p a.email-link:hover {
+.contact .hours p a.email-link:hover, .contact .hours p a.phone-link:hover {
   text-decoration: underline;
 }
 
