@@ -81,6 +81,9 @@
             .banner-overlay {
                 margin: auto;
                 padding: 60px 0;
+                .btn {
+                    padding: 15px 20px;
+                }
             }
 
             @include mq('medium') {

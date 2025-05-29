@@ -56,7 +56,7 @@ body {
   text-transform: uppercase;
   display: inline-block;
   border-radius: 5px;
-  padding: 12.5px 32px;
+  padding: 12.5px 30px;
   margin: 0 8px 20px 0;
   text-wrap: nowrap;
 }
@@ -1851,19 +1851,24 @@ header form.search-mobile .search-bar-mobile-icon {
   padding: 60px 0;
 }
 
+/* line 84, ../../html_css_assessment/website/scss/_banner.scss */
+.banner #banner-list .banner-item .banner-overlay .btn {
+  padding: 15px 20px;
+}
+
 @media (min-width: 992px) {
   /* line 9, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item {
     text-align: left;
     height: 577px;
   }
-  /* line 89, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 92, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     font-size: 4rem;
     line-height: 5rem;
     width: 940px;
   }
-  /* line 94, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 97, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item p {
     font-size: 1.625rem;
     line-height: 2.5rem;
@@ -1875,13 +1880,13 @@ header form.search-mobile .search-bar-mobile-icon {
   .banner #banner-list .banner-item {
     height: 550px;
   }
-  /* line 101, ../../html_css_assessment/website/scss/_banner.scss */
+  /* line 104, ../../html_css_assessment/website/scss/_banner.scss */
   .banner #banner-list .banner-item h1 {
     width: 1170px;
   }
 }
 
-/* line 108, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 111, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector {
   text-align: center;
   display: block;
@@ -1893,7 +1898,7 @@ header form.search-mobile .search-bar-mobile-icon {
   z-index: 10;
 }
 
-/* line 117, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 120, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1904,13 +1909,13 @@ header form.search-mobile .search-bar-mobile-icon {
   cursor: pointer;
 }
 
-/* line 125, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 128, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected {
   position: relative;
   background-color: #fff;
 }
 
-/* line 128, ../../html_css_assessment/website/scss/_banner.scss */
+/* line 131, ../../html_css_assessment/website/scss/_banner.scss */
 .banner .banner-selector .banner-circle.selected::after {
   content: "";
   position: absolute;
@@ -3334,7 +3339,7 @@ footer .footer-company .footer-social-media {
   margin-top: 0;
   margin-bottom: 36px;
   font-size: 1.625rem;
-  max-width: 312.34px;
+  max-width: 312.35px;
   min-width: 250px;
 }
 
